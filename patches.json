@@ -48,6 +48,13 @@
       "pattern": "<a[^>]*href=\"#r\\d+\">",
       "replace": "<a>",
       "reason": "Remove broken endnote backlinks (#rN anchors not in any file after split)"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<a\\s+id=\"(r\\d+)\"/>",
+      "replace": "<a id=\"\\1\"></a>",
+      "reason": "Convert self-closing rN anchors to explicit open/close so se build preserves them"
     }
   ]
 }
