@@ -1,13 +1,6 @@
 {
   "patches": [
     {
-      "file_pattern": "src/epub/text/*.xhtml",
-      "action": "regex",
-      "pattern": "<div epub:type=\"z3998:poem\"><p>(.*?)</p></div>",
-      "replace": "<span class=\"heading-verse\">\\1</span>",
-      "reason": "Replace <div> inside <h2> with <span> (prevents epubcheck RSC-005)"
-    },
-    {
       "file_pattern": "src/epub/text/chapter-*.xhtml",
       "action": "regex",
       "pattern": "<span class=\"heading-verse\"><span class=\"line\"><span epub:type=\"z3998:ordinal z3998:roman\">([ivxlcdmIVXLCDM]+)</span></span><span class=\"line\"><span class=\"small\">(.*?)</span></span></span>",
@@ -53,8 +46,8 @@
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
       "pattern": "<a\\s+id=\"(r\\d+)\"/>",
-      "replace": "<span id=\"\\1\"></span>",
-      "reason": "Convert rN anchors to span (se build strips empty <a> but preserves <span>)"
+      "replace": "<a id=\"\\1\">&#8203;</a>",
+      "reason": "rN anchors with zero-width space content so se build preserves them"
     }
   ]
 }
