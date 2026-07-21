@@ -1,0 +1,68 @@
+In The Orkneyinga Saga, by Anonymous, [EBook #57723],
+File: 57723.txt,
+I verified the following changes against the Internet Archive scan:
+https://archive.org/details/orkneyingasaga00goudgoog
+NOTE: Page numbers are 'of the scan' not 'of the book.'
+
+Page 218 (https://archive.org/details/orkneyingasaga00goudgoog/page/n218/mode/1up):
+Line 7387: measure happened through him. He invited Swein to stay with him, and he
+Line 7388: accepted the invitation with thinks.  <-- error here
+He invited Swein to stay with him, and he accepted the invitation with thinks.
+thinks ==> thanks
+
+Page 27 (https://archive.org/details/orkneyingasaga00goudgoog/page/n27/mode/1up):
+Accordingly he went back to Norway to organise the expedition, and returned to the Orkneys followed by a large number of Jorsala-farers—mostly adventurers of very indifferent character, if we are to judge by their turbulent and lawless behaviour during their stay in the Orkneys, where they spent the winter previous to their departure for the East.
+Jorsala-farers—mostly ==> Jorsala-farers— mostly
+
+Page 115 (https://archive.org/details/orkneyingasaga00goudgoog/page/n115/mode/1up):
+Line 885: this time, had been well known to the Norsemen as the viking station of
+Line 886: the western haf—the rendezvous of the Northern rovers, who swept the  <-- error here
+Line 887: coasts of the Hebrides and swarmed in the Irish Seas. Being fugitives
+Large numbers of the wealthy and powerful odallers, whom he had dispossessed of their territorial possessions, fled to the islands of Orkney and Shetland, which, for a full century previous to this time, had been well known to the Norsemen as the viking station of the western haf—the rendezvous of the Northern rovers, who swept the coasts of the Hebrides and swarmed in the Irish Seas.
+western haf ==> western half
+
+Page 149 (https://archive.org/details/orkneyingasaga00goudgoog/page/n149/mode/1up):
+EARL THORFINN made himself famous in the Orkneys by entertaining his own men and many other men of note throughout the winter, so that no one had to go to inns—providing food and drink at his own charges, in the same manner as chiefs in other countries, Kings, and Earls entertain their henchmen and guests at Christmas time.
+inns—providing ==> inns—-providing
+
+Page 206 (https://archive.org/details/orkneyingasaga00goudgoog/page/n206/mode/1up):
+Sölmund said that this had turned out just as he expected—namely, that little honour would be gained by asking Jón for settlement; and then he begged Kol to propose a plan that might be of some avail.
+expected—namely ==> expected—-namely
+
+Page 214 (https://archive.org/details/orkneyingasaga00goudgoog/page/n214/mode/1up):
+During the night the following chiefs came to Earl Paul:—Eyvind, Melbrigdi’s son, in a ship fully manned; Olaf, Rólf’s son, from Gáreksey (Gairsay), had another; Thorkel Flettir the third; Sigurd the fourth; and the Earl himself the fifth.
+Paul:—Eyvind ==> Paul: Eyvind
+
+Page 263 (https://archive.org/details/orkneyingasaga00goudgoog/page/n263/mode/1up):
+When the Earl asked the inhabitants to sell him victuals, they consented to do so until Lent, but made certain proposals on their part—to wit, that Earl Rögnvald should attack their enemies, and should have all the money which he might obtain from them.
+part—to ==> part—-to
+
+Page 281 (https://archive.org/details/orkneyingasaga00goudgoog/page/n281/mode/1up):
+The Caithnessmen called this—that the Earl was in guest-quarters.
+this—that ==> this-—that
+
+Page 337 (https://archive.org/details/orkneyingasaga00goudgoog/page/n337/mode/1up):
+But through the urgency of the Earl’s followers, he and his men ran down to the bog, and they met at the moss-hag—the two parties standing one on either side.
+moss-hag—the ==> moss-hag, the
+
+Page 337 (https://archive.org/details/orkneyingasaga00goudgoog/page/n337/mode/1up):
+His wife was Afreka, and their children were—Heinrek, Hákon, Helena, and Margarét.
+were—Heinrek ==> were Heinrek
+
+Page 357 (https://archive.org/details/orkneyingasaga00goudgoog/page/n357/mode/1up):
+Wild Men and Wild Beasts—Adventures in Camp and Jungle.
+Beasts—Adventures ==> Beasts-—Adventures
+
+Page 357 (https://archive.org/details/orkneyingasaga00goudgoog/page/n357/mode/1up):
+Line 17264: Wild Men and Wild Beasts—Adventures in Camp and Jungle. By
+Line 17265: LIEUT.-COLONEL GORDON CUMMING. With Illustrations by Lieut.-Col.  <-- error here
+Line 17266: BAIGRIE and others. Second edition. Demy 4to, price 24s.
+With Illustrations by Lieut.-Col. BAIGRIE and others.
+Lieut.-Col ==> Lieut. Col
+
+Page 111 (https://archive.org/details/orkneyingasaga00goudgoog/page/n111/mode/1up):
+Line 3556: twinkling, and he goes straight to paradise.” After the pile was
+Line 3557: consumed to ashes they raised a great-mound over the spot, and set up on  <-- error here
+Line 3558: it a pillar made of a tree-trunk, on which they carved the names of the
+” After the pile was consumed to ashes they raised a great-mound over the spot, and set up on it a pillar made of a tree-trunk, on which they carved the names of the dead man and of their king.
+great-mound ==> great mound

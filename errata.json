@@ -1,0 +1,86 @@
+{
+  "_generated_from": "gerrata-report.txt",
+  "text_corrections": [
+    {
+      "find": "thinks",
+      "replace": "thanks",
+      "reason": "Gerrata errata, scan page 218",
+      "context": "He invited Swein to stay with him, and he accepted the invitation with thinks."
+    },
+    {
+      "find": "Jorsala-farers—mostly",
+      "replace": "Jorsala-farers— mostly",
+      "reason": "Gerrata errata, scan page 27",
+      "context": "Accordingly he went back to Norway to organise the expedition, and returned to the Orkneys followed by a large number of Jorsala-farers—mostly adventurers of very indifferent character, if we are to judge by their turbulent and lawless behaviour during their stay in the Orkneys, where they spent the winter previous to their departure for the East."
+    },
+    {
+      "find": "western haf",
+      "replace": "western half",
+      "reason": "Gerrata errata, scan page 115",
+      "context": "Large numbers of the wealthy and powerful odallers, whom he had dispossessed of their territorial possessions, fled to the islands of Orkney and Shetland, which, for a full century previous to this time, had been well known to the Norsemen as the viking station of the western haf—the rendezvous of the Northern rovers, who swept the coasts of the Hebrides and swarmed in the Irish Seas."
+    },
+    {
+      "find": "inns—providing",
+      "replace": "inns—-providing",
+      "reason": "Gerrata errata, scan page 149",
+      "context": "EARL THORFINN made himself famous in the Orkneys by entertaining his own men and many other men of note throughout the winter, so that no one had to go to inns—providing food and drink at his own charges, in the same manner as chiefs in other countries, Kings, and Earls entertain their henchmen and guests at Christmas time."
+    },
+    {
+      "find": "expected—namely",
+      "replace": "expected—-namely",
+      "reason": "Gerrata errata, scan page 206",
+      "context": "Sölmund said that this had turned out just as he expected—namely, that little honour would be gained by asking Jón for settlement; and then he begged Kol to propose a plan that might be of some avail."
+    },
+    {
+      "find": "Paul:—Eyvind",
+      "replace": "Paul: Eyvind",
+      "reason": "Gerrata errata, scan page 214",
+      "context": "During the night the following chiefs came to Earl Paul:—Eyvind, Melbrigdi’s son, in a ship fully manned; Olaf, Rólf’s son, from Gáreksey (Gairsay), had another; Thorkel Flettir the third; Sigurd the fourth; and the Earl himself the fifth."
+    },
+    {
+      "find": "part—to",
+      "replace": "part—-to",
+      "reason": "Gerrata errata, scan page 263",
+      "context": "When the Earl asked the inhabitants to sell him victuals, they consented to do so until Lent, but made certain proposals on their part—to wit, that Earl Rögnvald should attack their enemies, and should have all the money which he might obtain from them."
+    },
+    {
+      "find": "this—that",
+      "replace": "this-—that",
+      "reason": "Gerrata errata, scan page 281",
+      "context": "The Caithnessmen called this—that the Earl was in guest-quarters."
+    },
+    {
+      "find": "moss-hag—the",
+      "replace": "moss-hag, the",
+      "reason": "Gerrata errata, scan page 337",
+      "context": "But through the urgency of the Earl’s followers, he and his men ran down to the bog, and they met at the moss-hag—the two parties standing one on either side."
+    },
+    {
+      "find": "were—Heinrek",
+      "replace": "were Heinrek",
+      "reason": "Gerrata errata, scan page 337",
+      "context": "His wife was Afreka, and their children were—Heinrek, Hákon, Helena, and Margarét."
+    },
+    {
+      "find": "Beasts—Adventures",
+      "replace": "Beasts-—Adventures",
+      "reason": "Gerrata errata, scan page 357",
+      "context": "Wild Men and Wild Beasts—Adventures in Camp and Jungle."
+    },
+    {
+      "find": "Lieut.-Col",
+      "replace": "Lieut. Col",
+      "reason": "Gerrata errata, scan page 357",
+      "context": "With Illustrations by Lieut.-Col. BAIGRIE and others."
+    },
+    {
+      "find": "great-mound",
+      "replace": "great mound",
+      "reason": "Gerrata errata, scan page 111",
+      "context": "” After the pile was consumed to ashes they raised a great-mound over the spot, and set up on it a pillar made of a tree-trunk, on which they carved the names of the dead man and of their king."
+    }
+  ],
+  "metadata_overrides": {},
+  "global_replacements": {},
+  "insertions": []
+}

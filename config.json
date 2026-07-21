@@ -1,0 +1,294 @@
+{
+  "pg_id": 57723,
+  "title": "The Orkneyinga Saga",
+  "author": "Anonymous",
+  "slug": "the-orkneyinga-saga",
+  "language": "en-GB",
+  "has_illustrations": true,
+  "illustration_count": 35,
+  "preserve_spelling": true,
+  "original_year": null,
+  "gutendex_subjects": [
+    "Scotland -- Antiquities",
+    "Orkney (Scotland) -- Antiquities",
+    "Orkney (Scotland) -- History",
+    "PT"
+  ],
+  "llm_model": "google/gemini-3.1-flash-lite",
+  "llm_model_strong": "google/gemini-3.1-flash-lite",
+  "llm_batch_size": 5,
+  "proofread_chapters": 2,
+  "spine_order": null,
+  "dc_description": null,
+  "dc_subject": null,
+  "pg_images": [
+    {
+      "filename": "020-skotland.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/020-skotland.jpg"
+    },
+    {
+      "filename": "chancel-arch-weir-a.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/chancel-arch-weir-a.jpg"
+    },
+    {
+      "filename": "chancel-arch-weir-b.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/chancel-arch-weir-b.jpg"
+    },
+    {
+      "filename": "cii.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cii.jpg"
+    },
+    {
+      "filename": "ciii.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/ciii.jpg"
+    },
+    {
+      "filename": "civ.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/civ.jpg"
+    },
+    {
+      "filename": "cix.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cix.jpg"
+    },
+    {
+      "filename": "cover.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cover.jpg"
+    },
+    {
+      "filename": "cvi.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cvi.jpg"
+    },
+    {
+      "filename": "cvii-bottom.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cvii-bottom.jpg"
+    },
+    {
+      "filename": "cvii-top.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cvii-top.jpg"
+    },
+    {
+      "filename": "cxvi.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cxvi.jpg"
+    },
+    {
+      "filename": "cxvii.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cxvii.jpg"
+    },
+    {
+      "filename": "cxxi.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cxxi.jpg"
+    },
+    {
+      "filename": "cxxii.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/cxxii.jpg"
+    },
+    {
+      "filename": "dragon-ship.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/dragon-ship.jpg"
+    },
+    {
+      "filename": "egilsey-church.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/egilsey-church.jpg"
+    },
+    {
+      "filename": "frontis.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/frontis.jpg"
+    },
+    {
+      "filename": "hjaltland-map.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/hjaltland-map.jpg"
+    },
+    {
+      "filename": "i150-bottom-l.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/i150-bottom-l.jpg"
+    },
+    {
+      "filename": "i150-bottom.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/i150-bottom.jpg"
+    },
+    {
+      "filename": "i150-top-l.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/i150-top-l.jpg"
+    },
+    {
+      "filename": "i150-top.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/i150-top.jpg"
+    },
+    {
+      "filename": "orkneyar.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/orkneyar.jpg"
+    },
+    {
+      "filename": "st-magnus-cathedral.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/st-magnus-cathedral.jpg"
+    },
+    {
+      "filename": "xci.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xci.jpg"
+    },
+    {
+      "filename": "xciv.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xciv.jpg"
+    },
+    {
+      "filename": "xcvi.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xcvi.jpg"
+    },
+    {
+      "filename": "xcvii.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xcvii.jpg"
+    },
+    {
+      "filename": "xiv.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xiv.jpg"
+    },
+    {
+      "filename": "xix.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xix.jpg"
+    },
+    {
+      "filename": "xvi.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xvi.jpg"
+    },
+    {
+      "filename": "xvii.jpg",
+      "url": "https://www.gutenberg.org/cache/epub/57723/images/xvii.jpg"
+    }
+  ],
+  "translator": null,
+  "ia_scan_url": "https://archive.org/details/orkneyingasaga00goudgoog",
+  "part_children": {
+    "part-1.xhtml": [
+      "chapter-i.xhtml",
+      "chapter-ii.xhtml",
+      "chapter-iii.xhtml",
+      "chapter-iv.xhtml",
+      "chapter-v.xhtml",
+      "chapter-vi.xhtml",
+      "chapter-vii.xhtml",
+      "chapter-viii.xhtml",
+      "chapter-ix.xhtml",
+      "chapter-x.xhtml",
+      "chapter-xi.xhtml",
+      "chapter-xii.xhtml",
+      "chapter-xiii.xhtml",
+      "chapter-xiv.xhtml",
+      "chapter-xv.xhtml",
+      "chapter-xvi.xhtml",
+      "chapter-xvii.xhtml",
+      "chapter-xviii.xhtml",
+      "chapter-xix.xhtml",
+      "chapter-xx.xhtml",
+      "chapter-xxi.xhtml",
+      "chapter-xxii.xhtml",
+      "chapter-xxiii.xhtml",
+      "chapter-xxiv.xhtml",
+      "chapter-xxv.xhtml",
+      "chapter-xxvi.xhtml",
+      "chapter-xxvii.xhtml",
+      "chapter-xxviii.xhtml",
+      "chapter-xxix.xhtml",
+      "chapter-xxx.xhtml",
+      "chapter-xxxi.xhtml",
+      "chapter-xxxii.xhtml",
+      "chapter-xxxiii.xhtml",
+      "chapter-xxxiv.xhtml",
+      "chapter-xxxv.xhtml",
+      "chapter-xxxvi.xhtml",
+      "chapter-xxxvii.xhtml",
+      "chapter-xxxviii.xhtml",
+      "chapter-xxxix.xhtml",
+      "chapter-xl.xhtml",
+      "chapter-xli.xhtml",
+      "chapter-lxii.xhtml",
+      "chapter-xliii.xhtml",
+      "chapter-xliv.xhtml",
+      "chapter-xlv.xhtml",
+      "chapter-xlvi.xhtml",
+      "chapter-xlvii.xhtml",
+      "chapter-xlviii.xhtml",
+      "chapter-xlix.xhtml",
+      "chapter-l.xhtml",
+      "chapter-li.xhtml",
+      "chapter-lii.xhtml",
+      "chapter-liii.xhtml",
+      "chapter-liv.xhtml",
+      "chapter-lv.xhtml",
+      "chapter-lvi.xhtml",
+      "chapter-lvii.xhtml",
+      "chapter-lviii.xhtml",
+      "chapter-lix.xhtml",
+      "chapter-lx.xhtml",
+      "chapter-lxi.xhtml",
+      "chapter-lxii-2.xhtml",
+      "chapter-lxiii.xhtml",
+      "chapter-lxiv.xhtml",
+      "chapter-lxv.xhtml",
+      "chapter-lxvi.xhtml",
+      "chapter-lxvii.xhtml",
+      "chapter-lxviii.xhtml",
+      "chapter-lxix.xhtml",
+      "chapter-lxx.xhtml",
+      "chapter-lxxi.xhtml",
+      "chapter-lxxii.xhtml",
+      "chapter-lxxiii.xhtml",
+      "chapter-lxxiv.xhtml",
+      "chapter-lxxv.xhtml",
+      "chapter-lxxvi.xhtml",
+      "chapter-lxxvii.xhtml",
+      "chapter-lxxviii.xhtml",
+      "chapter-lxxix.xhtml",
+      "chapter-lxxx.xhtml",
+      "chapter-lxxxi.xhtml",
+      "chapter-lxxxii.xhtml",
+      "chapter-lxxxiii.xhtml",
+      "chapter-lxxxiv.xhtml",
+      "chapter-lxxxv.xhtml",
+      "chapter-lxxxvi.xhtml",
+      "chapter-lxxxvii.xhtml",
+      "chapter-lxxxviii.xhtml",
+      "chapter-lxxxix.xhtml",
+      "chapter-xc.xhtml",
+      "chapter-xci.xhtml",
+      "chapter-xcii.xhtml",
+      "chapter-xciii.xhtml",
+      "chapter-xciv.xhtml",
+      "chapter-xcv.xhtml",
+      "chapter-xcvi.xhtml",
+      "chapter-xcvii.xhtml",
+      "chapter-xcviii.xhtml",
+      "chapter-xcix.xhtml",
+      "chapter-c.xhtml",
+      "chapter-ci.xhtml",
+      "chapter-cii.xhtml",
+      "chapter-ciii.xhtml",
+      "chapter-civ.xhtml",
+      "chapter-cv.xhtml",
+      "chapter-cvi.xhtml",
+      "chapter-cvii.xhtml",
+      "chapter-cviii.xhtml",
+      "chapter-cix.xhtml",
+      "chapter-cx.xhtml",
+      "chapter-cxi.xhtml",
+      "chapter-cxii.xhtml",
+      "chapter-cxiii.xhtml",
+      "chapter-cxiv.xhtml",
+      "chapter-cxv.xhtml",
+      "chapter-cxvi.xhtml",
+      "chapter-cxvii.xhtml",
+      "dominions-king-harald-earl-rgnvald.xhtml",
+      "earl-melbrigd-slain-sigurd.xhtml",
+      "einar-comes-islands.xhtml",
+      "vikings-slain.xhtml",
+      "battle-between-earl-einar-prince-halfdan.xhtml",
+      "murder-havard.xhtml",
+      "battle-between-liot-skuli.xhtml",
+      "battle.xhtml",
+      "meeting-between-olaf-tryggvis-son-earl.xhtml"
+    ]
+  },
+  "book_type": "novel",
+  "drop_sections": [
+    "index-8.xhtml"
+  ]
+}

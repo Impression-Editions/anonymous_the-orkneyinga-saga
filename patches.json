@@ -1,0 +1,39 @@
+{
+  "patches": [
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<div epub:type=\"z3998:poem\"><p>(.*?)</p></div>",
+      "replace": "<span class=\"heading-verse\">\\1</span>",
+      "reason": "Replace <div> inside <h2> with <span> — epubcheck RSC-005 (block element inside inline)"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "<a href=\"#r(\\d+)\">",
+      "replace": "<a class=\"dead-link\">",
+      "reason": "Remove broken backlinks — convert_endnotes did not create noteref anchors for this book"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "href=\"#(maeshow|mousa)\"",
+      "replace": "class=\"dead-link\"",
+      "reason": "Remove broken cross-references to named anchors that dont exist in split files"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "href=\"#(h3-XII|h3-XI)\"",
+      "replace": "class=\"dead-link\"",
+      "reason": "Remove broken cross-references to non-existent section anchors"
+    },
+    {
+      "file_pattern": "src/epub/text/ii-early-christianity-islands.xhtml",
+      "action": "regex",
+      "pattern": "href=\"#i-xvi\"",
+      "replace": "class=\"dead-link\"",
+      "reason": "Remove broken cross-reference to non-existent section anchor"
+    }
+  ]
+}

@@ -1,0 +1,772 @@
+{
+  "classifications": {
+    "the orkneyinga saga": {
+      "heading": "THE ORKNEYINGA SAGA",
+      "type": "halftitle"
+    },
+    "": {
+      "heading": "",
+      "type": "blank"
+    },
+    "preface.": {
+      "heading": "PREFACE.",
+      "type": "preface"
+    },
+    "contents.": {
+      "heading": "CONTENTS.",
+      "type": "contents"
+    },
+    "list of illustrations.": {
+      "heading": "LIST OF ILLUSTRATIONS.",
+      "type": "loi"
+    },
+    "syllabus of introduction.": {
+      "heading": "SYLLABUS OF INTRODUCTION.",
+      "type": "contents"
+    },
+    "introduction.": {
+      "heading": "INTRODUCTION.",
+      "type": "introduction"
+    },
+    "ii. early christianity of the islands.": {
+      "heading": "II. Early Christianity of the Islands.",
+      "type": "chapter"
+    },
+    "iii. arrival of the northmen, and establishment of the earldom of orkney and caithness.": {
+      "heading": "III. Arrival of the Northmen, and Establishment of the Earldom of Orkney and Cai",
+      "type": "chapter"
+    },
+    "iv. the earldom in the norse line, 872-1231.": {
+      "heading": "IV. The Earldom in the Norse Line, 872-1231.",
+      "type": "chapter"
+    },
+    "v. the earldom in the angus line—1231-1312.": {
+      "heading": "V. The Earldom in the Angus Line—1231-1312.",
+      "type": "chapter"
+    },
+    "vi. the earldom in the stratherne line—1321-1379.": {
+      "heading": "VI. The Earldom in the Stratherne Line—1321-1379.",
+      "type": "chapter"
+    },
+    "vii. the earldom in the line of st. clair—1379-1469.": {
+      "heading": "VII. The Earldom in the Line of St. Clair—1379-1469.",
+      "type": "chapter"
+    },
+    "viii. the bishopric of orkney—1060-1469.": {
+      "heading": "VIII. The Bishopric of Orkney—1060-1469.",
+      "type": "chapter"
+    },
+    "ix. the bishopric of caithness—1150-1469.": {
+      "heading": "IX. The Bishopric of Caithness—1150-1469.",
+      "type": "chapter"
+    },
+    "x. ancient churches of orkney.": {
+      "heading": "X. Ancient Churches of Orkney.",
+      "type": "chapter"
+    },
+    "xi. maeshow and the stones of stennis.": {
+      "heading": "XI. Maeshow and the Stones of Stennis.",
+      "type": "chapter"
+    },
+    "xii. mousa and the pictish towers.": {
+      "heading": "XII. Mousa and the Pictish Towers.",
+      "type": "chapter"
+    },
+    "xiii. remains of the northmen.": {
+      "heading": "XIII. Remains of the Northmen.",
+      "type": "chapter"
+    },
+    "chronological table.": {
+      "heading": "CHRONOLOGICAL TABLE.",
+      "type": "appendix"
+    },
+    "genealogical tables.": {
+      "heading": "GENEALOGICAL TABLES.",
+      "type": "appendix"
+    },
+    "ii. the angus line of the earls of orkney.": {
+      "heading": "II.  THE ANGUS LINE OF THE EARLS OF ORKNEY.",
+      "type": "appendix"
+    },
+    "iii. the stratherne line of the earls of orkney.": {
+      "heading": "III.  THE STRATHERNE LINE OF THE EARLS OF ORKNEY.",
+      "type": "appendix"
+    },
+    "iv. the st. clair line of the earls of orkney.": {
+      "heading": "IV. THE ST. CLAIR LINE OF THE EARLS OF ORKNEY.",
+      "type": "appendix"
+    },
+    "orkneyinga saga.": {
+      "heading": "ORKNEYINGA SAGA.",
+      "type": "part"
+    },
+    "chapter i. of the earls.": {
+      "heading": "CHAPTER I.\nOF THE EARLS.",
+      "type": "chapter"
+    },
+    "chapter ii of amundi and thorkel.": {
+      "heading": "CHAPTER II\nOF AMUNDI AND THORKEL.",
+      "type": "chapter"
+    },
+    "chapter iii thorkel slays earl einar.": {
+      "heading": "CHAPTER III\nTHORKEL SLAYS EARL EINAR.",
+      "type": "chapter"
+    },
+    "chapter iv of earl brúsi.": {
+      "heading": "CHAPTER IV\nOF EARL BRÚSI.",
+      "type": "chapter"
+    },
+    "chapter v of the earls brúsi and thorfinn.": {
+      "heading": "CHAPTER V\nOF THE EARLS BRÚSI AND THORFINN.",
+      "type": "chapter"
+    },
+    "chapter vi of the orkneymen.": {
+      "heading": "CHAPTER VI\nOF THE ORKNEYMEN.",
+      "type": "chapter"
+    },
+    "chapter vii of the famous deeds of earl thorfinn.": {
+      "heading": "CHAPTER VII\nOF THE FAMOUS DEEDS OF EARL THORFINN.",
+      "type": "chapter"
+    },
+    "chapter viii magnus, olaf’s son, accepted king of norway.": {
+      "heading": "CHAPTER VIII\nMAGNUS, OLAF’S SON, ACCEPTED KING OF NORWAY.",
+      "type": "chapter"
+    },
+    "chapter ix rögnvald asks magnus for leave to go to the islands.": {
+      "heading": "CHAPTER IX\nRÖGNVALD ASKS MAGNUS FOR LEAVE TO GO TO THE ISLANDS.",
+      "type": "chapter"
+    },
+    "chapter x of rognvald’s voyage.": {
+      "heading": "CHAPTER X\nOF ROGNVALD’S VOYAGE.",
+      "type": "chapter"
+    },
+    "chapter xi the battle of the kinsmen thorfinn and rognvald.": {
+      "heading": "CHAPTER XI\nTHE BATTLE OF THE KINSMEN THORFINN AND ROGNVALD.",
+      "type": "chapter"
+    },
+    "chapter xii of earl thorfinn’s warfare.": {
+      "heading": "CHAPTER XII\nOF EARL THORFINN’S WARFARE.",
+      "type": "chapter"
+    },
+    "chapter xiii of earl thorfinn’s expedition to england.": {
+      "heading": "CHAPTER XIII\nOF EARL THORFINN’S EXPEDITION TO ENGLAND.",
+      "type": "chapter"
+    },
+    "chapter xiv kalf flees to the orkneys.": {
+      "heading": "CHAPTER XIV\nKALF FLEES TO THE ORKNEYS.",
+      "type": "chapter"
+    },
+    "chapter xv battle of raudabiorg.": {
+      "heading": "CHAPTER XV\nBATTLE OF RAUDABIORG.",
+      "type": "chapter"
+    },
+    "chapter xvi earl thorfinn subdues the islands.": {
+      "heading": "CHAPTER XVI\nEARL THORFINN SUBDUES THE ISLANDS.",
+      "type": "chapter"
+    },
+    "chapter xvii rögnvald comes to the islands.": {
+      "heading": "CHAPTER XVII\nRÖGNVALD COMES TO THE ISLANDS.",
+      "type": "chapter"
+    },
+    "chapter xviii earl rögnvald slain.": {
+      "heading": "CHAPTER XVIII\nEARL RÖGNVALD SLAIN.",
+      "type": "chapter"
+    },
+    "chapter xix earl rögnvald’s burial.": {
+      "heading": "CHAPTER XIX\nEARL RÖGNVALD’S BURIAL.",
+      "type": "chapter"
+    },
+    "chapter xx earl thorfinn comes to king harald.": {
+      "heading": "CHAPTER XX\nEARL THORFINN COMES TO KING HARALD.",
+      "type": "chapter"
+    },
+    "chapter xxi earl thorfinn’s message to king harald (hardradi).": {
+      "heading": "CHAPTER XXI\nEARL THORFINN’S MESSAGE TO KING HARALD (HARDRADI).",
+      "type": "chapter"
+    },
+    "chapter xxii of earl thorfinn’s death.": {
+      "heading": "CHAPTER XXII\nOF EARL THORFINN’s DEATH.",
+      "type": "chapter"
+    },
+    "chapter xxiii of the earls paul and erlend, and genealogies.": {
+      "heading": "CHAPTER XXIII\nOF THE EARLS PAUL AND ERLEND, AND GENEALOGIES.",
+      "type": "chapter"
+    },
+    "chapter xxiv here is told of the death of king harald and his daughter.": {
+      "heading": "CHAPTER XXIV\nHERE IS TOLD OF THE DEATH OF KING HARALD AND HIS DAUGHTER.",
+      "type": "chapter"
+    },
+    "chapter xxv a meeting of peace.": {
+      "heading": "CHAPTER XXV\nA MEETING OF PEACE.",
+      "type": "chapter"
+    },
+    "chapter xxvi of the words of the spae-man.": {
+      "heading": "CHAPTER XXVI\nOF THE WORDS OF THE SPAE-MAN.",
+      "type": "chapter"
+    },
+    "chapter xxvii of the schemes of hakon, paul’s son.": {
+      "heading": "CHAPTER XXVII\nOF THE SCHEMES OF HAKON, PAUL’S SON.",
+      "type": "chapter"
+    },
+    "chapter xxviii hakon’s interview with king magnus.": {
+      "heading": "CHAPTER XXVIII\nHAKON’S INTERVIEW WITH KING MAGNUS.",
+      "type": "chapter"
+    },
+    "chapter xxix the western expedition of magnus barelegs.": {
+      "heading": "CHAPTER XXIX\nTHE WESTERN EXPEDITION OF MAGNUS BARELEGS.",
+      "type": "chapter"
+    },
+    "chapter xxx kali’s death.": {
+      "heading": "CHAPTER XXX\nKALI’S DEATH.",
+      "type": "chapter"
+    },
+    "chapter xxxi birth of kali, son of kol.": {
+      "heading": "CHAPTER XXXI\nBIRTH OF KALI, SON OF KOL.",
+      "type": "chapter"
+    },
+    "chapter xxxii. sigurd made king.": {
+      "heading": "CHAPTER XXXII.\nSIGURD MADE KING.",
+      "type": "chapter"
+    },
+    "chapter xxxiii magnus (erlend’s son) obtains the title of earl.": {
+      "heading": "CHAPTER XXXIII\nMAGNUS (ERLEND’S SON) OBTAINS THE TITLE OF EARL.",
+      "type": "chapter"
+    },
+    "chapter xxxiv of earl magnus (erlend’s son).": {
+      "heading": "CHAPTER XXXIV\nOF EARL MAGNUS (ERLEND’S SON).",
+      "type": "chapter"
+    },
+    "chapter xxxv of magnus and hakon.": {
+      "heading": "CHAPTER XXXV\nOF MAGNUS AND HAKON.",
+      "type": "chapter"
+    },
+    "chapter xxxvi of earl magnus.": {
+      "heading": "CHAPTER XXXVI\nOF EARL MAGNUS.",
+      "type": "chapter"
+    },
+    "chapter xxxvii earl hakon and earl magnus.": {
+      "heading": "CHAPTER XXXVII\nEARL HAKON AND EARL MAGNUS.",
+      "type": "chapter"
+    },
+    "chapter xxxviii. the offers of earl magnus.": {
+      "heading": "CHAPTER XXXVIII.\nTHE OFFERS OF EARL MAGNUS.",
+      "type": "chapter"
+    },
+    "chapter xxxix the beheading of earl magnus.": {
+      "heading": "CHAPTER XXXIX\nTHE BEHEADING OF EARL MAGNUS.",
+      "type": "chapter"
+    },
+    "chapter xl the saintship of earl magnus made manifest.": {
+      "heading": "CHAPTER XL\nTHE SAINTSHIP OF EARL MAGNUS MADE MANIFEST.",
+      "type": "chapter"
+    },
+    "chapter xli the earl’s body brought to church.": {
+      "heading": "CHAPTER XLI\nTHE EARL’S BODY BROUGHT TO CHURCH.",
+      "type": "chapter"
+    },
+    "chapter lxii the miracle-working of magnus the martyr.": {
+      "heading": "CHAPTER LXII\nTHE MIRACLE-WORKING OF MAGNUS THE MARTYR.",
+      "type": "chapter"
+    },
+    "chapter xliii the miracles wrought by the blessed friend of god, magnus.": {
+      "heading": "CHAPTER XLIII\nTHE MIRACLES WROUGHT BY THE BLESSED FRIEND OF GOD, MAGNUS.",
+      "type": "chapter"
+    },
+    "chapter xliv the journey of earl hakon to the south.": {
+      "heading": "CHAPTER XLIV\nTHE JOURNEY OF EARL HAKON TO THE SOUTH.",
+      "type": "chapter"
+    },
+    "chapter xlv genealogical.": {
+      "heading": "CHAPTER XLV\nGENEALOGICAL.",
+      "type": "chapter"
+    },
+    "chapter xlvi the slaying of thorkel fóstri.": {
+      "heading": "CHAPTER XLVI\nTHE SLAYING OF THORKEL FÓSTRI.",
+      "type": "chapter"
+    },
+    "chapter xlvii earl harald slain by sorcery.": {
+      "heading": "CHAPTER XLVII\nEARL HARALD SLAIN BY SORCERY.",
+      "type": "chapter"
+    },
+    "chapter xlviii of earl paul.": {
+      "heading": "CHAPTER XLVIII\nOF EARL PAUL.",
+      "type": "chapter"
+    },
+    "chapter xlix of kali, who afterwards became an earl.": {
+      "heading": "CHAPTER XLIX\nOF KALI, WHO AFTERWARDS BECAME AN EARL.",
+      "type": "chapter"
+    },
+    "chapter l of kali and gillichrist.": {
+      "heading": "CHAPTER L\nOF KALI AND GILLICHRIST.",
+      "type": "chapter"
+    },
+    "chapter li of kali and jon.": {
+      "heading": "CHAPTER LI\nOF KALI AND JON.",
+      "type": "chapter"
+    },
+    "chapter lii kali goes into dolls cave.": {
+      "heading": "CHAPTER LII\nKALI GOES INTO DOLLS CAVE.",
+      "type": "chapter"
+    },
+    "chapter liii of havard and brynjulf.": {
+      "heading": "CHAPTER LIII\nOF HAVARD AND BRYNJULF.",
+      "type": "chapter"
+    },
+    "chapter liv of jon and solmund.": {
+      "heading": "CHAPTER LIV\nOF JON AND SOLMUND.",
+      "type": "chapter"
+    },
+    "chapter lv the reconciliation of the orkneymen.": {
+      "heading": "CHAPTER LV\nTHE RECONCILIATION OF THE ORKNEYMEN.",
+      "type": "chapter"
+    },
+    "chapter lvi king sigurd’s death.": {
+      "heading": "CHAPTER LVI\nKING SIGURD’S DEATH.",
+      "type": "chapter"
+    },
+    "chapter lvii kol’s schemes.": {
+      "heading": "CHAPTER LVII\nKOL’S SCHEMES.",
+      "type": "chapter"
+    },
+    "chapter lviii the fight between earl paul and olvir rosta.": {
+      "heading": "CHAPTER LVIII\nTHE FIGHT BETWEEN EARL PAUL AND OLVIR ROSTA.",
+      "type": "chapter"
+    },
+    "chapter lix earl rögnvald’s plans.": {
+      "heading": "CHAPTER LIX\nEARL RÖGNVALD’S PLANS.",
+      "type": "chapter"
+    },
+    "chapter lx swein slays swein.": {
+      "heading": "CHAPTER LX\nSWEIN SLAYS SWEIN.",
+      "type": "chapter"
+    },
+    "chapter lxi of earl paul.": {
+      "heading": "CHAPTER LXI\nOF EARL PAUL.",
+      "type": "chapter"
+    },
+    "chapter lxii kol’s counsels.": {
+      "heading": "CHAPTER LXII\nKOL’S COUNSELS.",
+      "type": "chapter"
+    },
+    "chapter lxiii of kol and uni.": {
+      "heading": "CHAPTER LXIII\nOF KOL AND UNI.",
+      "type": "chapter"
+    },
+    "chapter lxiv of the orkneymen.": {
+      "heading": "CHAPTER LXIV\nOF THE ORKNEYMEN.",
+      "type": "chapter"
+    },
+    "chapter lxv the beacons of the orkneys destroyed.": {
+      "heading": "CHAPTER LXV\nTHE BEACONS OF THE ORKNEYS DESTROYED.",
+      "type": "chapter"
+    },
+    "chapter lxvi rognvald rules the orkneys.": {
+      "heading": "CHAPTER LXVI\nROGNVALD RULES THE ORKNEYS.",
+      "type": "chapter"
+    },
+    "chapter lxvii of earl rognvald and paul.": {
+      "heading": "CHAPTER LXVII\nOF EARL ROGNVALD AND PAUL.",
+      "type": "chapter"
+    },
+    "chapter lxviii swein takes earl paul captive.": {
+      "heading": "CHAPTER LXVIII\nSWEIN TAKES EARL PAUL CAPTIVE.",
+      "type": "chapter"
+    },
+    "chapter lxix of swein, asleif’s son’s, return to the orkneys.": {
+      "heading": "CHAPTER LXIX\nOF SWEIN, ASLEIF’S SON’S, RETURN TO THE ORKNEYS.",
+      "type": "chapter"
+    },
+    "chapter lxx of earl rognvald and swein, asleif’s son.": {
+      "heading": "CHAPTER LXX\nOF EARL ROGNVALD AND SWEIN, ASLEIF’S SON.",
+      "type": "chapter"
+    },
+    "chapter lxxi bishop jón arrives from scotland.": {
+      "heading": "CHAPTER LXXI\nBISHOP JÓN ARRIVES FROM SCOTLAND.",
+      "type": "chapter"
+    },
+    "chapter lxxii the burning of frakork.": {
+      "heading": "CHAPTER LXXII\nTHE BURNING OF FRAKORK.",
+      "type": "chapter"
+    },
+    "chapter lxxiii. of swein and holdbödi’s raids.": {
+      "heading": "CHAPTER LXXIII.\nOF SWEIN AND HOLDBÖDI’S RAIDS.",
+      "type": "chapter"
+    },
+    "chapter lxxiv of earl rognvald and swein.": {
+      "heading": "CHAPTER LXXIV\nOF EARL ROGNVALD AND SWEIN.",
+      "type": "chapter"
+    },
+    "chapter lxxv earl rognvald’s pleasantries.": {
+      "heading": "CHAPTER LXXV\nEARL ROGNVALD’S PLEASANTRIES.",
+      "type": "chapter"
+    },
+    "chapter lxxvi of earl rognvald and swein, asleif’s son.": {
+      "heading": "CHAPTER LXXVI\nOF EARL ROGNVALD AND SWEIN, ASLEIF’S SON.",
+      "type": "chapter"
+    },
+    "chapter lxxvii of swein, asleif’s son’s movements.": {
+      "heading": "CHAPTER LXXVII\nOF SWEIN, ASLEIF’S SON’S MOVEMENTS.",
+      "type": "chapter"
+    },
+    "chapter lxxviii. earl valthióf’s death.": {
+      "heading": "CHAPTER LXXVIII.\nEARL VALTHIÓF’S DEATH.",
+      "type": "chapter"
+    },
+    "chapter lxxix of eindridi ungi (the young).": {
+      "heading": "CHAPTER LXXIX\nOF EINDRIDI UNGI (THE YOUNG).",
+      "type": "chapter"
+    },
+    "chapter lxxx of earl rognvald and the orkneymen.": {
+      "heading": "CHAPTER LXXX\nOF EARL ROGNVALD AND THE ORKNEYMEN.",
+      "type": "chapter"
+    },
+    "chapter lxxxi earl rognvald takes a castle.": {
+      "heading": "CHAPTER LXXXI\nEARL ROGNVALD TAKES A CASTLE.",
+      "type": "chapter"
+    },
+    "chapter lxxxii rögnvald conquers the drómund.": {
+      "heading": "CHAPTER LXXXII\nRÖGNVALD CONQUERS THE DRÓMUND.",
+      "type": "chapter"
+    },
+    "chapter lxxxiii. of earl rögnvald.": {
+      "heading": "CHAPTER LXXXIII.\nOF EARL RÖGNVALD.",
+      "type": "chapter"
+    },
+    "chapter lxxxiv earl rögnvald goes to the orkneys.": {
+      "heading": "CHAPTER LXXXIV\nEARL RÖGNVALD GOES TO THE ORKNEYS.",
+      "type": "chapter"
+    },
+    "chapter lxxxv king eystein takes earl harald prisoner.": {
+      "heading": "CHAPTER LXXXV\nKING EYSTEIN TAKES EARL HARALD PRISONER.",
+      "type": "chapter"
+    },
+    "chapter lxxxvi of king eystein.": {
+      "heading": "CHAPTER LXXXVI\nOF KING EYSTEIN.",
+      "type": "chapter"
+    },
+    "chapter lxxxvii. of earl harald.": {
+      "heading": "CHAPTER LXXXVII.\nOF EARL HARALD.",
+      "type": "chapter"
+    },
+    "chapter lxxxviii. of swein, asleif’s son.": {
+      "heading": "CHAPTER LXXXVIII.\nOF SWEIN, ASLEIF’S SON.",
+      "type": "chapter"
+    },
+    "chapter lxxxix of swein and anakol.": {
+      "heading": "CHAPTER LXXXIX\nOF SWEIN AND ANAKOL.",
+      "type": "chapter"
+    },
+    "chapter xc the reconciliation of earl erlend and swein.": {
+      "heading": "CHAPTER XC\nTHE RECONCILIATION OF EARL ERLEND AND SWEIN.",
+      "type": "chapter"
+    },
+    "chapter xci earl harald comes unperceived to the orkneys.": {
+      "heading": "CHAPTER XCI\nEARL HARALD COMES UNPERCEIVED TO THE ORKNEYS.",
+      "type": "chapter"
+    },
+    "chapter xcii the reconciliation of the earls harald and erlend.": {
+      "heading": "CHAPTER XCII\nTHE RECONCILIATION OF THE EARLS HARALD AND ERLEND.",
+      "type": "chapter"
+    },
+    "chapter xciii peace between earl rögnvald and earl erlend.": {
+      "heading": "CHAPTER XCIII\nPEACE BETWEEN EARL RÖGNVALD AND EARL ERLEND.",
+      "type": "chapter"
+    },
+    "chapter xciv peace is talked of.": {
+      "heading": "CHAPTER XCIV\nPEACE IS TALKED OF.",
+      "type": "chapter"
+    },
+    "chapter xcv swein’s plans.": {
+      "heading": "CHAPTER XCV\nSWEIN’S PLANS.",
+      "type": "chapter"
+    },
+    "chapter xcvi battle between the three earls.": {
+      "heading": "CHAPTER XCVI\nBATTLE BETWEEN THE THREE EARLS.",
+      "type": "chapter"
+    },
+    "chapter xcvii earl erlend’s death.": {
+      "heading": "CHAPTER XCVII\nEARL ERLEND’S DEATH.",
+      "type": "chapter"
+    },
+    "chapter xcviii swein slays erlend.": {
+      "heading": "CHAPTER XCVIII\nSWEIN SLAYS ERLEND.",
+      "type": "chapter"
+    },
+    "chapter xcix of earl harald and swein, asleif’s son.": {
+      "heading": "CHAPTER XCIX\nOF EARL HARALD AND SWEIN, ASLEIF’S SON.",
+      "type": "chapter"
+    },
+    "chapter c of rognvald and swein.": {
+      "heading": "CHAPTER C\nOF ROGNVALD AND SWEIN.",
+      "type": "chapter"
+    },
+    "chapter ci of earl harald and swein.": {
+      "heading": "CHAPTER CI\nOF EARL HARALD AND SWEIN.",
+      "type": "chapter"
+    },
+    "chapter cii of earl rögnvald.": {
+      "heading": "CHAPTER CII\nOF EARL RÖGNVALD.",
+      "type": "chapter"
+    },
+    "chapter ciii of swein, asleif’s son.": {
+      "heading": "CHAPTER CIII\nOF SWEIN, ASLEIF’S SON.",
+      "type": "chapter"
+    },
+    "chapter civ of the earls.": {
+      "heading": "CHAPTER CIV\nOF THE EARLS.",
+      "type": "chapter"
+    },
+    "chapter cv swein slays sumarlidi.": {
+      "heading": "CHAPTER CV\nSWEIN SLAYS SUMARLIDI.",
+      "type": "chapter"
+    },
+    "chapter cvi of earl rögnvald and earl harald.": {
+      "heading": "CHAPTER CVI\nOF EARL RÖGNVALD AND EARL HARALD.",
+      "type": "chapter"
+    },
+    "chapter cvii the slaying of earl rögnvald.": {
+      "heading": "CHAPTER CVII\nTHE SLAYING OF EARL RÖGNVALD.",
+      "type": "chapter"
+    },
+    "chapter cviii the removal of earl rögnvald’s body.": {
+      "heading": "CHAPTER CVIII\nTHE REMOVAL OF EARL RÖGNVALD’S BODY.",
+      "type": "chapter"
+    },
+    "chapter cix of harald and swein.": {
+      "heading": "CHAPTER CIX\nOF HARALD AND SWEIN.",
+      "type": "chapter"
+    },
+    "chapter cx swein goes to ireland.": {
+      "heading": "CHAPTER CX\nSWEIN GOES TO IRELAND.",
+      "type": "chapter"
+    },
+    "chapter cxi swein, asleif’s son’s (last) expedition.": {
+      "heading": "CHAPTER CXI\nSWEIN, ASLEIF’S SON’S (LAST) EXPEDITION.",
+      "type": "chapter"
+    },
+    "chapter cxii swein, asleif’s son’s fall.": {
+      "heading": "CHAPTER CXII\nSWEIN, ASLEIF’S SON’S FALL.",
+      "type": "chapter"
+    },
+    "chapter cxiii of earl harald and his sons.": {
+      "heading": "CHAPTER CXIII\nOF EARL HARALD AND HIS SONS.",
+      "type": "chapter"
+    },
+    "chapter cxiv of the orkneymen.": {
+      "heading": "CHAPTER CXIV\nOF THE ORKNEYMEN.",
+      "type": "chapter"
+    },
+    "chapter cxv harald tortures the bishop.": {
+      "heading": "CHAPTER CXV\nHARALD TORTURES THE BISHOP.",
+      "type": "chapter"
+    },
+    "chapter cxvi of the stewards.": {
+      "heading": "CHAPTER CXVI\nOF THE STEWARDS.",
+      "type": "chapter"
+    },
+    "chapter cxvii the burning of bishop adam.": {
+      "heading": "CHAPTER CXVII\nTHE BURNING OF BISHOP ADAM.",
+      "type": "chapter"
+    },
+    "appendix.": {
+      "heading": "APPENDIX.",
+      "type": "appendix"
+    },
+    "the dominions of king harald and earl rögnvald.": {
+      "heading": "The Dominions of King Harald and Earl Rögnvald.",
+      "type": "chapter"
+    },
+    "earl melbrigd slain by sigurd.": {
+      "heading": "Earl Melbrigd slain by Sigurd.",
+      "type": "chapter"
+    },
+    "einar comes to the islands.": {
+      "heading": "Einar comes to the Islands.",
+      "type": "chapter"
+    },
+    "the vikings slain.": {
+      "heading": "The Vikings slain.",
+      "type": "chapter"
+    },
+    "battle between earl einar and prince halfdan.": {
+      "heading": "Battle between Earl Einar and Prince Halfdan.",
+      "type": "chapter"
+    },
+    "the murder of havard.": {
+      "heading": "The Murder of Havard.",
+      "type": "chapter"
+    },
+    "battle between liot and skuli.": {
+      "heading": "Battle between Liot and Skuli.",
+      "type": "chapter"
+    },
+    "battle.": {
+      "heading": "Battle.",
+      "type": "chapter"
+    },
+    "meeting between olaf (tryggvi’s son) and the earl.": {
+      "heading": "Meeting between Olaf (Tryggvi’s Son) and the Earl.",
+      "type": "chapter"
+    },
+    "index.": {
+      "heading": "INDEX.",
+      "type": "index"
+    },
+    "footnotes": {
+      "heading": "Footnotes",
+      "type": "endnotes"
+    }
+  },
+  "spine_order": [
+    "halftitle.xhtml",
+    "preface-2.xhtml",
+    "introduction-3.xhtml",
+    "ii-early-christianity-islands.xhtml",
+    "iii-arrival-northmen-establishment-earld.xhtml",
+    "iv-earldom-norse-line.xhtml",
+    "v-earldom-angus-line.xhtml",
+    "vi-earldom-stratherne-line.xhtml",
+    "vii-earldom-line-st-clair.xhtml",
+    "viii-bishopric-orkney.xhtml",
+    "ix-bishopric-caithness.xhtml",
+    "x-ancient-churches-orkney.xhtml",
+    "xi-maeshow-stones-stennis.xhtml",
+    "xii-mousa-pictish-towers.xhtml",
+    "xiii-remains-northmen.xhtml",
+    "appendix-2.xhtml",
+    "appendix-3.xhtml",
+    "appendix-4.xhtml",
+    "appendix-5.xhtml",
+    "appendix-6.xhtml",
+    "part-1.xhtml",
+    "chapter-i.xhtml",
+    "chapter-ii.xhtml",
+    "chapter-iii.xhtml",
+    "chapter-iv.xhtml",
+    "chapter-v.xhtml",
+    "chapter-vi.xhtml",
+    "chapter-vii.xhtml",
+    "chapter-viii.xhtml",
+    "chapter-ix.xhtml",
+    "chapter-x.xhtml",
+    "chapter-xi.xhtml",
+    "chapter-xii.xhtml",
+    "chapter-xiii.xhtml",
+    "chapter-xiv.xhtml",
+    "chapter-xv.xhtml",
+    "chapter-xvi.xhtml",
+    "chapter-xvii.xhtml",
+    "chapter-xviii.xhtml",
+    "chapter-xix.xhtml",
+    "chapter-xx.xhtml",
+    "chapter-xxi.xhtml",
+    "chapter-xxii.xhtml",
+    "chapter-xxiii.xhtml",
+    "chapter-xxiv.xhtml",
+    "chapter-xxv.xhtml",
+    "chapter-xxvi.xhtml",
+    "chapter-xxvii.xhtml",
+    "chapter-xxviii.xhtml",
+    "chapter-xxix.xhtml",
+    "chapter-xxx.xhtml",
+    "chapter-xxxi.xhtml",
+    "chapter-xxxii.xhtml",
+    "chapter-xxxiii.xhtml",
+    "chapter-xxxiv.xhtml",
+    "chapter-xxxv.xhtml",
+    "chapter-xxxvi.xhtml",
+    "chapter-xxxvii.xhtml",
+    "chapter-xxxviii.xhtml",
+    "chapter-xxxix.xhtml",
+    "chapter-xl.xhtml",
+    "chapter-xli.xhtml",
+    "chapter-lxii.xhtml",
+    "chapter-xliii.xhtml",
+    "chapter-xliv.xhtml",
+    "chapter-xlv.xhtml",
+    "chapter-xlvi.xhtml",
+    "chapter-xlvii.xhtml",
+    "chapter-xlviii.xhtml",
+    "chapter-xlix.xhtml",
+    "chapter-l.xhtml",
+    "chapter-li.xhtml",
+    "chapter-lii.xhtml",
+    "chapter-liii.xhtml",
+    "chapter-liv.xhtml",
+    "chapter-lv.xhtml",
+    "chapter-lvi.xhtml",
+    "chapter-lvii.xhtml",
+    "chapter-lviii.xhtml",
+    "chapter-lix.xhtml",
+    "chapter-lx.xhtml",
+    "chapter-lxi.xhtml",
+    "chapter-lxii-2.xhtml",
+    "chapter-lxiii.xhtml",
+    "chapter-lxiv.xhtml",
+    "chapter-lxv.xhtml",
+    "chapter-lxvi.xhtml",
+    "chapter-lxvii.xhtml",
+    "chapter-lxviii.xhtml",
+    "chapter-lxix.xhtml",
+    "chapter-lxx.xhtml",
+    "chapter-lxxi.xhtml",
+    "chapter-lxxii.xhtml",
+    "chapter-lxxiii.xhtml",
+    "chapter-lxxiv.xhtml",
+    "chapter-lxxv.xhtml",
+    "chapter-lxxvi.xhtml",
+    "chapter-lxxvii.xhtml",
+    "chapter-lxxviii.xhtml",
+    "chapter-lxxix.xhtml",
+    "chapter-lxxx.xhtml",
+    "chapter-lxxxi.xhtml",
+    "chapter-lxxxii.xhtml",
+    "chapter-lxxxiii.xhtml",
+    "chapter-lxxxiv.xhtml",
+    "chapter-lxxxv.xhtml",
+    "chapter-lxxxvi.xhtml",
+    "chapter-lxxxvii.xhtml",
+    "chapter-lxxxviii.xhtml",
+    "chapter-lxxxix.xhtml",
+    "chapter-xc.xhtml",
+    "chapter-xci.xhtml",
+    "chapter-xcii.xhtml",
+    "chapter-xciii.xhtml",
+    "chapter-xciv.xhtml",
+    "chapter-xcv.xhtml",
+    "chapter-xcvi.xhtml",
+    "chapter-xcvii.xhtml",
+    "chapter-xcviii.xhtml",
+    "chapter-xcix.xhtml",
+    "chapter-c.xhtml",
+    "chapter-ci.xhtml",
+    "chapter-cii.xhtml",
+    "chapter-ciii.xhtml",
+    "chapter-civ.xhtml",
+    "chapter-cv.xhtml",
+    "chapter-cvi.xhtml",
+    "chapter-cvii.xhtml",
+    "chapter-cviii.xhtml",
+    "chapter-cix.xhtml",
+    "chapter-cx.xhtml",
+    "chapter-cxi.xhtml",
+    "chapter-cxii.xhtml",
+    "chapter-cxiii.xhtml",
+    "chapter-cxiv.xhtml",
+    "chapter-cxv.xhtml",
+    "chapter-cxvi.xhtml",
+    "chapter-cxvii.xhtml",
+    "appendix-7.xhtml",
+    "dominions-king-harald-earl-rgnvald.xhtml",
+    "earl-melbrigd-slain-sigurd.xhtml",
+    "einar-comes-islands.xhtml",
+    "vikings-slain.xhtml",
+    "battle-between-earl-einar-prince-halfdan.xhtml",
+    "murder-havard.xhtml",
+    "battle-between-liot-skuli.xhtml",
+    "battle.xhtml",
+    "meeting-between-olaf-tryggvis-son-earl.xhtml",
+    "index-8.xhtml",
+    "endnotes-9.xhtml"
+  ]
+}

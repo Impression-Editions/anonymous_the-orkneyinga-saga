@@ -1,0 +1,59 @@
+{
+  "candidates": [
+    {
+      "index": 1,
+      "image_file": "cover-1.jpg",
+      "svg_file": "cover-1.svg",
+      "title": "Flatey Book, Orkneyinga saga.jpg",
+      "artist": "See 'source' above. The actual handwriting is that of Magnus Thorhallson.",
+      "date": "This image dates fro",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Flatey Book, Orkneyinga saga.jpg",
+      "description": "An example of a page from the <i><a href=\"https://en.wikipedia.org/wiki/Flatey_Book\" class=\"extiw\" title=\"w:Flatey Book\">Flatey Book</a></i>, containing a part of chapter 93 of the <i><a href=\"https://en.wikipedia.org/wiki/Orkneyinga_saga\" class=\"extiw\" title=\"w:Orkneyinga saga\">Orkneyinga saga</a><"
+    },
+    {
+      "index": 2,
+      "image_file": "cover-2.jpg",
+      "svg_file": "cover-2.svg",
+      "title": "Orkneyinga Saga.jpg",
+      "artist": "Gilwellian",
+      "date": "2012-09-13 21:02:47",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Orkneyinga Saga.jpg",
+      "description": "Saga of the Orkneys manuscript - XIII Century"
+    },
+    {
+      "index": 3,
+      "image_file": "cover-3.jpg",
+      "svg_file": "cover-3.svg",
+      "title": "Orkneyinga Saga Centre in Orphir - geograph.org.uk - 4778475.jpg",
+      "artist": "stalked",
+      "date": "2012-07-20",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Orkneyinga Saga Centre in Orphir - geograph.org.uk - 4778475.jpg",
+      "description": "Orkneyinga Saga Centre in Orphir <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Orkneyinga_Saga_Centre_in_Orphir_-_geograph.org.uk_-_4778475.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structur"
+    },
+    {
+      "index": 4,
+      "image_file": "cover-4.jpg",
+      "svg_file": "cover-4.svg",
+      "title": "Orphir Round Church seen from the Orkneyinga Saga Centre.jpg",
+      "artist": "Ymblanter",
+      "date": "19 July 2022, 17:42:",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Orphir Round Church seen from the Orkneyinga Saga Centre.jpg",
+      "description": "Orphir Round Church seen from the Orkneyinga Saga Centre, Orphir, Orkney, Scotland, the United Kingdom"
+    },
+    {
+      "index": 5,
+      "image_file": "cover-5.jpg",
+      "svg_file": "cover-5.svg",
+      "title": "Orkneyinga saga extract.jpg",
+      "artist": "Unknown authorUnknown author",
+      "date": "2023-08-01 17:11:03",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Orkneyinga saga extract.jpg",
+      "description": "Orkneyinga saga, Orkney Islands, Scotland"
+    }
+  ]
+}
