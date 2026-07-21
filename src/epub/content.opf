@@ -303,8 +303,8 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
-		<itemref idref="preface-2.xhtml"/>
 		<itemref idref="halftitle.xhtml"/>
+		<itemref idref="preface-2.xhtml"/>
 		<itemref idref="introduction-3.xhtml"/>
 		<itemref idref="ii-early-christianity-islands.xhtml"/>
 		<itemref idref="iii-arrival-northmen-establishment-earld.xhtml"/>
@@ -452,8 +452,8 @@
 		<itemref idref="battle.xhtml"/>
 		<itemref idref="meeting-between-olaf-tryggvis-son-earl.xhtml"/>
 		<itemref idref="endnotes-9.xhtml"/>
-		<itemref idref="permissions.xhtml"/>
-		<itemref idref="uncopyright.xhtml"/>
 		<itemref idref="about-the-translator.xhtml"/>
-	</spine>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="permissions.xhtml"/>
+</spine>
 </package>
