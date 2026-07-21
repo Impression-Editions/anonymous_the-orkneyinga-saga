@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3998/2005/ncx/" version="2005-1" xml:lang="en-US">
+	<head>
+		<meta name="dtb:uid" content="https://www.impressioneditions.com/ebooks/anonymous/the-orkneyinga-saga"/>
+	</head>
+	<docTitle>
+		<text>Table of Contents</text>
+	</docTitle>
+	<navMap>
+	<navPoint id="navPoint-1" playOrder="1">
+		<navLabel>
+			<text>The Orkneyinga Saga</text>
+		</navLabel>
+		<content src="text/titlepage.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-2" playOrder="2">
+		<navLabel>
+			<text>Imprint</text>
+		</navLabel>
+		<content src="text/imprint.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-3" playOrder="3">
+		<navLabel>
+			<text>The Orkneyinga Saga</text>
+		</navLabel>
+		<content src="text/halftitle.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-4" playOrder="4">
+		<navLabel>
+			<text>Preface</text>
+		</navLabel>
+		<content src="text/preface-2.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-5" playOrder="5">
+		<navLabel>
+			<text>Introduction</text>
+		</navLabel>
+		<content src="text/introduction-3.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-6" playOrder="6">
+		<navLabel>
+			<text>Ii. Early Christianity of the Islands.</text>
+		</navLabel>
+		<content src="text/ii-early-christianity-islands.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-7" playOrder="7">
+		<navLabel>
+			<text>Iii. Arrival of the Northmen, and Establishment of the Earldom of Orkney and Caithness.</text>
+		</navLabel>
+		<content src="text/iii-arrival-northmen-establishment-earld.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-8" playOrder="8">
+		<navLabel>
+			<text>Iv. the Earldom in the Norse Line, 872⁠–⁠1231</text>
+		</navLabel>
+		<content src="text/iv-earldom-norse-line.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-9" playOrder="9">
+		<navLabel>
+			<text>V. the Earldom in the Angus Line⁠—1231⁠–⁠1312</text>
+		</navLabel>
+		<content src="text/v-earldom-angus-line.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-10" playOrder="10">
+		<navLabel>
+			<text>Vi. the Earldom in the Stratherne Line⁠—1321⁠–⁠1379</text>
+		</navLabel>
+		<content src="text/vi-earldom-stratherne-line.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-11" playOrder="11">
+		<navLabel>
+			<text>Vii. the Earldom in the Line of St. Clair⁠—1379⁠–⁠1469</text>
+		</navLabel>
+		<content src="text/vii-earldom-line-st-clair.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-12" playOrder="12">
+		<navLabel>
+			<text>Viii. the Bishopric of Orkney⁠—1060⁠–⁠1469</text>
+		</navLabel>
+		<content src="text/viii-bishopric-orkney.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-13" playOrder="13">
+		<navLabel>
+			<text>Ix. the Bishopric of Caithness⁠—1150⁠–⁠1469</text>
+		</navLabel>
+		<content src="text/ix-bishopric-caithness.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-14" playOrder="14">
+		<navLabel>
+			<text>X. Ancient Churches of Orkney.</text>
+		</navLabel>
+		<content src="text/x-ancient-churches-orkney.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-15" playOrder="15">
+		<navLabel>
+			<text>Xi. Maeshow and the Stones of Stennis.</text>
+		</navLabel>
+		<content src="text/xi-maeshow-stones-stennis.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-16" playOrder="16">
+		<navLabel>
+			<text>Xii. Mousa and the Pictish Towers.</text>
+		</navLabel>
+		<content src="text/xii-mousa-pictish-towers.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-17" playOrder="17">
+		<navLabel>
+			<text>Xiii. Remains of the Northmen.</text>
+		</navLabel>
+		<content src="text/xiii-remains-northmen.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-18" playOrder="18">
+		<navLabel>
+			<text>Chronological Table</text>
+		</navLabel>
+		<content src="text/appendix-2.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-19" playOrder="19">
+		<navLabel>
+			<text>Genealogical Tables</text>
+		</navLabel>
+		<content src="text/appendix-3.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-20" playOrder="20">
+		<navLabel>
+			<text>Ii. the Angus Line of the Earls of Orkney</text>
+		</navLabel>
+		<content src="text/appendix-4.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-21" playOrder="21">
+		<navLabel>
+			<text>Iii. the Stratherne Line of the Earls of Orkney</text>
+		</navLabel>
+		<content src="text/appendix-5.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-22" playOrder="22">
+		<navLabel>
+			<text>Iv. the St. Clair Line of the Earls of Orkney</text>
+		</navLabel>
+		<content src="text/appendix-6.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-23" playOrder="23">
+		<navLabel>
+			<text>Orkneyinga Saga</text>
+		</navLabel>
+		<content src="text/part-1.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-24" playOrder="24">
+		<navLabel>
+			<text>Chapter I. Of the Earls.</text>
+		</navLabel>
+		<content src="text/chapter-i.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-25" playOrder="25">
+		<navLabel>
+			<text>Chapter IiOf Amundi and Thorkel.</text>
+		</navLabel>
+		<content src="text/chapter-ii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-26" playOrder="26">
+		<navLabel>
+			<text>Chapter IiiThorkel Slays Earl Einar.</text>
+		</navLabel>
+		<content src="text/chapter-iii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-27" playOrder="27">
+		<navLabel>
+			<text>Chapter IvOf Earl Brúsi.</text>
+		</navLabel>
+		<content src="text/chapter-iv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-28" playOrder="28">
+		<navLabel>
+			<text>Chapter VOf the Earls Brúsi and Thorfinn.</text>
+		</navLabel>
+		<content src="text/chapter-v.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-29" playOrder="29">
+		<navLabel>
+			<text>Chapter ViOf the Orkneymen.</text>
+		</navLabel>
+		<content src="text/chapter-vi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-30" playOrder="30">
+		<navLabel>
+			<text>Chapter Viiof the Famous Deeds of Earl Thorfinn.</text>
+		</navLabel>
+		<content src="text/chapter-vii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-31" playOrder="31">
+		<navLabel>
+			<text>Chapter ViiiMagnus, Olaf’s Son, Accepted King of Norway.</text>
+		</navLabel>
+		<content src="text/chapter-viii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-32" playOrder="32">
+		<navLabel>
+			<text>Chapter IxRögnvald Asks Magnus for Leave to Go to the Islands.</text>
+		</navLabel>
+		<content src="text/chapter-ix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-33" playOrder="33">
+		<navLabel>
+			<text>Chapter XOf Rognvald’s Voyage.</text>
+		</navLabel>
+		<content src="text/chapter-x.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-34" playOrder="34">
+		<navLabel>
+			<text>Chapter Xithe Battle of the Kinsmen Thorfinn and Rognvald.</text>
+		</navLabel>
+		<content src="text/chapter-xi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-35" playOrder="35">
+		<navLabel>
+			<text>Chapter XiiOf Earl Thorfinn’s Warfare.</text>
+		</navLabel>
+		<content src="text/chapter-xii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-36" playOrder="36">
+		<navLabel>
+			<text>Chapter XiiiOf Earl Thorfinn’s Expedition to England.</text>
+		</navLabel>
+		<content src="text/chapter-xiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-37" playOrder="37">
+		<navLabel>
+			<text>Chapter XivKalf Flees to the Orkneys.</text>
+		</navLabel>
+		<content src="text/chapter-xiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-38" playOrder="38">
+		<navLabel>
+			<text>Chapter XvBattle of Raudabiorg.</text>
+		</navLabel>
+		<content src="text/chapter-xv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-39" playOrder="39">
+		<navLabel>
+			<text>Chapter XviEarl Thorfinn Subdues the Islands.</text>
+		</navLabel>
+		<content src="text/chapter-xvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-40" playOrder="40">
+		<navLabel>
+			<text>Chapter XviiRögnvald Comes to the Islands.</text>
+		</navLabel>
+		<content src="text/chapter-xvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-41" playOrder="41">
+		<navLabel>
+			<text>Chapter XviiiEarl Rögnvald Slain.</text>
+		</navLabel>
+		<content src="text/chapter-xviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-42" playOrder="42">
+		<navLabel>
+			<text>Chapter XixEarl Rögnvald’s Burial.</text>
+		</navLabel>
+		<content src="text/chapter-xix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-43" playOrder="43">
+		<navLabel>
+			<text>Chapter XxEarl Thorfinn Comes to King Harald.</text>
+		</navLabel>
+		<content src="text/chapter-xx.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-44" playOrder="44">
+		<navLabel>
+			<text>Chapter XxiEarl Thorfinn’s Message to King Harald (Hardradi).</text>
+		</navLabel>
+		<content src="text/chapter-xxi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-45" playOrder="45">
+		<navLabel>
+			<text>Chapter XxiiOf Earl Thorfinn’s Death.</text>
+		</navLabel>
+		<content src="text/chapter-xxii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-46" playOrder="46">
+		<navLabel>
+			<text>Chapter XxiiiOf the Earls Paul and Erlend, and Genealogies.</text>
+		</navLabel>
+		<content src="text/chapter-xxiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-47" playOrder="47">
+		<navLabel>
+			<text>Chapter XxivHere Is Told of the Death of King Harald and His Daughter.</text>
+		</navLabel>
+		<content src="text/chapter-xxiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-48" playOrder="48">
+		<navLabel>
+			<text>Chapter XxvA Meeting of Peace.</text>
+		</navLabel>
+		<content src="text/chapter-xxv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-49" playOrder="49">
+		<navLabel>
+			<text>Chapter Xxviof the Words of the Spae-Man.</text>
+		</navLabel>
+		<content src="text/chapter-xxvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-50" playOrder="50">
+		<navLabel>
+			<text>Chapter Xxviiof the Schemes of Hakon, Paul’s Son.</text>
+		</navLabel>
+		<content src="text/chapter-xxvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-51" playOrder="51">
+		<navLabel>
+			<text>Chapter XxviiiHakon’s Interview With King Magnus.</text>
+		</navLabel>
+		<content src="text/chapter-xxviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-52" playOrder="52">
+		<navLabel>
+			<text>Chapter XxixThe Western Expedition of Magnus Barelegs.</text>
+		</navLabel>
+		<content src="text/chapter-xxix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-53" playOrder="53">
+		<navLabel>
+			<text>Chapter XxxKali’s Death.</text>
+		</navLabel>
+		<content src="text/chapter-xxx.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-54" playOrder="54">
+		<navLabel>
+			<text>Chapter XxxiBirth of Kali, Son of Kol.</text>
+		</navLabel>
+		<content src="text/chapter-xxxi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-55" playOrder="55">
+		<navLabel>
+			<text>Chapter Xxxii. Sigurd Made King.</text>
+		</navLabel>
+		<content src="text/chapter-xxxii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-56" playOrder="56">
+		<navLabel>
+			<text>Chapter XxxiiiMagnus (Erlend’s Son) Obtains the Title of Earl.</text>
+		</navLabel>
+		<content src="text/chapter-xxxiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-57" playOrder="57">
+		<navLabel>
+			<text>Chapter XxxivOf Earl Magnus (Erlend’s Son).</text>
+		</navLabel>
+		<content src="text/chapter-xxxiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-58" playOrder="58">
+		<navLabel>
+			<text>Chapter XxxvOf Magnus and Hakon.</text>
+		</navLabel>
+		<content src="text/chapter-xxxv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-59" playOrder="59">
+		<navLabel>
+			<text>Chapter XxxviOf Earl Magnus.</text>
+		</navLabel>
+		<content src="text/chapter-xxxvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-60" playOrder="60">
+		<navLabel>
+			<text>Chapter XxxviiEarl Hakon and Earl Magnus.</text>
+		</navLabel>
+		<content src="text/chapter-xxxvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-61" playOrder="61">
+		<navLabel>
+			<text>Chapter Xxxviii. The offers of Earl Magnus.</text>
+		</navLabel>
+		<content src="text/chapter-xxxviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-62" playOrder="62">
+		<navLabel>
+			<text>Chapter XxxixThe Beheading of Earl Magnus.</text>
+		</navLabel>
+		<content src="text/chapter-xxxix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-63" playOrder="63">
+		<navLabel>
+			<text>Chapter XlThe Saintship of Earl Magnus Made Manifest.</text>
+		</navLabel>
+		<content src="text/chapter-xl.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-64" playOrder="64">
+		<navLabel>
+			<text>Chapter XliThe Earl’s Body Brought to Church.</text>
+		</navLabel>
+		<content src="text/chapter-xli.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-65" playOrder="65">
+		<navLabel>
+			<text>Chapter Lxiithe Miracle-Working of Magnus the Martyr.</text>
+		</navLabel>
+		<content src="text/chapter-lxii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-66" playOrder="66">
+		<navLabel>
+			<text>Chapter Xliiithe Miracles Wrought by the Blessed Friend of God, Magnus.</text>
+		</navLabel>
+		<content src="text/chapter-xliii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-67" playOrder="67">
+		<navLabel>
+			<text>Chapter Xlivthe Journey of Earl Hakon to the South.</text>
+		</navLabel>
+		<content src="text/chapter-xliv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-68" playOrder="68">
+		<navLabel>
+			<text>Chapter XlvGenealogical.</text>
+		</navLabel>
+		<content src="text/chapter-xlv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-69" playOrder="69">
+		<navLabel>
+			<text>Chapter XlviThe Slaying of Thorkel Fóstri.</text>
+		</navLabel>
+		<content src="text/chapter-xlvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-70" playOrder="70">
+		<navLabel>
+			<text>Chapter XlviiEarl Harald Slain by Sorcery.</text>
+		</navLabel>
+		<content src="text/chapter-xlvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-71" playOrder="71">
+		<navLabel>
+			<text>Chapter XlviiiOf Earl Paul.</text>
+		</navLabel>
+		<content src="text/chapter-xlviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-72" playOrder="72">
+		<navLabel>
+			<text>Chapter XlixOf Kali, Who Afterwards Became an Earl.</text>
+		</navLabel>
+		<content src="text/chapter-xlix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-73" playOrder="73">
+		<navLabel>
+			<text>Chapter L Of Kali and Gillichrist.</text>
+		</navLabel>
+		<content src="text/chapter-l.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-74" playOrder="74">
+		<navLabel>
+			<text>Chapter LiOf Kali and Jon.</text>
+		</navLabel>
+		<content src="text/chapter-li.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-75" playOrder="75">
+		<navLabel>
+			<text>Chapter LiiKali Goes Into Dolls Cave.</text>
+		</navLabel>
+		<content src="text/chapter-lii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-76" playOrder="76">
+		<navLabel>
+			<text>Chapter LiiiOf Havard and Brynjulf.</text>
+		</navLabel>
+		<content src="text/chapter-liii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-77" playOrder="77">
+		<navLabel>
+			<text>Chapter LivOf Jon and Solmund.</text>
+		</navLabel>
+		<content src="text/chapter-liv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-78" playOrder="78">
+		<navLabel>
+			<text>Chapter Lvthe Reconciliation of the Orkneymen.</text>
+		</navLabel>
+		<content src="text/chapter-lv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-79" playOrder="79">
+		<navLabel>
+			<text>Chapter LviKing Sigurd’s Death.</text>
+		</navLabel>
+		<content src="text/chapter-lvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-80" playOrder="80">
+		<navLabel>
+			<text>Chapter LviiKol’s Schemes.</text>
+		</navLabel>
+		<content src="text/chapter-lvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-81" playOrder="81">
+		<navLabel>
+			<text>Chapter LviiiThe Fight Between Earl Paul and Olvir Rosta.</text>
+		</navLabel>
+		<content src="text/chapter-lviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-82" playOrder="82">
+		<navLabel>
+			<text>Chapter LixEarl Rögnvald’s Plans.</text>
+		</navLabel>
+		<content src="text/chapter-lix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-83" playOrder="83">
+		<navLabel>
+			<text>Chapter LxSwein Slays Swein.</text>
+		</navLabel>
+		<content src="text/chapter-lx.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-84" playOrder="84">
+		<navLabel>
+			<text>Chapter LxiOf Earl Paul.</text>
+		</navLabel>
+		<content src="text/chapter-lxi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-85" playOrder="85">
+		<navLabel>
+			<text>Chapter LxiiKol’s Counsels.</text>
+		</navLabel>
+		<content src="text/chapter-lxii-2.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-86" playOrder="86">
+		<navLabel>
+			<text>Chapter LxiiiOf Kol and Uni.</text>
+		</navLabel>
+		<content src="text/chapter-lxiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-87" playOrder="87">
+		<navLabel>
+			<text>Chapter LxivOf the Orkneymen.</text>
+		</navLabel>
+		<content src="text/chapter-lxiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-88" playOrder="88">
+		<navLabel>
+			<text>Chapter Lxvthe Beacons of the Orkneys Destroyed.</text>
+		</navLabel>
+		<content src="text/chapter-lxv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-89" playOrder="89">
+		<navLabel>
+			<text>Chapter LxviRognvald Rules the Orkneys.</text>
+		</navLabel>
+		<content src="text/chapter-lxvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-90" playOrder="90">
+		<navLabel>
+			<text>Chapter LxviiOf Earl Rognvald and Paul.</text>
+		</navLabel>
+		<content src="text/chapter-lxvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-91" playOrder="91">
+		<navLabel>
+			<text>Chapter LxviiiSwein Takes Earl Paul Captive.</text>
+		</navLabel>
+		<content src="text/chapter-lxviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-92" playOrder="92">
+		<navLabel>
+			<text>Chapter LxixOf Swein, Asleif’s Son’s, Return to the Orkneys.</text>
+		</navLabel>
+		<content src="text/chapter-lxix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-93" playOrder="93">
+		<navLabel>
+			<text>Chapter LxxOf Earl Rognvald and Swein, Asleif’s Son.</text>
+		</navLabel>
+		<content src="text/chapter-lxx.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-94" playOrder="94">
+		<navLabel>
+			<text>Chapter LxxiBishop Jón Arrives from Scotland.</text>
+		</navLabel>
+		<content src="text/chapter-lxxi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-95" playOrder="95">
+		<navLabel>
+			<text>Chapter LxxiiThe Burning of Frakork.</text>
+		</navLabel>
+		<content src="text/chapter-lxxii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-96" playOrder="96">
+		<navLabel>
+			<text>Chapter Lxxiii. Of Swein and Holdbödi’s Raids.</text>
+		</navLabel>
+		<content src="text/chapter-lxxiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-97" playOrder="97">
+		<navLabel>
+			<text>Chapter LxxivOf Earl Rognvald and Swein.</text>
+		</navLabel>
+		<content src="text/chapter-lxxiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-98" playOrder="98">
+		<navLabel>
+			<text>Chapter LxxvEarl Rognvald’s Pleasantries.</text>
+		</navLabel>
+		<content src="text/chapter-lxxv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-99" playOrder="99">
+		<navLabel>
+			<text>Chapter LxxviOf Earl Rognvald and Swein, Asleif’s Son.</text>
+		</navLabel>
+		<content src="text/chapter-lxxvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-100" playOrder="100">
+		<navLabel>
+			<text>Chapter LxxviiOf Swein, Asleif’s Son’s Movements.</text>
+		</navLabel>
+		<content src="text/chapter-lxxvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-101" playOrder="101">
+		<navLabel>
+			<text>Chapter Lxxviii. Earl Valthióf’s Death.</text>
+		</navLabel>
+		<content src="text/chapter-lxxviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-102" playOrder="102">
+		<navLabel>
+			<text>Chapter LxxixOf Eindridi Ungi (The Young).</text>
+		</navLabel>
+		<content src="text/chapter-lxxix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-103" playOrder="103">
+		<navLabel>
+			<text>Chapter LxxxOf Earl Rognvald and the Orkneymen.</text>
+		</navLabel>
+		<content src="text/chapter-lxxx.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-104" playOrder="104">
+		<navLabel>
+			<text>Chapter LxxxiEarl Rognvald Takes A Castle.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-105" playOrder="105">
+		<navLabel>
+			<text>Chapter LxxxiiRögnvald Conquers the Drómund.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-106" playOrder="106">
+		<navLabel>
+			<text>Chapter Lxxxiii. Of Earl Rögnvald.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-107" playOrder="107">
+		<navLabel>
+			<text>Chapter LxxxivEarl Rögnvald Goes to the Orkneys.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-108" playOrder="108">
+		<navLabel>
+			<text>Chapter LxxxvKing Eystein Takes Earl Harald Prisoner.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-109" playOrder="109">
+		<navLabel>
+			<text>Chapter LxxxviOf King Eystein.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-110" playOrder="110">
+		<navLabel>
+			<text>Chapter Lxxxvii. Of Earl Harald.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-111" playOrder="111">
+		<navLabel>
+			<text>Chapter Lxxxviii. of Swein, Asleif’s Son.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-112" playOrder="112">
+		<navLabel>
+			<text>Chapter LxxxixOf Swein and Anakol.</text>
+		</navLabel>
+		<content src="text/chapter-lxxxix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-113" playOrder="113">
+		<navLabel>
+			<text>Chapter XcThe Reconciliation of Earl Erlend and Swein.</text>
+		</navLabel>
+		<content src="text/chapter-xc.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-114" playOrder="114">
+		<navLabel>
+			<text>Chapter XciEarl Harald Comes Unperceived to the Orkneys.</text>
+		</navLabel>
+		<content src="text/chapter-xci.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-115" playOrder="115">
+		<navLabel>
+			<text>Chapter Xciithe Reconciliation of the Earls Harald and Erlend.</text>
+		</navLabel>
+		<content src="text/chapter-xcii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-116" playOrder="116">
+		<navLabel>
+			<text>Chapter XciiiPeace Between Earl Rögnvald and Earl Erlend.</text>
+		</navLabel>
+		<content src="text/chapter-xciii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-117" playOrder="117">
+		<navLabel>
+			<text>Chapter XcivPeace Is Talked Of.</text>
+		</navLabel>
+		<content src="text/chapter-xciv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-118" playOrder="118">
+		<navLabel>
+			<text>Chapter XcvSwein’s Plans.</text>
+		</navLabel>
+		<content src="text/chapter-xcv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-119" playOrder="119">
+		<navLabel>
+			<text>Chapter XcviBattle Between the Three Earls.</text>
+		</navLabel>
+		<content src="text/chapter-xcvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-120" playOrder="120">
+		<navLabel>
+			<text>Chapter XcviiEarl Erlend’s Death.</text>
+		</navLabel>
+		<content src="text/chapter-xcvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-121" playOrder="121">
+		<navLabel>
+			<text>Chapter XcviiiSwein Slays Erlend.</text>
+		</navLabel>
+		<content src="text/chapter-xcviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-122" playOrder="122">
+		<navLabel>
+			<text>Chapter XcixOf Earl Harald and Swein, Asleif’s Son.</text>
+		</navLabel>
+		<content src="text/chapter-xcix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-123" playOrder="123">
+		<navLabel>
+			<text>Chapter C of Rognvald and Swein.</text>
+		</navLabel>
+		<content src="text/chapter-c.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-124" playOrder="124">
+		<navLabel>
+			<text>Chapter CiOf Earl Harald and Swein.</text>
+		</navLabel>
+		<content src="text/chapter-ci.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-125" playOrder="125">
+		<navLabel>
+			<text>Chapter CiiOf Earl Rögnvald.</text>
+		</navLabel>
+		<content src="text/chapter-cii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-126" playOrder="126">
+		<navLabel>
+			<text>Chapter CiiiOf Swein, Asleif’s Son.</text>
+		</navLabel>
+		<content src="text/chapter-ciii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-127" playOrder="127">
+		<navLabel>
+			<text>Chapter CivOf the Earls.</text>
+		</navLabel>
+		<content src="text/chapter-civ.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-128" playOrder="128">
+		<navLabel>
+			<text>Chapter CvSwein Slays Sumarlidi.</text>
+		</navLabel>
+		<content src="text/chapter-cv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-129" playOrder="129">
+		<navLabel>
+			<text>Chapter CviOf Earl Rögnvald and Earl Harald.</text>
+		</navLabel>
+		<content src="text/chapter-cvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-130" playOrder="130">
+		<navLabel>
+			<text>Chapter CviiThe Slaying of Earl Rögnvald.</text>
+		</navLabel>
+		<content src="text/chapter-cvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-131" playOrder="131">
+		<navLabel>
+			<text>Chapter CviiiThe Removal of Earl Rögnvald’s Body.</text>
+		</navLabel>
+		<content src="text/chapter-cviii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-132" playOrder="132">
+		<navLabel>
+			<text>Chapter CixOf Harald and Swein.</text>
+		</navLabel>
+		<content src="text/chapter-cix.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-133" playOrder="133">
+		<navLabel>
+			<text>Chapter CxSwein Goes to Ireland.</text>
+		</navLabel>
+		<content src="text/chapter-cx.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-134" playOrder="134">
+		<navLabel>
+			<text>Chapter CxiSwein, Asleif’s Son’s (Last) Expedition.</text>
+		</navLabel>
+		<content src="text/chapter-cxi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-135" playOrder="135">
+		<navLabel>
+			<text>Chapter CxiiSwein, Asleif’s Son’s Fall.</text>
+		</navLabel>
+		<content src="text/chapter-cxii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-136" playOrder="136">
+		<navLabel>
+			<text>Chapter CxiiiOf Earl Harald and His Sons.</text>
+		</navLabel>
+		<content src="text/chapter-cxiii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-137" playOrder="137">
+		<navLabel>
+			<text>Chapter CxivOf the Orkneymen.</text>
+		</navLabel>
+		<content src="text/chapter-cxiv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-138" playOrder="138">
+		<navLabel>
+			<text>Chapter CxvHarald Tortures the Bishop.</text>
+		</navLabel>
+		<content src="text/chapter-cxv.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-139" playOrder="139">
+		<navLabel>
+			<text>Chapter CxviOf the Stewards.</text>
+		</navLabel>
+		<content src="text/chapter-cxvi.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-140" playOrder="140">
+		<navLabel>
+			<text>Chapter CxviiThe Burning of Bishop Adam.</text>
+		</navLabel>
+		<content src="text/chapter-cxvii.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-141" playOrder="141">
+		<navLabel>
+			<text>Appendix</text>
+		</navLabel>
+		<content src="text/appendix-7.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-142" playOrder="142">
+		<navLabel>
+			<text>The Dominions of King Harald and Earl Rögnvald.</text>
+		</navLabel>
+		<content src="text/dominions-king-harald-earl-rgnvald.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-143" playOrder="143">
+		<navLabel>
+			<text>Earl Melbrigd slain by Sigurd.</text>
+		</navLabel>
+		<content src="text/earl-melbrigd-slain-sigurd.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-144" playOrder="144">
+		<navLabel>
+			<text>Einar comes to the Islands.</text>
+		</navLabel>
+		<content src="text/einar-comes-islands.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-145" playOrder="145">
+		<navLabel>
+			<text>The Vikings slain.</text>
+		</navLabel>
+		<content src="text/vikings-slain.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-146" playOrder="146">
+		<navLabel>
+			<text>Battle between Earl Einar and Prince Halfdan.</text>
+		</navLabel>
+		<content src="text/battle-between-earl-einar-prince-halfdan.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-147" playOrder="147">
+		<navLabel>
+			<text>The Murder of Havard.</text>
+		</navLabel>
+		<content src="text/murder-havard.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-148" playOrder="148">
+		<navLabel>
+			<text>Battle between Liot and Skuli.</text>
+		</navLabel>
+		<content src="text/battle-between-liot-skuli.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-149" playOrder="149">
+		<navLabel>
+			<text>Battle.</text>
+		</navLabel>
+		<content src="text/battle.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-150" playOrder="150">
+		<navLabel>
+			<text>Meeting between Olaf (Tryggvi’s Son) and the Earl.</text>
+		</navLabel>
+		<content src="text/meeting-between-olaf-tryggvis-son-earl.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-151" playOrder="151">
+		<navLabel>
+			<text>About the Translator</text>
+		</navLabel>
+		<content src="text/about-the-translator.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-152" playOrder="152">
+		<navLabel>
+			<text>Endnotes</text>
+		</navLabel>
+		<content src="text/endnotes.xhtml"/>
+	</navPoint>
+	<navPoint id="navPoint-153" playOrder="153">
+		<navLabel>
+			<text>Copyright &amp; Permissions</text>
+		</navLabel>
+		<content src="text/permissions.xhtml"/>
+	</navPoint>
+	</navMap>
+</ncx>
