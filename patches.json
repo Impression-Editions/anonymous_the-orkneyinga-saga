@@ -48,6 +48,20 @@
       "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
       "replace": "class=\"dead-link\"",
       "reason": "Remove broken cross-references to named anchors"
+    },
+    {
+      "file_pattern": "src/epub/content.opf",
+      "action": "regex",
+      "pattern": "\\s*<item[^>]*href=\"text/endnotes\\.xhtml\"[^>]*/>",
+      "replace": "",
+      "reason": "Remove endnotes.xhtml from manifest (duplicate of endnotes-9)"
+    },
+    {
+      "file_pattern": "src/epub/content.opf",
+      "action": "regex",
+      "pattern": "\\s*<itemref[^>]*idref=\"endnotes\\.xhtml\"[^>]*/>",
+      "replace": "",
+      "reason": "Remove endnotes.xhtml from spine"
     }
   ]
 }
