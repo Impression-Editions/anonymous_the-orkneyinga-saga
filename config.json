@@ -292,7 +292,8 @@
   },
   "book_type": "novel",
   "drop_sections": [
-    "index-8.xhtml"
+    "index-8.xhtml",
+    "endnotes-9.xhtml"
   ],
   "translator_sort": "Goudie, Gilbert"
 }
