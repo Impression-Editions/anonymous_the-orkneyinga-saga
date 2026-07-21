@@ -31,30 +31,9 @@
     {
       "file_pattern": "src/epub/text/endnotes-9.xhtml",
       "action": "regex",
-      "pattern": "<a href=\"#r\\d+\">",
-      "replace": "<a>",
-      "reason": "Remove broken backlinks in old endnotes-9 (new endnotes.xhtml has proper links)"
-    },
-    {
-      "file_pattern": "src/epub/text/endnotes-9.xhtml",
-      "action": "regex",
-      "pattern": "<a href=\"#r\\d+\">",
-      "replace": "<a>",
-      "reason": "Remove broken backlinks in endnotes-9 (noterefs use different IDs)"
-    },
-    {
-      "file_pattern": "src/epub/text/endnotes-9.xhtml",
-      "action": "regex",
       "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
       "replace": "class=\"dead-link\"",
       "reason": "Remove broken cross-references to named anchors"
-    },
-    {
-      "file_pattern": "src/epub/text/*.xhtml",
-      "action": "regex",
-      "pattern": "<a[^>]*class=\"c017 pginternal\"[^>]*href=\"#f\\d+\"[^>]*/>",
-      "replace": "",
-      "reason": "Remove leftover self-closing footnote anchor elements"
     }
   ]
 }
