@@ -50,39 +50,11 @@
       "reason": "Remove broken cross-references to named anchors"
     },
     {
-      "file_pattern": "src/epub/content.opf",
-      "action": "regex",
-      "pattern": "\\s*<item[^>]*href=\"text/endnotes\\.xhtml\"[^>]*/>",
-      "replace": "",
-      "reason": "Remove endnotes.xhtml from manifest (duplicate of endnotes-9)"
-    },
-    {
-      "file_pattern": "src/epub/content.opf",
-      "action": "regex",
-      "pattern": "\\s*<itemref[^>]*idref=\"endnotes\\.xhtml\"[^>]*/>",
-      "replace": "",
-      "reason": "Remove endnotes.xhtml from spine"
-    },
-    {
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
       "pattern": "<a[^>]*class=\"c017 pginternal\"[^>]*href=\"#f\\d+\"[^>]*/>",
       "replace": "",
       "reason": "Remove leftover self-closing footnote anchor elements"
-    },
-    {
-      "file_pattern": "src/epub/content.opf",
-      "action": "regex",
-      "pattern": "\\s*<item[^>]*href=\"text/endnotes-9\\.xhtml\"[^>]*/>",
-      "replace": "",
-      "reason": "Remove endnotes-9 from manifest (replaced by endnotes.xhtml)"
-    },
-    {
-      "file_pattern": "src/epub/content.opf",
-      "action": "regex",
-      "pattern": "\\s*<itemref[^>]*idref=\"endnotes-9\"[^>]*/>",
-      "replace": "",
-      "reason": "Remove endnotes-9 from spine"
     }
   ]
 }
