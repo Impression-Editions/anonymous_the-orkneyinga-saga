@@ -7,7 +7,7 @@
   "has_illustrations": true,
   "illustration_count": 35,
   "preserve_spelling": true,
-  "original_year": null,
+  "original_year": 1873,
   "gutendex_subjects": [
     "Scotland -- Antiquities",
     "Orkney (Scotland) -- Antiquities",
@@ -19,8 +19,11 @@
   "llm_batch_size": 5,
   "proofread_chapters": 2,
   "spine_order": null,
-  "dc_description": null,
-  "dc_subject": null,
+  "dc_description": "A chronicle of the Jarls (Earls) of Orkney from the ninth to thirteenth centuries, tracing the Norse colonization of the Northern and Hebridean islands, family feuds, political intrigue, and Viking raids. Blending historical fact with praise poetry and oral legend, it is the principal source for the medieval history of Orkney and Shetland.",
+  "dc_subject": [
+    "Sagas — Translations into English",
+    "Orkney (Scotland) — History"
+  ],
   "pg_images": [
     {
       "filename": "020-skotland.jpg",
@@ -155,7 +158,7 @@
       "url": "https://www.gutenberg.org/cache/epub/57723/images/xvii.jpg"
     }
   ],
-  "translator": null,
+  "translator": "Gilbert Goudie and Jón A. Hjaltalín",
   "ia_scan_url": "https://archive.org/details/orkneyingasaga00goudgoog",
   "part_children": {
     "part-1.xhtml": [
@@ -290,5 +293,6 @@
   "book_type": "novel",
   "drop_sections": [
     "index-8.xhtml"
-  ]
+  ],
+  "translator_sort": "Goudie, Gilbert"
 }
