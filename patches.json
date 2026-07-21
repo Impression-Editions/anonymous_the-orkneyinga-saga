@@ -1,18 +1,18 @@
 {
   "patches": [
     {
-      "file_pattern": "src/epub/text/chapter-*.xhtml",
-      "action": "regex",
-      "pattern": "<span class=\"heading-verse\"><span class=\"line\"><span epub:type=\"z3998:ordinal z3998:roman\">([ivxlcdmIVXLCDM]+)</span></span><span class=\"line\"><span class=\"small\">(.*?)</span></span></span>",
-      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">\\1</span>. <span class=\"subtitle\">\\2</span>",
-      "reason": "Normalize chapter heading: uppercase Roman numeral, proper spacing between number and subtitle"
-    },
-    {
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
       "pattern": "<div epub:type=\"z3998:poem\"><p>(.*?)</p></div>",
       "replace": "<span class=\"heading-verse\">\\1</span>",
       "reason": "Replace <div> inside <h2> with <span> (prevents epubcheck RSC-005)"
+    },
+    {
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "action": "regex",
+      "pattern": "<span class=\"heading-verse\"><span class=\"line\"><span epub:type=\"z3998:ordinal z3998:roman\">([ivxlcdmIVXLCDM]+)</span></span><span class=\"line\"><span class=\"small\">(.*?)</span></span></span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">\\1</span>. <span class=\"subtitle\">\\2</span>",
+      "reason": "Normalize chapter heading: uppercase Roman numeral, proper spacing between number and subtitle"
     },
     {
       "file_pattern": "src/epub/text/endnotes-9.xhtml",
