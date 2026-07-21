@@ -34,6 +34,20 @@
       "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
       "replace": "class=\"dead-link\"",
       "reason": "Remove broken cross-references to named anchors"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<a[^>]*class=\"c017 pginternal\"[^>]*href=\"#f\\d+\"[^>]*/>",
+      "replace": "",
+      "reason": "Remove orphaned footnote reference anchors (targets are in endnotes-9, not same file)"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "<a[^>]*href=\"#r\\d+\">",
+      "replace": "<a>",
+      "reason": "Remove broken endnote backlinks (#rN anchors not in any file after split)"
     }
   ]
 }
