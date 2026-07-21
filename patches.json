@@ -41,13 +41,6 @@
       "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
       "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
       "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
-    },
-    {
-      "file_pattern": "src/epub/text/*.xhtml",
-      "action": "regex",
-      "pattern": "<a\\s+id=\"(r\\d+)\"/>",
-      "replace": "<a id=\"\\1\">&#8203;</a>",
-      "reason": "rN anchors with zero-width space content so se build preserves them"
     }
   ]
 }
