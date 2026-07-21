@@ -53,8 +53,15 @@
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
       "pattern": "<a\\s+id=\"(r\\d+)\"/>",
-      "replace": "<a id=\"\\1\"></a>",
-      "reason": "Convert self-closing rN anchors to explicit open/close so se build preserves them"
+      "replace": "<span id=\"\\1\" class=\"fn-backlink\"></span>",
+      "reason": "Convert rN anchors to span elements (se build strips empty <a> but preserves <span>)"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
+      "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
+      "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
     }
   ]
 }
