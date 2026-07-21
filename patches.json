@@ -66,9 +66,9 @@
     {
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
-      "pattern": "<a[^>]*href=\"#f\\d+\"[^>]*>(<sup>\\[\\d+\\]</sup>)</a>",
-      "replace": "\\1",
-      "reason": "Remove broken footnote links, keep visible [N] reference"
+      "pattern": "<a[^>]*class=\"c017 pginternal\"[^>]*href=\"#f\\d+\"[^>]*/>",
+      "replace": "",
+      "reason": "Remove leftover self-closing footnote anchor elements"
     }
   ]
 }
