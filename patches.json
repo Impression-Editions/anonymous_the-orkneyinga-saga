@@ -1,6 +1,13 @@
 {
   "patches": [
     {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<div epub:type=\"z3998:poem\"><p>(.*?)</p></div>",
+      "replace": "<span class=\"heading-verse\">\\1</span>",
+      "reason": "Replace div inside h2 with span (prevents epubcheck RSC-005)"
+    },
+    {
       "file_pattern": "src/epub/text/chapter-*.xhtml",
       "action": "regex",
       "pattern": "<span class=\"heading-verse\"><span class=\"line\"><span epub:type=\"z3998:ordinal z3998:roman\">([ivxlcdmIVXLCDM]+)</span></span><span class=\"line\"><span class=\"small\">(.*?)</span></span></span>",
@@ -27,13 +34,6 @@
       "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
       "replace": "class=\"dead-link\"",
       "reason": "Remove broken cross-references to named anchors"
-    },
-    {
-      "file_pattern": "src/epub/text/*.xhtml",
-      "action": "regex",
-      "pattern": "<a[^>]*class=\"c017 pginternal\"[^>]*href=\"#f\\d+\"[^>]*/>",
-      "replace": "",
-      "reason": "Remove orphaned footnote reference anchors (targets are in endnotes-9, not same file)"
     },
     {
       "file_pattern": "src/epub/text/*.xhtml",
