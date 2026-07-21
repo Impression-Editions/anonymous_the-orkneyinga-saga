@@ -43,25 +43,18 @@
       "reason": "Remove orphaned footnote reference anchors (targets are in endnotes-9, not same file)"
     },
     {
-      "file_pattern": "src/epub/text/endnotes-9.xhtml",
-      "action": "regex",
-      "pattern": "<a[^>]*href=\"#r\\d+\">",
-      "replace": "<a>",
-      "reason": "Remove broken endnote backlinks (#rN anchors not in any file after split)"
-    },
-    {
-      "file_pattern": "src/epub/text/*.xhtml",
-      "action": "regex",
-      "pattern": "<a\\s+id=\"(r\\d+)\"/>",
-      "replace": "<span id=\"\\1\" class=\"fn-backlink\"></span>",
-      "reason": "Convert rN anchors to span elements (se build strips empty <a> but preserves <span>)"
-    },
-    {
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
       "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
       "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
       "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<a\\s+id=\"(r\\d+)\"/>",
+      "replace": "<span id=\"\\1\"></span>",
+      "reason": "Convert rN anchors to span (se build strips empty <a> but preserves <span>)"
     }
   ]
 }
