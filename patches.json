@@ -27,6 +27,13 @@
       "pattern": "href=\"#i-xvi\"",
       "replace": "class=\"dead-link\"",
       "reason": "Remove broken cross-reference to non-existent section anchor"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "<a href=\"#r\\d+\">",
+      "replace": "<a>",
+      "reason": "Remove broken backlinks in old endnotes-9 (new endnotes.xhtml has proper links)"
     }
   ]
 }
