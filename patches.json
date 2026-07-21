@@ -34,6 +34,13 @@
       "pattern": "<a href=\"#r\\d+\">",
       "replace": "<a>",
       "reason": "Remove broken backlinks in old endnotes-9 (new endnotes.xhtml has proper links)"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes.xhtml",
+      "action": "regex",
+      "pattern": "endnotes-9.xhtml#noteref",
+      "replace": "introduction-3.xhtml#noteref",
+      "reason": "Fix endnote backlinks: point to correct chapter file (introduction) not endnotes-9"
     }
   ]
 }
