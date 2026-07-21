@@ -62,6 +62,13 @@
       "pattern": "\\s*<itemref[^>]*idref=\"endnotes\\.xhtml\"[^>]*/>",
       "replace": "",
       "reason": "Remove endnotes.xhtml from spine"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<a[^>]*href=\"#f\\d+\"[^>]*>(<sup>\\[\\d+\\]</sup>)</a>",
+      "replace": "\\1",
+      "reason": "Remove broken footnote links, keep visible [N] reference"
     }
   ]
 }

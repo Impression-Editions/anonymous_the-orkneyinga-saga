@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://www.impressioneditions.com/ebooks/anonymous/the-orkneyinga-saga</dc:identifier>
-		<dc:date>2026-07-21T18:10:54Z</dc:date>
+		<dc:date>2026-07-21T18:14:06Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the public domain. This ebook edition is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See the Copyright &amp; Permissions page at the end of this ebook for details.</dc:rights>
 		<dc:publisher id="publisher">Impression Editions</dc:publisher>
@@ -303,8 +303,8 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
-		<itemref idref="halftitle.xhtml"/>
 		<itemref idref="preface-2.xhtml"/>
+		<itemref idref="halftitle.xhtml"/>
 		<itemref idref="introduction-3.xhtml"/>
 		<itemref idref="ii-early-christianity-islands.xhtml"/>
 		<itemref idref="iii-arrival-northmen-establishment-earld.xhtml"/>
@@ -452,8 +452,8 @@
 		<itemref idref="battle.xhtml"/>
 		<itemref idref="meeting-between-olaf-tryggvis-son-earl.xhtml"/>
 		<itemref idref="endnotes-9.xhtml"/>
-		<itemref idref="about-the-translator.xhtml"/>
-		<itemref idref="endnotes.xhtml"/>
 		<itemref idref="permissions.xhtml"/>
-</spine>
+		<itemref idref="uncopyright.xhtml"/>
+		<itemref idref="about-the-translator.xhtml"/>
+	</spine>
 </package>
