@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://www.impressioneditions.com/ebooks/anonymous/the-orkneyinga-saga</dc:identifier>
-		<dc:date>2026-07-22T11:36:19Z</dc:date>
+		<dc:date>2026-07-22T12:53:13Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the public domain. This ebook edition is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See the Copyright &amp; Permissions page at the end of this ebook for details.</dc:rights>
 		<dc:publisher id="publisher">Impression Editions</dc:publisher>
@@ -114,7 +114,9 @@
 		<item href="images/ciii.jpg" id="ciii.jpg" media-type="image/jpeg"/>
 		<item href="images/civ.jpg" id="civ.jpg" media-type="image/jpeg"/>
 		<item href="images/cix.jpg" id="cix.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
+		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+		<item href="images/cover.source.jpg" id="cover.source.jpg" media-type="image/jpeg"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/cvi.jpg" id="cvi.jpg" media-type="image/jpeg"/>
 		<item href="images/cvii-bottom.jpg" id="cvii-bottom.jpg" media-type="image/jpeg"/>
 		<item href="images/cvii-top.jpg" id="cvii-top.jpg" media-type="image/jpeg"/>
@@ -140,6 +142,7 @@
 		<item href="images/xix.jpg" id="xix.jpg" media-type="image/jpeg"/>
 		<item href="images/xvi.jpg" id="xvi.jpg" media-type="image/jpeg"/>
 		<item href="images/xvii.jpg" id="xvii.jpg" media-type="image/jpeg"/>
+		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-2.xhtml" id="appendix-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-3.xhtml" id="appendix-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-4.xhtml" id="appendix-4.xhtml" media-type="application/xhtml+xml"/>
@@ -266,6 +269,7 @@
 		<item href="text/chapter-xxxvi.xhtml" id="chapter-xxxvi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-xxxvii.xhtml" id="chapter-xxxvii.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-xxxviii.xhtml" id="chapter-xxxviii.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/dominions-king-harald-earl-rgnvald.xhtml" id="dominions-king-harald-earl-rgnvald.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/earl-melbrigd-slain-sigurd.xhtml" id="earl-melbrigd-slain-sigurd.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/einar-comes-islands.xhtml" id="einar-comes-islands.xhtml" media-type="application/xhtml+xml"/>
@@ -277,6 +281,7 @@
 		<item href="text/introduction-3.xhtml" id="introduction-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/iv-earldom-norse-line.xhtml" id="iv-earldom-norse-line.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/ix-bishopric-caithness.xhtml" id="ix-bishopric-caithness.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/loi.xhtml" id="loi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/meeting-between-olaf-tryggvis-son-earl.xhtml" id="meeting-between-olaf-tryggvis-son-earl.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/murder-havard.xhtml" id="murder-havard.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
@@ -294,8 +299,6 @@
 		<item href="text/xii-mousa-pictish-towers.xhtml" id="xii-mousa-pictish-towers.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/xiii-remains-northmen.xhtml" id="xiii-remains-northmen.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
-		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
-		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 			<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="font/woff2"/>
 		<item href="fonts/SortsMillGoudy-Italic.woff2" id="SortsMillGoudy-Italic.woff2" media-type="font/woff2"/>
 		<item href="fonts/LeagueSpartan-Bold.woff2" id="LeagueSpartan-Bold.woff2" media-type="font/woff2"/>
@@ -426,6 +429,7 @@
 		<itemref idref="chapter-xxxvi.xhtml"/>
 		<itemref idref="chapter-xxxvii.xhtml"/>
 		<itemref idref="chapter-xxxviii.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
 		<itemref idref="dominions-king-harald-earl-rgnvald.xhtml"/>
 		<itemref idref="earl-melbrigd-slain-sigurd.xhtml"/>
 		<itemref idref="einar-comes-islands.xhtml"/>
@@ -453,7 +457,8 @@
 		<itemref idref="appendix-6.xhtml"/>
 		<itemref idref="appendix-7.xhtml"/>
 		<itemref idref="endnotes-9.xhtml"/>
-		<itemref idref="permissions.xhtml"/>
+		<itemref idref="loi.xhtml"/>
 		<itemref idref="about-the-translator.xhtml"/>
+		<itemref idref="permissions.xhtml"/>
 	</spine>
 </package>
