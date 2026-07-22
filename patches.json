@@ -29,25 +29,11 @@
       "reason": "Remove broken cross-reference to non-existent section anchor"
     },
     {
-      "file_pattern": "src/epub/text/endnotes-9.xhtml",
-      "action": "regex",
-      "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
-      "replace": "class=\"dead-link\"",
-      "reason": "Remove broken cross-references to named anchors"
-    },
-    {
       "file_pattern": "src/epub/text/*.xhtml",
       "action": "regex",
       "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
       "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
       "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
-    },
-    {
-      "file_pattern": "src/epub/text/endnotes-9.xhtml",
-      "action": "regex",
-      "pattern": "<a\\s+href=\"([^\"]+)#r\\d+\"",
-      "replace": "<a href=\"\\1\"",
-      "reason": "Fix endnote backlinks: point to chapter file (rN anchors stripped by se build)"
     }
   ]
 }
