@@ -1490,6 +1490,97 @@
             "pattern": "<abbr>([^<]*)</abbr>",
             "replace": "<abbr epub:type=\"z3998:initialism\">\\1</abbr>",
             "reason": "y-028: Add epub:type to bare <abbr> elements"
+        },
+        {
+            "action": "regex",
+            "file_pattern": "src/epub/text/*.xhtml",
+            "pattern": "<abbr([^>]*)>AD</abbr>",
+            "replace": "<abbr\\1>A.D.</abbr>",
+            "reason": "t-030: Add periods to AD initialism"
+        },
+        {
+            "action": "regex",
+            "file_pattern": "src/epub/text/endnotes-*.xhtml",
+            "pattern": "(\\d)<abbr",
+            "replace": "\\1 <abbr",
+            "reason": "y-028: Add space between digit and <abbr>"
+        },
+        {
+            "file": "src/epub/text/appendix-2.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from appendix-2.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-3.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from appendix-3.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-5.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from appendix-5.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-6.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from appendix-6.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-cxvii.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from chapter-cxvii.xhtml"
+        },
+        {
+            "file": "src/epub/text/endnotes-9.xhtml",
+            "action": "regex",
+            "pattern": "<hr\\ class=\"c027\"/>",
+            "replace": "",
+            "reason": "s-012: Remove hr from endnotes-9.xhtml"
+        },
+        {
+            "file": "src/epub/text/endnotes-9.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c002\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from endnotes-9.xhtml"
+        },
+        {
+            "file": "src/epub/text/endnotes-9.xhtml",
+            "action": "regex",
+            "pattern": "<hr\\ class=\"c029\"/>",
+            "replace": "",
+            "reason": "s-012: Remove hr from endnotes-9.xhtml"
+        },
+        {
+            "file": "src/epub/text/preface-2.xhtml",
+            "action": "regex",
+            "pattern": "<hr\\ class=\"c006\"/>",
+            "replace": "",
+            "reason": "s-012: Remove hr from preface-2.xhtml"
+        },
+        {
+            "file": "src/epub/text/xiii-remains-northmen.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from xiii-remains-northmen.xhtml"
+        },
+        {
+            "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
+            "action": "regex",
+            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
+            "replace": "",
+            "reason": "s-012: Remove pbb hr div from meeting-between-olaf-tryggvis-son-earl.xhtml"
         }
     ]
 }
