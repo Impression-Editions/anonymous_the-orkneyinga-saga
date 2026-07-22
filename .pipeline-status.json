@@ -1,6 +1,6 @@
 {
-  "run_number": 1,
-  "last_run": "2026-07-22 12:58:42 UTC",
+  "run_number": 2,
+  "last_run": "2026-07-22 15:13:34 UTC",
   "last_from_step": "lint",
   "result": "errors",
   "error_count": 2,
@@ -27,8 +27,8 @@
     "Step 12.5: Verify"
   ],
   "errors": [
-    "('Step 11.1: Patches', '  Applying 33 patch(es) from patches.json...\\n  OK   [0]: src/epub/text/*.xhtml — applied to 156 file(s)\\n  OK   [1]: src/epub/text/chapter-*.xhtml — applied to 117 file(s)\\n  FAIL [2]: src/epub/text/endnotes-9.xhtml — pattern not found in any file\\n  FAIL [3]: src/epub/text/ii-early-christianity-island')",
+    "('Step 11.1: Patches', '  Applying 152 patch(es) from patches.json...\\n  OK   [0]: src/epub/text/*.xhtml — applied to 156 file(s)\\n  OK   [1]: src/epub/text/chapter-*.xhtml — applied to 117 file(s)\\n  FAIL [2]: src/epub/text/endnotes-9.xhtml — pattern not found in any file\\n  FAIL [3]: src/epub/text/ii-early-christianity-islan')",
     "('Step 12.5: Verify', '3 assertion(s) failed')"
   ],
-  "previous_run": null
+  "previous_run": "2026-07-22 12:58:42 UTC"
 }
