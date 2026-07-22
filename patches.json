@@ -34,6 +34,202 @@
       "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
       "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
       "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/dragon-ship\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Dragon-ship of the Viking period\"",
+      "reason": "Set proper alt caption for dragon-ship"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/orkneyar\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Map of the Orkney Islands\"",
+      "reason": "Set proper alt caption for orkneyar"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/hjaltland-map\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Map of the Shetland Islands\"",
+      "reason": "Set proper alt caption for hjaltland-map"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/i150-top\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"View of South Transept and part of Choir of the Cathedral of St. Magnus\"",
+      "reason": "Set proper alt caption for i150-top"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/i150-bottom\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"View of South Transept and part of Choir of the Cathedral of St. Magnus\"",
+      "reason": "Set proper alt caption for i150-bottom"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxxii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Comb found in a Norse Grave in Westray, Orkney\"",
+      "reason": "Set proper alt caption for cxxii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxxi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Bronze Tortoise Brooch found in a Norse Grave in Caithness\"",
+      "reason": "Set proper alt caption for cxxi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxvii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Scabbard-Point found in a Norse Grave in Westray, Orkney\"",
+      "reason": "Set proper alt caption for cxvii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxvi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Norse Sword found at Gorton, Morayshire\"",
+      "reason": "Set proper alt caption for cxvi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cix\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Pictish Tower of Mousa (Moseyarborg), Shetland\"",
+      "reason": "Set proper alt caption for cix"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cvii-bottom\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Stone Circle at Stennis, from the westward\"",
+      "reason": "Set proper alt caption for cvii-bottom"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cvii-top\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Stone Circle at Stennis, and Cromlech, from the northward\"",
+      "reason": "Set proper alt caption for cvii-top"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cvi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Stone Circle at Brogar, Stennis, Orkney\"",
+      "reason": "Set proper alt caption for cvi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/civ\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Dragon carved on the wall in Maeshow\"",
+      "reason": "Set proper alt caption for civ"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/ciii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"View of the Chamber in Maeshow, Orkney\"",
+      "reason": "Set proper alt caption for ciii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan and Section of Maeshow, Orkney\"",
+      "reason": "Set proper alt caption for cii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/chancel-arch-weir-b\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Church at Lybster, Reay, Caithness\"",
+      "reason": "Set proper alt caption for chancel-arch-weir-b"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/chancel-arch-weir-a\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Chancel Arch of Church of Weir, and Chancel Doorway of Church at Lybster, Reay\"",
+      "reason": "Set proper alt caption for chancel-arch-weir-a"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xcvii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Church at Lybster, Reay, Caithness\"",
+      "reason": "Set proper alt caption for xcvii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xcvi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Church at Weir, Orkney\"",
+      "reason": "Set proper alt caption for xcvi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xciv\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Round Church at Orphir, Orkney\"",
+      "reason": "Set proper alt caption for xciv"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/egilsey-church\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"The Church of Egilsey\"",
+      "reason": "Set proper alt caption for egilsey-church"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xci\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Egilsey Church and Tower, Orkney\"",
+      "reason": "Set proper alt caption for xci"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/st-magnus-cathedral\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Cathedral of St. Magnus, Kirkwall, exterior view\"",
+      "reason": "Set proper alt caption for st-magnus-cathedral"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xix\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Symbols on the Sculptured Stones of Scotland\"",
+      "reason": "Set proper alt caption for xix"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xvii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"The Bressay Sculptured Stone, Reverse of\"",
+      "reason": "Set proper alt caption for xvii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xvi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"The Bressay Sculptured Stone\"",
+      "reason": "Set proper alt caption for xvi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xiv\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Square-sided Iron Bell found at Saverough, Orkney\"",
+      "reason": "Set proper alt caption for xiv"
     }
   ]
 }
