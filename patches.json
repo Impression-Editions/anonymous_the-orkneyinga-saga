@@ -1037,27 +1037,6 @@
             "reason": "s-023: Uppercase Roman numeral Xxxviii to XXXVIII"
         },
         {
-            "file": "src/epub/text/appendix-4.xhtml",
-            "action": "replace",
-            "find": "<h3 class=\"c016\" epub:type=\"title\">Ii. the Angus Line of the Earls of Orkney</h3>",
-            "replace": "<h3 class=\"c016\" epub:type=\"title\">II. The Angus Line of the Earls of Orkney</h3>",
-            "reason": "s-023: Fix titlecase in appendix-4.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "replace",
-            "find": "<h3 class=\"c016\" epub:type=\"title\">Iii. the Stratherne Line of the Earls of Orkney</h3>",
-            "replace": "<h3 class=\"c016\" epub:type=\"title\">III. The Stratherne Line of the Earls of Orkney</h3>",
-            "reason": "s-023: Fix titlecase in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "replace",
-            "find": "<h3 class=\"c016\" epub:type=\"title\">Iv. the St. Clair Line of the Earls of Orkney</h3>",
-            "replace": "<h3 class=\"c016\" epub:type=\"title\">IV. The St. Clair Line of the Earls of Orkney</h3>",
-            "reason": "s-023: Fix titlecase in appendix-6.xhtml"
-        },
-        {
             "action": "regex",
             "file_pattern": "src/epub/text/*.xhtml",
             "pattern": "<hr\\s*/?>\\s*(</section>)",
@@ -1798,27 +1777,6 @@
             "pattern": "\\.(</title>)",
             "replace": "\\1",
             "reason": "s-021: Remove trailing period from title tags"
-        },
-        {
-            "file": "src/epub/text/appendix-4.xhtml",
-            "action": "replace",
-            "find": "<title>Ii. the Angus Line of the Earls of Orkney</title>",
-            "replace": "<title>II. The Angus Line of the Earls of Orkney</title>",
-            "reason": "s-021/s-023: Fix title tag in appendix-4.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "replace",
-            "find": "<title>Iii. the Stratherne Line of the Earls of Orkney</title>",
-            "replace": "<title>III. The Stratherne Line of the Earls of Orkney</title>",
-            "reason": "s-021/s-023: Fix title tag in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "replace",
-            "find": "<title>Iv. the St. Clair Line of the Earls of Orkney</title>",
-            "replace": "<title>IV. The St.  Clair Line of the Earls of Orkney</title>",
-            "reason": "s-021/s-023: Fix title tag in appendix-6.xhtml"
         },
         {
             "file": "src/epub/text/ii-early-christianity-islands.xhtml",
