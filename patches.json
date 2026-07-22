@@ -1133,6 +1133,363 @@
             "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Vikings slain.</span>\n\t\t\t</h2>",
             "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Vikings slain.</h2>",
             "reason": "s-072: Unwrap single span in vikings-slain.xhtml"
+        },
+        {
+            "file": "src/epub/text/battle-between-earl-einar-prince-halfdan.xhtml",
+            "action": "replace",
+            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle Between Earl Einar and Prince Halfdan</span>\n\t\t\t</h2>",
+            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle Between Earl Einar and Prince Halfdan</h2>",
+            "reason": "s-072: Unwrap single span in battle-between-earl-einar-prince-halfdan.xhtml"
+        },
+        {
+            "file": "src/epub/text/battle-between-liot-skuli.xhtml",
+            "action": "replace",
+            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle Between Liot and Skuli</span>\n\t\t\t</h2>",
+            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle Between Liot and Skuli</h2>",
+            "reason": "s-072: Unwrap single span in battle-between-liot-skuli.xhtml"
+        },
+        {
+            "file": "src/epub/text/battle.xhtml",
+            "action": "replace",
+            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle</span>\n\t\t\t</h2>",
+            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle</h2>",
+            "reason": "s-072: Unwrap single span in battle.xhtml"
+        },
+        {
+            "file": "src/epub/text/dominions-king-harald-earl-rgnvald.xhtml",
+            "action": "replace",
+            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Dominions of King Harald and Earl Rögnvald</span>\n\t\t\t</h2>",
+            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Dominions of King Harald and Earl Rögnvald</h2>",
+            "reason": "s-072: Unwrap single span in dominions-king-harald-earl-rgnvald.xhtml"
+        },
+        {
+            "file": "src/epub/text/earl-melbrigd-slain-sigurd.xhtml",
+            "action": "replace",
+            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Earl Melbrigd Slain by Sigurd</span>\n\t\t\t</h2>",
+            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Earl Melbrigd Slain by Sigurd</h2>",
+            "reason": "s-072: Unwrap single span in earl-melbrigd-slain-sigurd.xhtml"
+        },
+        {
+            "file": "src/epub/text/einar-comes-islands.xhtml",
+            "action": "replace",
+            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Einar Comes to the Islands</span>\n\t\t\t</h2>",
+            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Einar Comes to the Islands</h2>",
+            "reason": "s-072: Unwrap single span in einar-comes-islands.xhtml"
+        },
+        {
+            "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
+            "action": "replace",
+            "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">Meeting Between Olaf (Tryggvi’s Son) and the Earl</span></h2>",
+            "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">Meeting Between Olaf (Tryggvi’s Son) and the Earl</h2>",
+            "reason": "s-072: Unwrap single span in meeting-between-olaf-tryggvis-son-earl.xhtml"
+        },
+        {
+            "file": "src/epub/text/murder-havard.xhtml",
+            "action": "replace",
+            "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">The Murder of Havard</span></h2>",
+            "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">The Murder of Havard</h2>",
+            "reason": "s-072: Unwrap single span in murder-havard.xhtml"
+        },
+        {
+            "file": "src/epub/text/vikings-slain.xhtml",
+            "action": "replace",
+            "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">The Vikings Slain</span></h2>",
+            "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">The Vikings Slain</h2>",
+            "reason": "s-072: Unwrap single span in vikings-slain.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-3.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-cxxxii\">cxxxii</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">cxxxii</div>",
+            "reason": "s-072: Unwrap single span in appendix-3.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-5.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-cxxxiii\">cxxxiii</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">cxxxiii</div>",
+            "reason": "s-072: Unwrap single span in appendix-5.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-7.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t\t\t<span class=\"large\">SAGA OF OLAF, TRYGGVI’s SON.</span>\n\t\t\t\t\t</div>",
+            "replace": "<div class=\"large\">SAGA OF OLAF, TRYGGVI’s SON.</div>",
+            "reason": "s-072: Unwrap single span in appendix-7.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-c.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-176\">176</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">176</div>",
+            "reason": "s-072: Unwrap single span in chapter-c.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-cvi.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-183\">183</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">183</div>",
+            "reason": "s-072: Unwrap single span in chapter-cvi.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-cvii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-188\">188</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">188</div>",
+            "reason": "s-072: Unwrap single span in chapter-cvii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-cxv.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-198\">198</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">198</div>",
+            "reason": "s-072: Unwrap single span in chapter-cxv.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-cxvi.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-200\">200</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">200</div>",
+            "reason": "s-072: Unwrap single span in chapter-cxvi.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-lii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-78\">78</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">78</div>",
+            "reason": "s-072: Unwrap single span in chapter-lii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-lviii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-91\">91</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">91</div>",
+            "reason": "s-072: Unwrap single span in chapter-lviii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-lxii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-68\">68</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">68</div>",
+            "reason": "s-072: Unwrap single span in chapter-lxii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-lxx.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-113\">113</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">113</div>",
+            "reason": "s-072: Unwrap single span in chapter-lxx.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-lxxx.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-139\">139</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">139</div>",
+            "reason": "s-072: Unwrap single span in chapter-lxxx.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-lxxxviii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-156\">156</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">156</div>",
+            "reason": "s-072: Unwrap single span in chapter-lxxxviii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-viii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-26\">26</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">26</div>",
+            "reason": "s-072: Unwrap single span in chapter-viii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xci.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-161\">161</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">161</div>",
+            "reason": "s-072: Unwrap single span in chapter-xci.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xcviii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-172\">172</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">172</div>",
+            "reason": "s-072: Unwrap single span in chapter-xcviii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xi.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-29\">29</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">29</div>",
+            "reason": "s-072: Unwrap single span in chapter-xi.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xix.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-40\">40</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">40</div>",
+            "reason": "s-072: Unwrap single span in chapter-xix.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xlviii.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-75\">75</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">75</div>",
+            "reason": "s-072: Unwrap single span in chapter-xlviii.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xxi.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-44\">44</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">44</div>",
+            "reason": "s-072: Unwrap single span in chapter-xxi.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xxiv.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-49\">49</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">49</div>",
+            "reason": "s-072: Unwrap single span in chapter-xxiv.xhtml"
+        },
+        {
+            "file": "src/epub/text/chapter-xxxv.xhtml",
+            "action": "replace",
+            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-61\">61</span>\n\t\t\t</div>",
+            "replace": "<div class=\"pageno\">61</div>",
+            "reason": "s-072: Unwrap single span in chapter-xxxv.xhtml"
+        },
+        {
+            "file": "src/epub/text/murder-havard.xhtml",
+            "action": "replace",
+            "find": "<div>\n<span class=\"pageno\" id=\"Page-209\">209</span>\n</div>",
+            "replace": "<div class=\"pageno\">209</div>",
+            "reason": "s-072: Unwrap single span in murder-havard.xhtml"
+        },
+        {
+            "file": "src/epub/text/preface-2.xhtml",
+            "action": "replace",
+            "find": "<div class=\"line in5\">\n\t\t\t\t\t\t\t<span class=\"sc\">National Museum</span>\n\t\t\t\t\t\t</div>",
+            "replace": "<div class=\"line in5 sc\">National Museum</div>",
+            "reason": "s-072: Unwrap single span in preface-2.xhtml"
+        },
+        {
+            "file": "src/epub/text/viii-bishopric-orkney.xhtml",
+            "action": "replace",
+            "find": "<div class=\"line\">\n\t\t\t\t\t\t\t<span class=\"sc\">Hic requiescit Willialmus senex, felicis memoriae,</span>\n\t\t\t\t\t\t</div>",
+            "replace": "<div class=\"line sc\">Hic requiescit Willialmus senex, felicis memoriae,</div>",
+            "reason": "s-072: Unwrap single span in viii-bishopric-orkney.xhtml"
+        },
+        {
+            "file": "src/epub/text/viii-bishopric-orkney.xhtml",
+            "action": "replace",
+            "find": "<div class=\"line\">\n\t\t\t\t\t\t\t<span class=\"sc\">primus Episcopus.</span>\n\t\t\t\t\t\t</div>",
+            "replace": "<div class=\"line sc\">primus Episcopus.</div>",
+            "reason": "s-072: Unwrap single span in viii-bishopric-orkney.xhtml"
+        },
+        {
+            "file": "src/epub/text/xi-maeshow-stones-stennis.xhtml",
+            "action": "replace",
+            "find": "<div>\n<span class=\"pageno\" id=\"Page-cix\">cix</span>\n</div>",
+            "replace": "<div class=\"pageno\">cix</div>",
+            "reason": "s-072: Unwrap single span in xi-maeshow-stones-stennis.xhtml"
+        },
+        {
+            "action": "regex",
+            "file_pattern": "src/epub/text/*.xhtml",
+            "pattern": "\\s*<div class=\"pbb\">\\s*<hr[^>]*/>\\s*</div>\\s*(</section>)",
+            "replace": "\\n\\t\\t\\1",
+            "reason": "s-012: Remove trailing page-break hr div before </section>"
+        },
+        {
+            "file": "src/epub/text/appendix-4.xhtml",
+            "action": "replace",
+            "find": "<h3 class=\"c016\" epub:type=\"title\">Ii. The Angus Line of the Earls of Orkney</h3>",
+            "replace": "<h2 class=\"c016\" epub:type=\"title\">Ii. The Angus Line of the Earls of Orkney</h2>",
+            "reason": "s-085: Promote h3 → h2 in appendix-4.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-5.xhtml",
+            "action": "replace",
+            "find": "<h3 class=\"c016\" epub:type=\"title\">Iii. The Stratherne Line of the Earls of Orkney</h3>",
+            "replace": "<h2 class=\"c016\" epub:type=\"title\">Iii. The Stratherne Line of the Earls of Orkney</h2>",
+            "reason": "s-085: Promote h3 → h2 in appendix-5.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-6.xhtml",
+            "action": "replace",
+            "find": "<h3 class=\"c016\" epub:type=\"title\">Iv. The St. Clair Line of the Earls of Orkney</h3>",
+            "replace": "<h2 class=\"c016\" epub:type=\"title\">Iv. The St. Clair Line of the Earls of Orkney</h2>",
+            "reason": "s-085: Promote h3 → h2 in appendix-6.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-4.xhtml",
+            "action": "regex",
+            "pattern": "<i>d\\.\\s",
+            "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+            "reason": "t-029: Wrap 'd.' abbreviation in appendix-4.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-5.xhtml",
+            "action": "regex",
+            "pattern": "<i>d\\.\\s",
+            "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+            "reason": "t-029: Wrap 'd.' abbreviation in appendix-5.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-6.xhtml",
+            "action": "regex",
+            "pattern": "<i>d\\.\\s",
+            "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+            "reason": "t-029: Wrap 'd.' abbreviation in appendix-6.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-4.xhtml",
+            "action": "regex",
+            "pattern": ">\\s*d\\.\\s",
+            "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+            "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-4.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-4.xhtml",
+            "action": "regex",
+            "pattern": ">\\s*m\\.\\s",
+            "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
+            "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-4.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-5.xhtml",
+            "action": "regex",
+            "pattern": ">\\s*d\\.\\s",
+            "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+            "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-5.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-5.xhtml",
+            "action": "regex",
+            "pattern": ">\\s*m\\.\\s",
+            "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
+            "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-5.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-6.xhtml",
+            "action": "regex",
+            "pattern": ">\\s*d\\.\\s",
+            "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+            "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-6.xhtml"
+        },
+        {
+            "file": "src/epub/text/appendix-6.xhtml",
+            "action": "regex",
+            "pattern": ">\\s*m\\.\\s",
+            "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
+            "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-6.xhtml"
+        },
+        {
+            "action": "regex",
+            "file_pattern": "src/epub/text/*.xhtml",
+            "pattern": "<abbr>([^<]*)</abbr>",
+            "replace": "<abbr epub:type=\"z3998:initialism\">\\1</abbr>",
+            "reason": "y-028: Add epub:type to bare <abbr> elements"
         }
     ]
 }
