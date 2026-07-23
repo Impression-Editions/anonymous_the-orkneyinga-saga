@@ -1581,6 +1581,97 @@
             "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
             "replace": "",
             "reason": "s-012: Remove pbb hr div from meeting-between-olaf-tryggvis-son-earl.xhtml"
+        },
+        {
+            "action": "regex",
+            "file_pattern": "src/epub/text/*.xhtml",
+            "pattern": "\\s*<span class=\"pageno\"[^>]*>[^<]*</span>",
+            "replace": "",
+            "reason": "Remove print page number markers from text"
+        },
+        {
+            "action": "regex",
+            "file_pattern": "src/epub/text/*.xhtml",
+            "pattern": "<span class=\"pageno\"[^>]*>[^<]*</span>\\s*",
+            "replace": "",
+            "reason": "Remove pageno spans with trailing whitespace"
+        },
+        {
+            "file": "src/epub/text/ii-early-christianity-islands.xhtml",
+            "action": "replace",
+            "find": ">Ii. ",
+            "replace": ">II. ",
+            "reason": "Uppercase Roman numeral in ii-early-christianity-islands.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/iii-arrival-northmen-establishment-earld.xhtml",
+            "action": "replace",
+            "find": ">Iii. ",
+            "replace": ">III. ",
+            "reason": "Uppercase Roman numeral in iii-arrival-northmen-establishment-earld.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/iv-earldom-norse-line.xhtml",
+            "action": "replace",
+            "find": ">Iv. ",
+            "replace": ">IV. ",
+            "reason": "Uppercase Roman numeral in iv-earldom-norse-line.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/ix-bishopric-caithness.xhtml",
+            "action": "replace",
+            "find": ">Ix. ",
+            "replace": ">IX. ",
+            "reason": "Uppercase Roman numeral in ix-bishopric-caithness.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/v-earldom-angus-line.xhtml",
+            "action": "replace",
+            "find": ">v. ",
+            "replace": ">V. ",
+            "reason": "Uppercase Roman numeral in v-earldom-angus-line.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/vi-earldom-stratherne-line.xhtml",
+            "action": "replace",
+            "find": ">Vi. ",
+            "replace": ">VI. ",
+            "reason": "Uppercase Roman numeral in vi-earldom-stratherne-line.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/vii-earldom-line-st-clair.xhtml",
+            "action": "replace",
+            "find": ">Vii. ",
+            "replace": ">VII. ",
+            "reason": "Uppercase Roman numeral in vii-earldom-line-st-clair.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/viii-bishopric-orkney.xhtml",
+            "action": "replace",
+            "find": ">Viii. ",
+            "replace": ">VIII. ",
+            "reason": "Uppercase Roman numeral in viii-bishopric-orkney.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/xi-maeshow-stones-stennis.xhtml",
+            "action": "replace",
+            "find": ">Xi. ",
+            "replace": ">XI. ",
+            "reason": "Uppercase Roman numeral in xi-maeshow-stones-stennis.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/xii-mousa-pictish-towers.xhtml",
+            "action": "replace",
+            "find": ">Xii. ",
+            "replace": ">XII. ",
+            "reason": "Uppercase Roman numeral in xii-mousa-pictish-towers.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/xiii-remains-northmen.xhtml",
+            "action": "replace",
+            "find": ">Xiii. ",
+            "replace": ">XIII. ",
+            "reason": "Uppercase Roman numeral in xiii-remains-northmen.xhtml heading"
         }
     ]
 }
