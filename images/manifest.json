@@ -12,12 +12,12 @@
     }
   },
   "cover": {
-    "credit": "Cover image: \"Orkneyinga saga extract.jpg\" by Unknown authorUnknown author. (2023-08-01 17:11:03). Public domain. Source: https://commons.wikimedia.org/wiki/File:Orkneyinga saga extract.jpg.",
-    "artist": "Unknown authorUnknown author",
+    "credit": "Cover image: \"Orkneyinga saga extract.jpg\" by Unknown author. (2023-08-01 17:11:03). Public domain. Source: https://commons.wikimedia.org/wiki/File:Orkneyinga_saga_extract.jpg.",
+    "artist": "Unknown author",
     "title": "Orkneyinga saga extract.jpg",
     "date": "2023-08-01 17:11:03",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Orkneyinga saga extract.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Orkneyinga_saga_extract.jpg",
     "override": "cover-override/cover.jpg"
   },
   "placements": []
