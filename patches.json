@@ -1672,6 +1672,13 @@
             "find": ">Xiii. ",
             "replace": ">XIII. ",
             "reason": "Uppercase Roman numeral in xiii-remains-northmen.xhtml heading"
+        },
+        {
+            "file": "src/epub/text/chapter-lxxii.xhtml",
+            "action": "regex",
+            "pattern": "<h2 epub:type=\"title\" class=\"c001\">Chapter <div epub:type=\"z3998:poem\">.*?<span epub:type=\"z3998:roman z3998:ordinal\">Lxxii</span></span><span class=\"line\"><span class=\"small\">the Burning of Frakork\\.</span></span></p> </div></h2>",
+            "replace": "<h2 epub:type=\"title\" class=\"c001\">Chapter <span epub:type=\"z3998:ordinal z3998:roman\">LXXII</span>. <span class=\"subtitle\">The Burning of Frakork</span></h2>",
+            "reason": "Fix corrupted chapter-lxxii heading (rough_cleanup verse conversion bug)"
         }
     ]
 }
