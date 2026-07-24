@@ -2,12 +2,12 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://www.impressioneditions.com/ebooks/anonymous/the-orkneyinga-saga</dc:identifier>
-		<dc:date>2026-07-23T17:11:49Z</dc:date>
+		<dc:date>2026-07-24T01:11:12Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
-		<dc:rights>The source text and artwork in this ebook are believed to be in the public domain. This ebook edition is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See the Copyright &amp; Permissions page at the end of this ebook for details.</dc:rights>
-		<dc:publisher id="publisher">Impression Editions</dc:publisher>
-		<meta property="file-as" refines="#publisher">Impression Editions</meta>
-		<meta property="se:url.homepage" refines="#publisher">https://www.impressioneditions.com/</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<meta property="se:url.homepage" refines="#publisher">https://standardebooks.org/</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
@@ -16,9 +16,8 @@
 		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com/</meta>
 		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
-		<meta property="a11y:certifiedBy" refines="#conformance-statement">Impression Editions</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
 		<meta property="schema:accessMode">textual</meta>
-		<meta property="schema:accessMode">visual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
 		<meta property="schema:accessibilityFeature">alternativeText</meta>
 		<meta property="schema:accessibilityFeature">displayTransformability</meta>
@@ -30,32 +29,42 @@
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
 		<dc:title id="title">The Orkneyinga Saga</dc:title>
 		<meta property="file-as" refines="#title">The Orkneyinga Saga_SORT</meta>
-		<dc:subject id="subject-1">Sagas — Translations into English</dc:subject>
-		<dc:subject id="subject-2">Orkney (Scotland) — History</dc:subject>
+		<dc:subject id="subject-1"></dc:subject>
+		<dc:subject id="subject-2"></dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
-		<meta property="term" refines="#subject-1">Unknown</meta>
+		<meta property="term" refines="#subject-1">_LCSH_ID</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
-		<meta property="term" refines="#subject-2">Unknown</meta>
-		<meta property="se:subject">Nonfiction</meta>
-		<dc:description id="description">A chronicle of the Jarls (Earls) of Orkney from the ninth to thirteenth centuries, tracing the Norse colonization of the Northern and Hebridean islands, family feuds, political intrigue, and Viking raids. Blending historical fact with praise poetry and oral legend, it is the principal source for the medieval history of Orkney and Shetland.</dc:description>
+		<meta property="term" refines="#subject-2">_LCSH_ID</meta>
+		<meta property="se:subject">TAG</meta>
+		<dc:description id="description"></dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			A chronicle of the Jarls (Earls) of Orkney from the ninth to thirteenth centuries, tracing the Norse colonization of the Northern and Hebridean islands, family feuds, political intrigue, and Viking raids. Blending historical fact with praise poetry and oral legend, it is the principal source for the medieval history of Orkney and Shetland.
+			LONG_
 		</meta>
 		<dc:language>en-GB</dc:language>
-		<dc:source>https://www.gutenberg.org/ebooks/57723</dc:source>
-		<meta property="se:word-count">102629</meta>
-		<meta property="se:reading-ease.flesch">66.17</meta>
-		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Anonymous</meta>
+		<dc:source>TRANSCRIPTION_URL</dc:source>
+		<dc:source></dc:source>
+		<meta property="se:production-notes"></meta>
+		<meta property="se:word-count">WORD_COUNT</meta>
+		<meta property="se:reading-ease.flesch">READING_EASE</meta>
+		<meta property="se:url.encyclopedia.wikipedia">EBOOK_WIKI_URL</meta>
 		<meta property="se:url.vcs.github">VCS_URL</meta>
 		<dc:creator id="author">Anonymous</dc:creator>
-		<meta property="file-as" refines="#author"/>
+		<meta property="file-as" refines="#author"></meta>
 		<meta property="se:name.person.full-name" refines="#author">Anonymous</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#author"></meta>
+		<meta property="se:url.authority.nacoaf" refines="#author"></meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<dc:contributor id="translator">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
+		<meta property="file-as" refines="#translator"></meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#translator">_WIKI_URL</meta>
 		<meta property="se:url.authority.nacoaf" refines="#translator">_NACOAF_URI</meta>
 		<meta property="display-seq" refines="#translator">1</meta>
 		<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>
+		<dc:contributor id="artist"></dc:contributor>
+		<meta property="file-as" refines="#artist"></meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist"></meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist"></meta>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">TRANSCRIBER_1_NAME</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">TRANSCRIBER_1_SORT</meta>
 		<meta property="se:url.homepage" refines="#transcriber-1">TRANSCRIBER_1_URL</meta>
@@ -68,377 +77,33 @@
 		<meta property="file-as" refines="#transcriber-3">Distributed Proofreaders</meta>
 		<meta property="se:url.homepage" refines="#transcriber-3">https://www.pgdp.net/</meta>
 		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
-		<dc:contributor id="translator-1">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
-		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
-		<meta property="file-as" refines="#translator-1">Gilbert Goudie and Jón A. Hjaltalín</meta>
-		<meta property="marc:relators" refines="#preface-2.xhtml">wpr</meta>
+		<dc:contributor id="producer-1"></dc:contributor>
+		<meta property="file-as" refines="#producer-1"></meta>
+		<meta property="se:url.homepage" refines="#producer-1"></meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 	</metadata>
 	<manifest>
-		<item href="css/compatibility-white-label.css" id="compatibility-white-label.css" media-type="text/css"/>
-		<item href="css/compatibility.css" id="compatibility.css" media-type="text/css"/>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
-		<item href="css/dedication.css" id="dedication.css" media-type="text/css"/>
-		<item href="css/dramatis-personae.css" id="dramatis-personae.css" media-type="text/css"/>
-		<item href="css/epigraph.css" id="epigraph.css" media-type="text/css"/>
-		<item href="css/full-page-figure-compatibility.css" id="full-page-figure-compatibility.css" media-type="text/css"/>
-		<item href="css/glossary.css" id="glossary.css" media-type="text/css"/>
-		<item href="css/kindle.css" id="kindle.css" media-type="text/css"/>
-		<item href="css/kobo.css" id="kobo.css" media-type="text/css"/>
-		<item href="css/local-white-label.css" id="local-white-label.css" media-type="text/css"/>
 		<item href="css/local.css" id="local.css" media-type="text/css"/>
-		<item href="css/proofreading.css" id="proofreading.css" media-type="text/css"/>
-		<item href="css/se-kobo.css" id="se-kobo.css" media-type="text/css"/>
 		<item href="css/se.css" id="se.css" media-type="text/css"/>
-		<item href="fonts/LeagueSpartan-Bold.woff2" id="LeagueSpartan-Bold.woff2" media-type="application/vnd.ms-opentype"/>
-		<item href="fonts/SortsMillGoudy-Italic.woff2" id="SortsMillGoudy-Italic.woff2" media-type="application/vnd.ms-opentype"/>
-		<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="application/vnd.ms-opentype"/>
-		<item href="images/020-skotland.jpg" id="020-skotland.jpg" media-type="image/jpeg"/>
-		<item href="images/chancel-arch-weir-a.jpg" id="chancel-arch-weir-a.jpg" media-type="image/jpeg"/>
-		<item href="images/chancel-arch-weir-b.jpg" id="chancel-arch-weir-b.jpg" media-type="image/jpeg"/>
-		<item href="images/cii.jpg" id="cii.jpg" media-type="image/jpeg"/>
-		<item href="images/ciii.jpg" id="ciii.jpg" media-type="image/jpeg"/>
-		<item href="images/civ.jpg" id="civ.jpg" media-type="image/jpeg"/>
-		<item href="images/cix.jpg" id="cix.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.source.jpg" id="cover.source.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image cover-image"/>
-		<item href="images/cvi.jpg" id="cvi.jpg" media-type="image/jpeg"/>
-		<item href="images/cvii-bottom.jpg" id="cvii-bottom.jpg" media-type="image/jpeg"/>
-		<item href="images/cvii-top.jpg" id="cvii-top.jpg" media-type="image/jpeg"/>
-		<item href="images/cxvi.jpg" id="cxvi.jpg" media-type="image/jpeg"/>
-		<item href="images/cxvii.jpg" id="cxvii.jpg" media-type="image/jpeg"/>
-		<item href="images/cxxi.jpg" id="cxxi.jpg" media-type="image/jpeg"/>
-		<item href="images/cxxii.jpg" id="cxxii.jpg" media-type="image/jpeg"/>
-		<item href="images/dragon-ship.jpg" id="dragon-ship.jpg" media-type="image/jpeg"/>
-		<item href="images/egilsey-church.jpg" id="egilsey-church.jpg" media-type="image/jpeg"/>
-		<item href="images/frontis.jpg" id="frontis.jpg" media-type="image/jpeg"/>
-		<item href="images/hjaltland-map.jpg" id="hjaltland-map.jpg" media-type="image/jpeg"/>
-		<item href="images/i150-bottom.jpg" id="i150-bottom.jpg" media-type="image/jpeg"/>
-		<item href="images/i150-top.jpg" id="i150-top.jpg" media-type="image/jpeg"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
-		<item href="images/orkneyar.jpg" id="orkneyar.jpg" media-type="image/jpeg"/>
-		<item href="images/st-magnus-cathedral.jpg" id="st-magnus-cathedral.jpg" media-type="image/jpeg"/>
 		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
-		<item href="images/xci.jpg" id="xci.jpg" media-type="image/jpeg"/>
-		<item href="images/xciv.jpg" id="xciv.jpg" media-type="image/jpeg"/>
-		<item href="images/xcvi.jpg" id="xcvi.jpg" media-type="image/jpeg"/>
-		<item href="images/xcvii.jpg" id="xcvii.jpg" media-type="image/jpeg"/>
-		<item href="images/xiv.jpg" id="xiv.jpg" media-type="image/jpeg"/>
-		<item href="images/xix.jpg" id="xix.jpg" media-type="image/jpeg"/>
-		<item href="images/xvi.jpg" id="xvi.jpg" media-type="image/jpeg"/>
-		<item href="images/xvii.jpg" id="xvii.jpg" media-type="image/jpeg"/>
-		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/appendix-2.xhtml" id="appendix-2.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/appendix-3.xhtml" id="appendix-3.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/appendix-4.xhtml" id="appendix-4.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/appendix-5.xhtml" id="appendix-5.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/appendix-6.xhtml" id="appendix-6.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/appendix-7.xhtml" id="appendix-7.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/battle-between-earl-einar-prince-halfdan.xhtml" id="battle-between-earl-einar-prince-halfdan.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/battle-between-liot-skuli.xhtml" id="battle-between-liot-skuli.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/battle.xhtml" id="battle.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-c.xhtml" id="chapter-c.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-ci.xhtml" id="chapter-ci.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cii.xhtml" id="chapter-cii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-ciii.xhtml" id="chapter-ciii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-civ.xhtml" id="chapter-civ.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cix.xhtml" id="chapter-cix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cv.xhtml" id="chapter-cv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cvi.xhtml" id="chapter-cvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cvii.xhtml" id="chapter-cvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cviii.xhtml" id="chapter-cviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cx.xhtml" id="chapter-cx.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxi.xhtml" id="chapter-cxi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxii.xhtml" id="chapter-cxii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxiii.xhtml" id="chapter-cxiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxiv.xhtml" id="chapter-cxiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxv.xhtml" id="chapter-cxv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxvi.xhtml" id="chapter-cxvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-cxvii.xhtml" id="chapter-cxvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-i.xhtml" id="chapter-i.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-ii.xhtml" id="chapter-ii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-iii.xhtml" id="chapter-iii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-iv.xhtml" id="chapter-iv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-ix.xhtml" id="chapter-ix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-l.xhtml" id="chapter-l.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-li.xhtml" id="chapter-li.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lii.xhtml" id="chapter-lii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-liii.xhtml" id="chapter-liii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-liv.xhtml" id="chapter-liv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lix.xhtml" id="chapter-lix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lv.xhtml" id="chapter-lv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lvi.xhtml" id="chapter-lvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lvii.xhtml" id="chapter-lvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lviii.xhtml" id="chapter-lviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lx.xhtml" id="chapter-lx.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxi.xhtml" id="chapter-lxi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxii-2.xhtml" id="chapter-lxii-2.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxii.xhtml" id="chapter-lxii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxiii.xhtml" id="chapter-lxiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxiv.xhtml" id="chapter-lxiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxix.xhtml" id="chapter-lxix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxv.xhtml" id="chapter-lxv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxvi.xhtml" id="chapter-lxvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxvii.xhtml" id="chapter-lxvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxviii.xhtml" id="chapter-lxviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxx.xhtml" id="chapter-lxx.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxi.xhtml" id="chapter-lxxi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxii.xhtml" id="chapter-lxxii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxiii.xhtml" id="chapter-lxxiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxiv.xhtml" id="chapter-lxxiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxix.xhtml" id="chapter-lxxix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxv.xhtml" id="chapter-lxxv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxvi.xhtml" id="chapter-lxxvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxvii.xhtml" id="chapter-lxxvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxviii.xhtml" id="chapter-lxxviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxx.xhtml" id="chapter-lxxx.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxi.xhtml" id="chapter-lxxxi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxii.xhtml" id="chapter-lxxxii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxiii.xhtml" id="chapter-lxxxiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxiv.xhtml" id="chapter-lxxxiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxix.xhtml" id="chapter-lxxxix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxv.xhtml" id="chapter-lxxxv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxvi.xhtml" id="chapter-lxxxvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxvii.xhtml" id="chapter-lxxxvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-lxxxviii.xhtml" id="chapter-lxxxviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-v.xhtml" id="chapter-v.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-vi.xhtml" id="chapter-vi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-vii.xhtml" id="chapter-vii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-viii.xhtml" id="chapter-viii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-x.xhtml" id="chapter-x.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xc.xhtml" id="chapter-xc.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xci.xhtml" id="chapter-xci.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xcii.xhtml" id="chapter-xcii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xciii.xhtml" id="chapter-xciii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xciv.xhtml" id="chapter-xciv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xcix.xhtml" id="chapter-xcix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xcv.xhtml" id="chapter-xcv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xcvi.xhtml" id="chapter-xcvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xcvii.xhtml" id="chapter-xcvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xcviii.xhtml" id="chapter-xcviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xi.xhtml" id="chapter-xi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xii.xhtml" id="chapter-xii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xiii.xhtml" id="chapter-xiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xiv.xhtml" id="chapter-xiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xix.xhtml" id="chapter-xix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xl.xhtml" id="chapter-xl.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xli.xhtml" id="chapter-xli.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xliii.xhtml" id="chapter-xliii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xliv.xhtml" id="chapter-xliv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xlix.xhtml" id="chapter-xlix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xlv.xhtml" id="chapter-xlv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xlvi.xhtml" id="chapter-xlvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xlvii.xhtml" id="chapter-xlvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xlviii.xhtml" id="chapter-xlviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xv.xhtml" id="chapter-xv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xvi.xhtml" id="chapter-xvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xvii.xhtml" id="chapter-xvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xviii.xhtml" id="chapter-xviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xx.xhtml" id="chapter-xx.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxi.xhtml" id="chapter-xxi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxii.xhtml" id="chapter-xxii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxiii.xhtml" id="chapter-xxiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxiv.xhtml" id="chapter-xxiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxix.xhtml" id="chapter-xxix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxv.xhtml" id="chapter-xxv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxvi.xhtml" id="chapter-xxvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxvii.xhtml" id="chapter-xxvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxviii.xhtml" id="chapter-xxviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxx.xhtml" id="chapter-xxx.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxi.xhtml" id="chapter-xxxi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxii.xhtml" id="chapter-xxxii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxiii.xhtml" id="chapter-xxxiii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxiv.xhtml" id="chapter-xxxiv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxix.xhtml" id="chapter-xxxix.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxv.xhtml" id="chapter-xxxv.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxvi.xhtml" id="chapter-xxxvi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxvii.xhtml" id="chapter-xxxvii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-xxxviii.xhtml" id="chapter-xxxviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/dominions-king-harald-earl-rgnvald.xhtml" id="dominions-king-harald-earl-rgnvald.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/earl-melbrigd-slain-sigurd.xhtml" id="earl-melbrigd-slain-sigurd.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/einar-comes-islands.xhtml" id="einar-comes-islands.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/endnotes-9.xhtml" id="endnotes-9.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/halftitle.xhtml" id="halftitle.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/ii-early-christianity-islands.xhtml" id="ii-early-christianity-islands.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/iii-arrival-northmen-establishment-earld.xhtml" id="iii-arrival-northmen-establishment-earld.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
-		<item href="text/introduction-3.xhtml" id="introduction-3.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/iv-earldom-norse-line.xhtml" id="iv-earldom-norse-line.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/ix-bishopric-caithness.xhtml" id="ix-bishopric-caithness.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/loi.xhtml" id="loi.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/meeting-between-olaf-tryggvis-son-earl.xhtml" id="meeting-between-olaf-tryggvis-son-earl.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/murder-havard.xhtml" id="murder-havard.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/permissions.xhtml" id="permissions.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/preface-2.xhtml" id="preface-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/v-earldom-angus-line.xhtml" id="v-earldom-angus-line.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/vi-earldom-stratherne-line.xhtml" id="vi-earldom-stratherne-line.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/vii-earldom-line-st-clair.xhtml" id="vii-earldom-line-st-clair.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/viii-bishopric-orkney.xhtml" id="viii-bishopric-orkney.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/vikings-slain.xhtml" id="vikings-slain.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/x-ancient-churches-orkney.xhtml" id="x-ancient-churches-orkney.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/xi-maeshow-stones-stennis.xhtml" id="xi-maeshow-stones-stennis.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/xii-mousa-pictish-towers.xhtml" id="xii-mousa-pictish-towers.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/xiii-remains-northmen.xhtml" id="xiii-remains-northmen.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 	</manifest>
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
-		<itemref idref="introduction-3.xhtml"/>
-		<itemref idref="preface-2.xhtml"/>
-		<itemref idref="halftitle.xhtml"/>
-		<itemref idref="battle-between-earl-einar-prince-halfdan.xhtml"/>
-		<itemref idref="battle-between-liot-skuli.xhtml"/>
-		<itemref idref="battle.xhtml"/>
-		<itemref idref="chapter-c.xhtml"/>
-		<itemref idref="chapter-ci.xhtml"/>
-		<itemref idref="chapter-cii.xhtml"/>
-		<itemref idref="chapter-ciii.xhtml"/>
-		<itemref idref="chapter-civ.xhtml"/>
-		<itemref idref="chapter-cix.xhtml"/>
-		<itemref idref="chapter-cv.xhtml"/>
-		<itemref idref="chapter-cvi.xhtml"/>
-		<itemref idref="chapter-cvii.xhtml"/>
-		<itemref idref="chapter-cviii.xhtml"/>
-		<itemref idref="chapter-cx.xhtml"/>
-		<itemref idref="chapter-cxi.xhtml"/>
-		<itemref idref="chapter-cxii.xhtml"/>
-		<itemref idref="chapter-cxiii.xhtml"/>
-		<itemref idref="chapter-cxiv.xhtml"/>
-		<itemref idref="chapter-cxv.xhtml"/>
-		<itemref idref="chapter-cxvi.xhtml"/>
-		<itemref idref="chapter-cxvii.xhtml"/>
-		<itemref idref="chapter-i.xhtml"/>
-		<itemref idref="chapter-ii.xhtml"/>
-		<itemref idref="chapter-iii.xhtml"/>
-		<itemref idref="chapter-iv.xhtml"/>
-		<itemref idref="chapter-ix.xhtml"/>
-		<itemref idref="chapter-l.xhtml"/>
-		<itemref idref="chapter-li.xhtml"/>
-		<itemref idref="chapter-lii.xhtml"/>
-		<itemref idref="chapter-liii.xhtml"/>
-		<itemref idref="chapter-liv.xhtml"/>
-		<itemref idref="chapter-lix.xhtml"/>
-		<itemref idref="chapter-lv.xhtml"/>
-		<itemref idref="chapter-lvi.xhtml"/>
-		<itemref idref="chapter-lvii.xhtml"/>
-		<itemref idref="chapter-lviii.xhtml"/>
-		<itemref idref="chapter-lx.xhtml"/>
-		<itemref idref="chapter-lxi.xhtml"/>
-		<itemref idref="chapter-lxii-2.xhtml"/>
-		<itemref idref="chapter-lxii.xhtml"/>
-		<itemref idref="chapter-lxiii.xhtml"/>
-		<itemref idref="chapter-lxiv.xhtml"/>
-		<itemref idref="chapter-lxix.xhtml"/>
-		<itemref idref="chapter-lxv.xhtml"/>
-		<itemref idref="chapter-lxvi.xhtml"/>
-		<itemref idref="chapter-lxvii.xhtml"/>
-		<itemref idref="chapter-lxviii.xhtml"/>
-		<itemref idref="chapter-lxx.xhtml"/>
-		<itemref idref="chapter-lxxi.xhtml"/>
-		<itemref idref="chapter-lxxii.xhtml"/>
-		<itemref idref="chapter-lxxiii.xhtml"/>
-		<itemref idref="chapter-lxxiv.xhtml"/>
-		<itemref idref="chapter-lxxix.xhtml"/>
-		<itemref idref="chapter-lxxv.xhtml"/>
-		<itemref idref="chapter-lxxvi.xhtml"/>
-		<itemref idref="chapter-lxxvii.xhtml"/>
-		<itemref idref="chapter-lxxviii.xhtml"/>
-		<itemref idref="chapter-lxxx.xhtml"/>
-		<itemref idref="chapter-lxxxi.xhtml"/>
-		<itemref idref="chapter-lxxxii.xhtml"/>
-		<itemref idref="chapter-lxxxiii.xhtml"/>
-		<itemref idref="chapter-lxxxiv.xhtml"/>
-		<itemref idref="chapter-lxxxix.xhtml"/>
-		<itemref idref="chapter-lxxxv.xhtml"/>
-		<itemref idref="chapter-lxxxvi.xhtml"/>
-		<itemref idref="chapter-lxxxvii.xhtml"/>
-		<itemref idref="chapter-lxxxviii.xhtml"/>
-		<itemref idref="chapter-v.xhtml"/>
-		<itemref idref="chapter-vi.xhtml"/>
-		<itemref idref="chapter-vii.xhtml"/>
-		<itemref idref="chapter-viii.xhtml"/>
-		<itemref idref="chapter-x.xhtml"/>
-		<itemref idref="chapter-xc.xhtml"/>
-		<itemref idref="chapter-xci.xhtml"/>
-		<itemref idref="chapter-xcii.xhtml"/>
-		<itemref idref="chapter-xciii.xhtml"/>
-		<itemref idref="chapter-xciv.xhtml"/>
-		<itemref idref="chapter-xcix.xhtml"/>
-		<itemref idref="chapter-xcv.xhtml"/>
-		<itemref idref="chapter-xcvi.xhtml"/>
-		<itemref idref="chapter-xcvii.xhtml"/>
-		<itemref idref="chapter-xcviii.xhtml"/>
-		<itemref idref="chapter-xi.xhtml"/>
-		<itemref idref="chapter-xii.xhtml"/>
-		<itemref idref="chapter-xiii.xhtml"/>
-		<itemref idref="chapter-xiv.xhtml"/>
-		<itemref idref="chapter-xix.xhtml"/>
-		<itemref idref="chapter-xl.xhtml"/>
-		<itemref idref="chapter-xli.xhtml"/>
-		<itemref idref="chapter-xliii.xhtml"/>
-		<itemref idref="chapter-xliv.xhtml"/>
-		<itemref idref="chapter-xlix.xhtml"/>
-		<itemref idref="chapter-xlv.xhtml"/>
-		<itemref idref="chapter-xlvi.xhtml"/>
-		<itemref idref="chapter-xlvii.xhtml"/>
-		<itemref idref="chapter-xlviii.xhtml"/>
-		<itemref idref="chapter-xv.xhtml"/>
-		<itemref idref="chapter-xvi.xhtml"/>
-		<itemref idref="chapter-xvii.xhtml"/>
-		<itemref idref="chapter-xviii.xhtml"/>
-		<itemref idref="chapter-xx.xhtml"/>
-		<itemref idref="chapter-xxi.xhtml"/>
-		<itemref idref="chapter-xxii.xhtml"/>
-		<itemref idref="chapter-xxiii.xhtml"/>
-		<itemref idref="chapter-xxiv.xhtml"/>
-		<itemref idref="chapter-xxix.xhtml"/>
-		<itemref idref="chapter-xxv.xhtml"/>
-		<itemref idref="chapter-xxvi.xhtml"/>
-		<itemref idref="chapter-xxvii.xhtml"/>
-		<itemref idref="chapter-xxviii.xhtml"/>
-		<itemref idref="chapter-xxx.xhtml"/>
-		<itemref idref="chapter-xxxi.xhtml"/>
-		<itemref idref="chapter-xxxii.xhtml"/>
-		<itemref idref="chapter-xxxiii.xhtml"/>
-		<itemref idref="chapter-xxxiv.xhtml"/>
-		<itemref idref="chapter-xxxix.xhtml"/>
-		<itemref idref="chapter-xxxv.xhtml"/>
-		<itemref idref="chapter-xxxvi.xhtml"/>
-		<itemref idref="chapter-xxxvii.xhtml"/>
-		<itemref idref="chapter-xxxviii.xhtml"/>
-		<itemref idref="dominions-king-harald-earl-rgnvald.xhtml"/>
-		<itemref idref="earl-melbrigd-slain-sigurd.xhtml"/>
-		<itemref idref="einar-comes-islands.xhtml"/>
-		<itemref idref="ii-early-christianity-islands.xhtml"/>
-		<itemref idref="iii-arrival-northmen-establishment-earld.xhtml"/>
-		<itemref idref="iv-earldom-norse-line.xhtml"/>
-		<itemref idref="ix-bishopric-caithness.xhtml"/>
-		<itemref idref="meeting-between-olaf-tryggvis-son-earl.xhtml"/>
-		<itemref idref="murder-havard.xhtml"/>
-		<itemref idref="part-1.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
-		<itemref idref="v-earldom-angus-line.xhtml"/>
-		<itemref idref="vi-earldom-stratherne-line.xhtml"/>
-		<itemref idref="vii-earldom-line-st-clair.xhtml"/>
-		<itemref idref="viii-bishopric-orkney.xhtml"/>
-		<itemref idref="vikings-slain.xhtml"/>
-		<itemref idref="x-ancient-churches-orkney.xhtml"/>
-		<itemref idref="xi-maeshow-stones-stennis.xhtml"/>
-		<itemref idref="xii-mousa-pictish-towers.xhtml"/>
-		<itemref idref="xiii-remains-northmen.xhtml"/>
-		<itemref idref="appendix-2.xhtml"/>
-		<itemref idref="appendix-3.xhtml"/>
-		<itemref idref="appendix-4.xhtml"/>
-		<itemref idref="appendix-5.xhtml"/>
-		<itemref idref="appendix-6.xhtml"/>
-		<itemref idref="appendix-7.xhtml"/>
-		<itemref idref="endnotes-9.xhtml"/>
-		<itemref idref="loi.xhtml"/>
-		<itemref idref="about-the-translator.xhtml"/>
-		<itemref idref="permissions.xhtml"/>
 	</spine>
 </package>
