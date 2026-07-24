@@ -44,7 +44,7 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/57723</dc:source>
 		<meta property="se:production-notes"/>
-		<meta property="se:word-count">124876</meta>
+		<meta property="se:word-count">124931</meta>
 		<meta property="se:reading-ease.flesch">66.17</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Anonymous</meta>
 		<meta property="se:url.vcs.github">VCS_URL</meta>
@@ -80,6 +80,9 @@
 		<dc:contributor id="translator-1">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
 		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
 		<meta property="file-as" refines="#translator-1">Gilbert Goudie and Jón A. Hjaltalín</meta>
+		<dc:contributor id="translator-2">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
+		<meta property="role" refines="#translator-2" scheme="marc:relators">trl</meta>
+		<meta property="file-as" refines="#translator-2">Gilbert Goudie and Jón A. Hjaltalín</meta>
 		<dc:contributor id="producer-1"/>
 		<meta property="file-as" refines="#producer-1"/>
 		<meta property="se:url.homepage" refines="#producer-1"/>
@@ -297,15 +300,15 @@
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
-			<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="font/woff2"/>
+		<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="font/woff2"/>
 		<item href="fonts/SortsMillGoudy-Italic.woff2" id="SortsMillGoudy-Italic.woff2" media-type="font/woff2"/>
 		<item href="fonts/LeagueSpartan-Bold.woff2" id="LeagueSpartan-Bold.woff2" media-type="font/woff2"/>
 	</manifest>
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
-		<itemref idref="halftitle.xhtml"/>
 		<itemref idref="preface-2.xhtml"/>
+		<itemref idref="halftitle.xhtml"/>
 		<itemref idref="introduction-3.xhtml"/>
 		<itemref idref="ii-early-christianity-islands.xhtml"/>
 		<itemref idref="iii-arrival-northmen-establishment-earld.xhtml"/>
@@ -455,5 +458,7 @@
 		<itemref idref="endnotes-9.xhtml"/>
 		<itemref idref="about-the-translator.xhtml"/>
 		<itemref idref="permissions.xhtml"/>
-</spine>
+		<itemref idref="loi.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
 </package>
