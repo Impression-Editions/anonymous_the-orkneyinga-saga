@@ -114,6 +114,9 @@
 		<item href="css/proofreading.css" id="proofreading.css" media-type="text/css"/>
 		<item href="css/se-kobo.css" id="se-kobo.css" media-type="text/css"/>
 		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="fonts/LeagueSpartan-Bold.woff2" id="LeagueSpartan-Bold.woff2" media-type="application/vnd.ms-opentype"/>
+		<item href="fonts/SortsMillGoudy-Italic.woff2" id="SortsMillGoudy-Italic.woff2" media-type="application/vnd.ms-opentype"/>
+		<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="application/vnd.ms-opentype"/>
 		<item href="images/020-skotland.jpg" id="020-skotland.jpg" media-type="image/jpeg"/>
 		<item href="images/chancel-arch-weir-a.jpg" id="chancel-arch-weir-a.jpg" media-type="image/jpeg"/>
 		<item href="images/chancel-arch-weir-b.jpg" id="chancel-arch-weir-b.jpg" media-type="image/jpeg"/>
@@ -121,7 +124,9 @@
 		<item href="images/ciii.jpg" id="ciii.jpg" media-type="image/jpeg"/>
 		<item href="images/civ.jpg" id="civ.jpg" media-type="image/jpeg"/>
 		<item href="images/cix.jpg" id="cix.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
+		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+		<item href="images/cover.source.jpg" id="cover.source.jpg" media-type="image/jpeg"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/cvi.jpg" id="cvi.jpg" media-type="image/jpeg"/>
 		<item href="images/cvii-bottom.jpg" id="cvii-bottom.jpg" media-type="image/jpeg"/>
 		<item href="images/cvii-top.jpg" id="cvii-top.jpg" media-type="image/jpeg"/>
@@ -147,6 +152,7 @@
 		<item href="images/xix.jpg" id="xix.jpg" media-type="image/jpeg"/>
 		<item href="images/xvi.jpg" id="xvi.jpg" media-type="image/jpeg"/>
 		<item href="images/xvii.jpg" id="xvii.jpg" media-type="image/jpeg"/>
+		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-2.xhtml" id="appendix-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-3.xhtml" id="appendix-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-4.xhtml" id="appendix-4.xhtml" media-type="application/xhtml+xml"/>
@@ -273,6 +279,7 @@
 		<item href="text/chapter-xxxvi.xhtml" id="chapter-xxxvi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-xxxvii.xhtml" id="chapter-xxxvii.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-xxxviii.xhtml" id="chapter-xxxviii.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/dominions-king-harald-earl-rgnvald.xhtml" id="dominions-king-harald-earl-rgnvald.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/earl-melbrigd-slain-sigurd.xhtml" id="earl-melbrigd-slain-sigurd.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/einar-comes-islands.xhtml" id="einar-comes-islands.xhtml" media-type="application/xhtml+xml"/>
@@ -302,11 +309,6 @@
 		<item href="text/xii-mousa-pictish-towers.xhtml" id="xii-mousa-pictish-towers.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/xiii-remains-northmen.xhtml" id="xiii-remains-northmen.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
-		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
-		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml"/>
-		<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="font/woff2"/>
-		<item href="fonts/SortsMillGoudy-Italic.woff2" id="SortsMillGoudy-Italic.woff2" media-type="font/woff2"/>
-		<item href="fonts/LeagueSpartan-Bold.woff2" id="LeagueSpartan-Bold.woff2" media-type="font/woff2"/>
 	</manifest>
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
@@ -434,6 +436,7 @@
 		<itemref idref="chapter-xxxvi.xhtml"/>
 		<itemref idref="chapter-xxxvii.xhtml"/>
 		<itemref idref="chapter-xxxviii.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
 		<itemref idref="dominions-king-harald-earl-rgnvald.xhtml"/>
 		<itemref idref="earl-melbrigd-slain-sigurd.xhtml"/>
 		<itemref idref="einar-comes-islands.xhtml"/>
@@ -462,7 +465,7 @@
 		<itemref idref="appendix-7.xhtml"/>
 		<itemref idref="endnotes-9.xhtml"/>
 		<itemref idref="loi.xhtml"/>
-		<itemref idref="permissions.xhtml"/>
 		<itemref idref="about-the-translator.xhtml"/>
+		<itemref idref="permissions.xhtml"/>
 	</spine>
 </package>
