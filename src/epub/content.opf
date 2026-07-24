@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://www.impressioneditions.com/ebooks/anonymous/the-orkneyinga-saga</dc:identifier>
-		<dc:date>2026-07-24T06:34:09Z</dc:date>
+		<dc:date>2026-07-24T06:38:08Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the public domain. This ebook edition is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See the Copyright &amp; Permissions page at the end of this ebook for details.</dc:rights>
 		<dc:publisher id="publisher">Impression Editions</dc:publisher>
@@ -80,6 +80,9 @@
 		<dc:contributor id="translator-1">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
 		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
 		<meta property="file-as" refines="#translator-1">Gilbert Goudie and Jón A. Hjaltalín</meta>
+		<dc:contributor id="translator-2">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
+		<meta property="role" refines="#translator-2" scheme="marc:relators">trl</meta>
+		<meta property="file-as" refines="#translator-2">Gilbert Goudie and Jón A. Hjaltalín</meta>
 		<dc:contributor id="producer-1"/>
 		<meta property="file-as" refines="#producer-1"/>
 		<meta property="se:url.homepage" refines="#producer-1"/>
@@ -455,7 +458,7 @@
 		<itemref idref="appendix-7.xhtml"/>
 		<itemref idref="endnotes-9.xhtml"/>
 		<itemref idref="loi.xhtml"/>
-		<itemref idref="permissions.xhtml"/>
 		<itemref idref="about-the-translator.xhtml"/>
+		<itemref idref="permissions.xhtml"/>
 	</spine>
 </package>
