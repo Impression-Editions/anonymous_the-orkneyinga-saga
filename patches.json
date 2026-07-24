@@ -1564,9 +1564,9 @@
     {
       "file": "src/epub/text/endnotes-9.xhtml",
       "action": "regex",
-      "replace": "\\1",
+      "replace": "",
       "reason": "RSC-012: unwrap broken chapter cross-refs in endnotes",
-      "pattern": "<a href=\"#ch-[^\"]+\">([^<]+)</a>"
+      "pattern": "<a href=\"#ch-[^\"]+\">.*?</a>"
     },
     {
       "file": "src/epub/text/endnotes-9.xhtml",
