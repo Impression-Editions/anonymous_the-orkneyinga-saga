@@ -1,1558 +1,1586 @@
 {
-    "patches": [
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "<div epub:type=\"z3998:poem\"><p>(.*?)</p></div>",
-            "replace": "<span class=\"heading-verse\">\\1</span>",
-            "reason": "Replace div inside h2 with span (prevents epubcheck RSC-005)"
-        },
-        {
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "action": "regex",
-            "pattern": "<span class=\"heading-verse\"><span class=\"line\"><span epub:type=\"z3998:ordinal z3998:roman\">([ivxlcdmIVXLCDM]+)</span></span><span class=\"line\"><span class=\"small\">(.*?)</span></span></span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">\\1</span>. <span class=\"subtitle\">\\2</span>",
-            "reason": "Normalize chapter heading: uppercase Roman numeral, proper spacing between number and subtitle"
-        },
-        {
-            "file_pattern": "src/epub/text/endnotes-9.xhtml",
-            "action": "regex",
-            "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
-            "replace": "class=\"dead-link\"",
-            "reason": "Remove broken cross-references to named anchors not in split files"
-        },
-        {
-            "file_pattern": "src/epub/text/ii-early-christianity-islands.xhtml",
-            "action": "regex",
-            "pattern": "href=\"#i-xvi\"",
-            "replace": "class=\"dead-link\"",
-            "reason": "Remove broken cross-reference to non-existent section anchor"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
-            "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
-            "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/i150-top\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"View of South Transept and part of Choir of the Cathedral of St. Magnus\"",
-            "reason": "Set proper alt caption for i150-top"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/i150-bottom\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"View of South Transept and part of Choir of the Cathedral of St. Magnus\"",
-            "reason": "Set proper alt caption for i150-bottom"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/cxxii\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Comb found in a Norse Grave in Westray, Orkney\"",
-            "reason": "Set proper alt caption for cxxii"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/cxxi\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Bronze Tortoise Brooch found in a Norse Grave in Caithness\"",
-            "reason": "Set proper alt caption for cxxi"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/cxvii\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Scabbard-Point found in a Norse Grave in Westray, Orkney\"",
-            "reason": "Set proper alt caption for cxvii"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/cxvi\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Norse Sword found at Gorton, Morayshire\"",
-            "reason": "Set proper alt caption for cxvi"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/cix\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Pictish Tower of Mousa (Moseyarborg), Shetland\"",
-            "reason": "Set proper alt caption for cix"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/xcvii\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Ground-plan of Church at Lybster, Reay, Caithness\"",
-            "reason": "Set proper alt caption for xcvii"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/xcvi\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Ground-plan of Church at Weir, Orkney\"",
-            "reason": "Set proper alt caption for xcvi"
-        },
-        {
-            "file_pattern": "src/epub/text/*.xhtml",
-            "action": "regex",
-            "pattern": "(src=\"images/xci\\.jpg\"[^>]*) alt=\"Illustration\"",
-            "replace": "\\1 alt=\"Ground-plan of Egilsey Church and Tower, Orkney\"",
-            "reason": "Set proper alt caption for xci"
-        },
-        {
-            "file": "src/epub/text/loi.xhtml",
-            "action": "regex",
-            "pattern": "<li>\\s*<p>\\s*<a href=\"titlepage\\.xhtml[^\"]*\">[^<]*</a>\\s*</p>\\s*</li>\\s*",
-            "replace": "",
-            "reason": "RSC-012: Remove LoI entry referencing non-existent titlepage fragment"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "\\.(</span>\\s*</h2>)",
-            "replace": "\\1",
-            "reason": "t-065: Remove trailing period from chapter subtitle"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "(<h[1-6]\\s+[^>]*?)\\s+id=\"[^\"]*\"([^>]*>)",
-            "replace": "\\1\\2",
-            "reason": "s-019: Remove id attribute from heading elements"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ci</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CI</span>",
-            "reason": "s-023: Uppercase Roman numeral Ci to CI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CII</span>",
-            "reason": "s-023: Uppercase Roman numeral Cii to CII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ciii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Ciii to CIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Civ</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Civ to CIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Cix to CIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CV</span>",
-            "reason": "s-023: Uppercase Roman numeral Cv to CV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Cvi to CVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Cvii to CVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Cviii to CVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cx</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CX</span>",
-            "reason": "s-023: Uppercase Roman numeral Cx to CX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXI</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxi to CXI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXII</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxii to CXII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxiii to CXIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxiv to CXIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXV</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxv to CXV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxvi to CXVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Cxvii to CXVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">II</span>",
-            "reason": "s-023: Uppercase Roman numeral Ii to II"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Iii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">III</span>",
-            "reason": "s-023: Uppercase Roman numeral Iii to III"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Iv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">IV</span>",
-            "reason": "s-023: Uppercase Roman numeral Iv to IV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">IX</span>",
-            "reason": "s-023: Uppercase Roman numeral Ix to IX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Li</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LI</span>",
-            "reason": "s-023: Uppercase Roman numeral Li to LI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lii to LII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Liii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Liii to LIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Liv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Liv to LIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lix to LIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lv to LV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lvi to LVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lvii to LVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lviii to LVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lx</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lx to LX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxi to LXI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxii to LXII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxiii to LXIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxiv to LXIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxix to LXIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxv to LXV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxvi to LXVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxvii to LXVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxviii to LXVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxx</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxx to LXX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxi to LXXI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxii to LXXII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxiii to LXXIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxiv to LXXIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxix to LXXIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxv to LXXV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxvi to LXXVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxvii to LXXVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxviii to LXXVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxx</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxx to LXXX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">i</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">I</span>",
-            "reason": "s-023: Uppercase Roman numeral i to I"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxi to LXXXI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxii to LXXXII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxiii to LXXXIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxiv to LXXXIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxix to LXXXIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXV</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxv to LXXXV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxvi to LXXXVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxvii to LXXXVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Lxxxviii to LXXXVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Vi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">VI</span>",
-            "reason": "s-023: Uppercase Roman numeral Vi to VI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Vii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">VII</span>",
-            "reason": "s-023: Uppercase Roman numeral Vii to VII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Viii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">VIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Viii to VIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xc</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XC</span>",
-            "reason": "s-023: Uppercase Roman numeral Xc to XC"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xci</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xci to XCI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xcii to XCII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xciii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xciii to XCIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xciv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xciv to XCIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xcix to XCIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xcv to XCV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xcvi to XCVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xcvii to XCVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xcviii to XCVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xi to XI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xii to XII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xiii to XIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xiv to XIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xix to XIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xl</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XL</span>",
-            "reason": "s-023: Uppercase Roman numeral Xl to XL"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xli</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xli to XLI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xliii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xliii to XLIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xliv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xliv to XLIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xlix to XLIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xlv to XLV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xlvi to XLVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xlvii to XLVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xlviii to XLVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xv to XV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xvi to XVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xvii to XVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xviii to XVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xx</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xx to XX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxi to XXI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxii to XXII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxiii to XXIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxiv to XXIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxix to XXIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxv to XXV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxvi to XXVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxvii to XXVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxviii to XXVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxx</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxx to XXX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxi to XXXI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxii to XXXII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxiii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxiii to XXXIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxiv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXIV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxiv to XXXIV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxix</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXIX</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxix to XXXIX"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxv</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXV</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxv to XXXV"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxvi</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXVI</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxvi to XXXVI"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxvii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXVII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxvii to XXXVII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/chapter-*.xhtml",
-            "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxviii</span>",
-            "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXVIII</span>",
-            "reason": "s-023: Uppercase Roman numeral Xxxviii to XXXVIII"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "<hr\\s*/?>\\s*(</section>)",
-            "replace": "\\1",
-            "reason": "s-012: Remove trailing hr before section close"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "\\.(</h[1-6]>)",
-            "replace": "\\1",
-            "reason": "t-065: Remove trailing period from headings"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "\\.(</span>\\s*</h[1-6]>)",
-            "replace": "\\1",
-            "reason": "t-065: Remove trailing period before closing span"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "\\s*<hr\\s*/?>\\s*(</section>)",
-            "replace": "\\n\\t\\t\\1",
-            "reason": "s-012: Remove trailing hr before section close"
-        },
-        {
-            "file": "src/epub/text/loi.xhtml",
-            "action": "regex",
-            "pattern": "<li>\\s*<p>\\s*<a href=\"titlepage\\.xhtml[^\"]*\">[^<]*</a>\\s*</p>\\s*</li>\\s*",
-            "replace": "",
-            "reason": "RSC-012: Remove LoI entry for non-existent titlepage fragment"
-        },
-        {
-            "file": "src/epub/text/battle-between-earl-einar-prince-halfdan.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle between Earl Einar and Prince Halfdan.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle between Earl Einar and Prince Halfdan.</h2>",
-            "reason": "s-072: Unwrap single span in battle-between-earl-einar-prince-halfdan.xhtml"
-        },
-        {
-            "file": "src/epub/text/battle-between-liot-skuli.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle between Liot and Skuli.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle between Liot and Skuli.</h2>",
-            "reason": "s-072: Unwrap single span in battle-between-liot-skuli.xhtml"
-        },
-        {
-            "file": "src/epub/text/battle.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle.</h2>",
-            "reason": "s-072: Unwrap single span in battle.xhtml"
-        },
-        {
-            "file": "src/epub/text/dominions-king-harald-earl-rgnvald.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Dominions of King Harald and Earl Rögnvald.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Dominions of King Harald and Earl Rögnvald.</h2>",
-            "reason": "s-072: Unwrap single span in dominions-king-harald-earl-rgnvald.xhtml"
-        },
-        {
-            "file": "src/epub/text/earl-melbrigd-slain-sigurd.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Earl Melbrigd slain by Sigurd.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Earl Melbrigd slain by Sigurd.</h2>",
-            "reason": "s-072: Unwrap single span in earl-melbrigd-slain-sigurd.xhtml"
-        },
-        {
-            "file": "src/epub/text/einar-comes-islands.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Einar comes to the Islands.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Einar comes to the Islands.</h2>",
-            "reason": "s-072: Unwrap single span in einar-comes-islands.xhtml"
-        },
-        {
-            "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Meeting between Olaf (Tryggvi’s Son) and the Earl.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Meeting between Olaf (Tryggvi’s Son) and the Earl.</h2>",
-            "reason": "s-072: Unwrap single span in meeting-between-olaf-tryggvis-son-earl.xhtml"
-        },
-        {
-            "file": "src/epub/text/murder-havard.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Murder of Havard.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Murder of Havard.</h2>",
-            "reason": "s-072: Unwrap single span in murder-havard.xhtml"
-        },
-        {
-            "file": "src/epub/text/vikings-slain.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Vikings slain.</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Vikings slain.</h2>",
-            "reason": "s-072: Unwrap single span in vikings-slain.xhtml"
-        },
-        {
-            "file": "src/epub/text/battle-between-earl-einar-prince-halfdan.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle Between Earl Einar and Prince Halfdan</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle Between Earl Einar and Prince Halfdan</h2>",
-            "reason": "s-072: Unwrap single span in battle-between-earl-einar-prince-halfdan.xhtml"
-        },
-        {
-            "file": "src/epub/text/battle-between-liot-skuli.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle Between Liot and Skuli</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle Between Liot and Skuli</h2>",
-            "reason": "s-072: Unwrap single span in battle-between-liot-skuli.xhtml"
-        },
-        {
-            "file": "src/epub/text/battle.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle</h2>",
-            "reason": "s-072: Unwrap single span in battle.xhtml"
-        },
-        {
-            "file": "src/epub/text/dominions-king-harald-earl-rgnvald.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Dominions of King Harald and Earl Rögnvald</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Dominions of King Harald and Earl Rögnvald</h2>",
-            "reason": "s-072: Unwrap single span in dominions-king-harald-earl-rgnvald.xhtml"
-        },
-        {
-            "file": "src/epub/text/earl-melbrigd-slain-sigurd.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Earl Melbrigd Slain by Sigurd</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Earl Melbrigd Slain by Sigurd</h2>",
-            "reason": "s-072: Unwrap single span in earl-melbrigd-slain-sigurd.xhtml"
-        },
-        {
-            "file": "src/epub/text/einar-comes-islands.xhtml",
-            "action": "replace",
-            "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Einar Comes to the Islands</span>\n\t\t\t</h2>",
-            "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Einar Comes to the Islands</h2>",
-            "reason": "s-072: Unwrap single span in einar-comes-islands.xhtml"
-        },
-        {
-            "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
-            "action": "replace",
-            "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">Meeting Between Olaf (Tryggvi’s Son) and the Earl</span></h2>",
-            "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">Meeting Between Olaf (Tryggvi’s Son) and the Earl</h2>",
-            "reason": "s-072: Unwrap single span in meeting-between-olaf-tryggvis-son-earl.xhtml"
-        },
-        {
-            "file": "src/epub/text/murder-havard.xhtml",
-            "action": "replace",
-            "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">The Murder of Havard</span></h2>",
-            "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">The Murder of Havard</h2>",
-            "reason": "s-072: Unwrap single span in murder-havard.xhtml"
-        },
-        {
-            "file": "src/epub/text/vikings-slain.xhtml",
-            "action": "replace",
-            "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">The Vikings Slain</span></h2>",
-            "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">The Vikings Slain</h2>",
-            "reason": "s-072: Unwrap single span in vikings-slain.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-3.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-cxxxii\">cxxxii</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">cxxxii</div>",
-            "reason": "s-072: Unwrap single span in appendix-3.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-cxxxiii\">cxxxiii</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">cxxxiii</div>",
-            "reason": "s-072: Unwrap single span in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-7.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t\t\t<span class=\"large\">SAGA OF OLAF, TRYGGVI’s SON.</span>\n\t\t\t\t\t</div>",
-            "replace": "<div class=\"large\">SAGA OF OLAF, TRYGGVI’s SON.</div>",
-            "reason": "s-072: Unwrap single span in appendix-7.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-c.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-176\">176</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">176</div>",
-            "reason": "s-072: Unwrap single span in chapter-c.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-cvi.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-183\">183</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">183</div>",
-            "reason": "s-072: Unwrap single span in chapter-cvi.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-cvii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-188\">188</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">188</div>",
-            "reason": "s-072: Unwrap single span in chapter-cvii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-cxv.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-198\">198</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">198</div>",
-            "reason": "s-072: Unwrap single span in chapter-cxv.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-cxvi.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-200\">200</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">200</div>",
-            "reason": "s-072: Unwrap single span in chapter-cxvi.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-lii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-78\">78</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">78</div>",
-            "reason": "s-072: Unwrap single span in chapter-lii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-lviii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-91\">91</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">91</div>",
-            "reason": "s-072: Unwrap single span in chapter-lviii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-lxii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-68\">68</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">68</div>",
-            "reason": "s-072: Unwrap single span in chapter-lxii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-lxx.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-113\">113</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">113</div>",
-            "reason": "s-072: Unwrap single span in chapter-lxx.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-lxxx.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-139\">139</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">139</div>",
-            "reason": "s-072: Unwrap single span in chapter-lxxx.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-lxxxviii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-156\">156</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">156</div>",
-            "reason": "s-072: Unwrap single span in chapter-lxxxviii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-viii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-26\">26</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">26</div>",
-            "reason": "s-072: Unwrap single span in chapter-viii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xci.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-161\">161</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">161</div>",
-            "reason": "s-072: Unwrap single span in chapter-xci.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xcviii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-172\">172</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">172</div>",
-            "reason": "s-072: Unwrap single span in chapter-xcviii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xi.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-29\">29</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">29</div>",
-            "reason": "s-072: Unwrap single span in chapter-xi.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xix.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-40\">40</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">40</div>",
-            "reason": "s-072: Unwrap single span in chapter-xix.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xlviii.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-75\">75</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">75</div>",
-            "reason": "s-072: Unwrap single span in chapter-xlviii.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xxi.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-44\">44</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">44</div>",
-            "reason": "s-072: Unwrap single span in chapter-xxi.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xxiv.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-49\">49</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">49</div>",
-            "reason": "s-072: Unwrap single span in chapter-xxiv.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-xxxv.xhtml",
-            "action": "replace",
-            "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-61\">61</span>\n\t\t\t</div>",
-            "replace": "<div class=\"pageno\">61</div>",
-            "reason": "s-072: Unwrap single span in chapter-xxxv.xhtml"
-        },
-        {
-            "file": "src/epub/text/murder-havard.xhtml",
-            "action": "replace",
-            "find": "<div>\n<span class=\"pageno\" id=\"Page-209\">209</span>\n</div>",
-            "replace": "<div class=\"pageno\">209</div>",
-            "reason": "s-072: Unwrap single span in murder-havard.xhtml"
-        },
-        {
-            "file": "src/epub/text/preface-2.xhtml",
-            "action": "replace",
-            "find": "<div class=\"line in5\">\n\t\t\t\t\t\t\t<span class=\"sc\">National Museum</span>\n\t\t\t\t\t\t</div>",
-            "replace": "<div class=\"line in5 sc\">National Museum</div>",
-            "reason": "s-072: Unwrap single span in preface-2.xhtml"
-        },
-        {
-            "file": "src/epub/text/viii-bishopric-orkney.xhtml",
-            "action": "replace",
-            "find": "<div class=\"line\">\n\t\t\t\t\t\t\t<span class=\"sc\">Hic requiescit Willialmus senex, felicis memoriae,</span>\n\t\t\t\t\t\t</div>",
-            "replace": "<div class=\"line sc\">Hic requiescit Willialmus senex, felicis memoriae,</div>",
-            "reason": "s-072: Unwrap single span in viii-bishopric-orkney.xhtml"
-        },
-        {
-            "file": "src/epub/text/viii-bishopric-orkney.xhtml",
-            "action": "replace",
-            "find": "<div class=\"line\">\n\t\t\t\t\t\t\t<span class=\"sc\">primus Episcopus.</span>\n\t\t\t\t\t\t</div>",
-            "replace": "<div class=\"line sc\">primus Episcopus.</div>",
-            "reason": "s-072: Unwrap single span in viii-bishopric-orkney.xhtml"
-        },
-        {
-            "file": "src/epub/text/xi-maeshow-stones-stennis.xhtml",
-            "action": "replace",
-            "find": "<div>\n<span class=\"pageno\" id=\"Page-cix\">cix</span>\n</div>",
-            "replace": "<div class=\"pageno\">cix</div>",
-            "reason": "s-072: Unwrap single span in xi-maeshow-stones-stennis.xhtml"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "\\s*<div class=\"pbb\">\\s*<hr[^>]*/>\\s*</div>\\s*(</section>)",
-            "replace": "\\n\\t\\t\\1",
-            "reason": "s-012: Remove trailing page-break hr div before </section>"
-        },
-        {
-            "file": "src/epub/text/appendix-4.xhtml",
-            "action": "replace",
-            "find": "<h3 class=\"c016\" epub:type=\"title\">Ii. The Angus Line of the Earls of Orkney</h3>",
-            "replace": "<h2 class=\"c016\" epub:type=\"title\">Ii. The Angus Line of the Earls of Orkney</h2>",
-            "reason": "s-085: Promote h3 → h2 in appendix-4.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "replace",
-            "find": "<h3 class=\"c016\" epub:type=\"title\">Iii. The Stratherne Line of the Earls of Orkney</h3>",
-            "replace": "<h2 class=\"c016\" epub:type=\"title\">Iii. The Stratherne Line of the Earls of Orkney</h2>",
-            "reason": "s-085: Promote h3 → h2 in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "replace",
-            "find": "<h3 class=\"c016\" epub:type=\"title\">Iv. The St. Clair Line of the Earls of Orkney</h3>",
-            "replace": "<h2 class=\"c016\" epub:type=\"title\">Iv. The St. Clair Line of the Earls of Orkney</h2>",
-            "reason": "s-085: Promote h3 → h2 in appendix-6.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-4.xhtml",
-            "action": "regex",
-            "pattern": "<i>d\\.\\s",
-            "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
-            "reason": "t-029: Wrap 'd.' abbreviation in appendix-4.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "regex",
-            "pattern": "<i>d\\.\\s",
-            "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
-            "reason": "t-029: Wrap 'd.' abbreviation in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "regex",
-            "pattern": "<i>d\\.\\s",
-            "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
-            "reason": "t-029: Wrap 'd.' abbreviation in appendix-6.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-4.xhtml",
-            "action": "regex",
-            "pattern": ">\\s*d\\.\\s",
-            "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
-            "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-4.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-4.xhtml",
-            "action": "regex",
-            "pattern": ">\\s*m\\.\\s",
-            "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
-            "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-4.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "regex",
-            "pattern": ">\\s*d\\.\\s",
-            "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
-            "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "regex",
-            "pattern": ">\\s*m\\.\\s",
-            "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
-            "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "regex",
-            "pattern": ">\\s*d\\.\\s",
-            "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
-            "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-6.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "regex",
-            "pattern": ">\\s*m\\.\\s",
-            "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
-            "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-6.xhtml"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "<abbr>([^<]*)</abbr>",
-            "replace": "<abbr epub:type=\"z3998:initialism\">\\1</abbr>",
-            "reason": "y-028: Add epub:type to bare <abbr> elements"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "<abbr([^>]*)>AD</abbr>",
-            "replace": "<abbr\\1>A.D.</abbr>",
-            "reason": "t-030: Add periods to AD initialism"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/endnotes-*.xhtml",
-            "pattern": "(\\d)<abbr",
-            "replace": "\\1 <abbr",
-            "reason": "y-028: Add space between digit and <abbr>"
-        },
-        {
-            "file": "src/epub/text/appendix-2.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from appendix-2.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-3.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from appendix-3.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-5.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from appendix-5.xhtml"
-        },
-        {
-            "file": "src/epub/text/appendix-6.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from appendix-6.xhtml"
-        },
-        {
-            "file": "src/epub/text/chapter-cxvii.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from chapter-cxvii.xhtml"
-        },
-        {
-            "file": "src/epub/text/endnotes-9.xhtml",
-            "action": "regex",
-            "pattern": "<hr\\ class=\"c027\"/>",
-            "replace": "",
-            "reason": "s-012: Remove hr from endnotes-9.xhtml"
-        },
-        {
-            "file": "src/epub/text/endnotes-9.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c002\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from endnotes-9.xhtml"
-        },
-        {
-            "file": "src/epub/text/endnotes-9.xhtml",
-            "action": "regex",
-            "pattern": "<hr\\ class=\"c029\"/>",
-            "replace": "",
-            "reason": "s-012: Remove hr from endnotes-9.xhtml"
-        },
-        {
-            "file": "src/epub/text/preface-2.xhtml",
-            "action": "regex",
-            "pattern": "<hr\\ class=\"c006\"/>",
-            "replace": "",
-            "reason": "s-012: Remove hr from preface-2.xhtml"
-        },
-        {
-            "file": "src/epub/text/xiii-remains-northmen.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from xiii-remains-northmen.xhtml"
-        },
-        {
-            "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
-            "action": "regex",
-            "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
-            "replace": "",
-            "reason": "s-012: Remove pbb hr div from meeting-between-olaf-tryggvis-son-earl.xhtml"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "\\s*<span class=\"pageno\"[^>]*>[^<]*</span>",
-            "replace": "",
-            "reason": "Remove print page number markers from text"
-        },
-        {
-            "action": "regex",
-            "file_pattern": "src/epub/text/*.xhtml",
-            "pattern": "<span class=\"pageno\"[^>]*>[^<]*</span>\\s*",
-            "replace": "",
-            "reason": "Remove pageno spans with trailing whitespace"
-        },
-        {
-            "file": "src/epub/text/ii-early-christianity-islands.xhtml",
-            "action": "replace",
-            "find": ">Ii. ",
-            "replace": ">II. ",
-            "reason": "Uppercase Roman numeral in ii-early-christianity-islands.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/iii-arrival-northmen-establishment-earld.xhtml",
-            "action": "replace",
-            "find": ">Iii. ",
-            "replace": ">III. ",
-            "reason": "Uppercase Roman numeral in iii-arrival-northmen-establishment-earld.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/iv-earldom-norse-line.xhtml",
-            "action": "replace",
-            "find": ">Iv. ",
-            "replace": ">IV. ",
-            "reason": "Uppercase Roman numeral in iv-earldom-norse-line.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/ix-bishopric-caithness.xhtml",
-            "action": "replace",
-            "find": ">Ix. ",
-            "replace": ">IX. ",
-            "reason": "Uppercase Roman numeral in ix-bishopric-caithness.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/v-earldom-angus-line.xhtml",
-            "action": "replace",
-            "find": ">v. ",
-            "replace": ">V. ",
-            "reason": "Uppercase Roman numeral in v-earldom-angus-line.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/vi-earldom-stratherne-line.xhtml",
-            "action": "replace",
-            "find": ">Vi. ",
-            "replace": ">VI. ",
-            "reason": "Uppercase Roman numeral in vi-earldom-stratherne-line.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/vii-earldom-line-st-clair.xhtml",
-            "action": "replace",
-            "find": ">Vii. ",
-            "replace": ">VII. ",
-            "reason": "Uppercase Roman numeral in vii-earldom-line-st-clair.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/viii-bishopric-orkney.xhtml",
-            "action": "replace",
-            "find": ">Viii. ",
-            "replace": ">VIII. ",
-            "reason": "Uppercase Roman numeral in viii-bishopric-orkney.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/xi-maeshow-stones-stennis.xhtml",
-            "action": "replace",
-            "find": ">Xi. ",
-            "replace": ">XI. ",
-            "reason": "Uppercase Roman numeral in xi-maeshow-stones-stennis.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/xii-mousa-pictish-towers.xhtml",
-            "action": "replace",
-            "find": ">Xii. ",
-            "replace": ">XII. ",
-            "reason": "Uppercase Roman numeral in xii-mousa-pictish-towers.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/xiii-remains-northmen.xhtml",
-            "action": "replace",
-            "find": ">Xiii. ",
-            "replace": ">XIII. ",
-            "reason": "Uppercase Roman numeral in xiii-remains-northmen.xhtml heading"
-        },
-        {
-            "file": "src/epub/text/chapter-lxxii.xhtml",
-            "action": "regex",
-            "pattern": "<h2 epub:type=\"title\" class=\"c001\">Chapter <div epub:type=\"z3998:poem\">.*?<span epub:type=\"z3998:roman z3998:ordinal\">Lxxii</span></span><span class=\"line\"><span class=\"small\">the Burning of Frakork\\.</span></span></p> </div></h2>",
-            "replace": "<h2 epub:type=\"title\" class=\"c001\">Chapter <span epub:type=\"z3998:ordinal z3998:roman\">LXXII</span>. <span class=\"subtitle\">The Burning of Frakork</span></h2>",
-            "reason": "Fix corrupted chapter-lxxii heading (rough_cleanup verse conversion bug)"
-        }
-    ]
+  "patches": [
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<div epub:type=\"z3998:poem\"><p>(.*?)</p></div>",
+      "replace": "<span class=\"heading-verse\">\\1</span>",
+      "reason": "Replace div inside h2 with span (prevents epubcheck RSC-005)"
+    },
+    {
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "action": "regex",
+      "pattern": "<span class=\"heading-verse\"><span class=\"line\"><span epub:type=\"z3998:ordinal z3998:roman\">([ivxlcdmIVXLCDM]+)</span></span><span class=\"line\"><span class=\"small\">(.*?)</span></span></span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">\\1</span>. <span class=\"subtitle\">\\2</span>",
+      "reason": "Normalize chapter heading: uppercase Roman numeral, proper spacing between number and subtitle"
+    },
+    {
+      "file_pattern": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "href=\"#(maeshow|mousa|h3-XII|h3-XI)\"",
+      "replace": "class=\"dead-link\"",
+      "reason": "Remove broken cross-references to named anchors not in split files"
+    },
+    {
+      "file_pattern": "src/epub/text/ii-early-christianity-islands.xhtml",
+      "action": "regex",
+      "pattern": "href=\"#i-xvi\"",
+      "replace": "class=\"dead-link\"",
+      "reason": "Remove broken cross-reference to non-existent section anchor"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "<a\\s+href=\"#f(\\d+)\"><sup></sup></a>",
+      "replace": "<a href=\"#f\\1\"><sup>[\\1]</sup></a>",
+      "reason": "Restore footnote number in <sup> for fN links (was stripped to empty)"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/i150-top\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"View of South Transept and part of Choir of the Cathedral of St. Magnus\"",
+      "reason": "Set proper alt caption for i150-top"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/i150-bottom\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"View of South Transept and part of Choir of the Cathedral of St. Magnus\"",
+      "reason": "Set proper alt caption for i150-bottom"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxxii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Comb found in a Norse Grave in Westray, Orkney\"",
+      "reason": "Set proper alt caption for cxxii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxxi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Bronze Tortoise Brooch found in a Norse Grave in Caithness\"",
+      "reason": "Set proper alt caption for cxxi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxvii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Scabbard-Point found in a Norse Grave in Westray, Orkney\"",
+      "reason": "Set proper alt caption for cxvii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cxvi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Norse Sword found at Gorton, Morayshire\"",
+      "reason": "Set proper alt caption for cxvi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/cix\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Pictish Tower of Mousa (Moseyarborg), Shetland\"",
+      "reason": "Set proper alt caption for cix"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xcvii\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Church at Lybster, Reay, Caithness\"",
+      "reason": "Set proper alt caption for xcvii"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xcvi\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Church at Weir, Orkney\"",
+      "reason": "Set proper alt caption for xcvi"
+    },
+    {
+      "file_pattern": "src/epub/text/*.xhtml",
+      "action": "regex",
+      "pattern": "(src=\"images/xci\\.jpg\"[^>]*) alt=\"Illustration\"",
+      "replace": "\\1 alt=\"Ground-plan of Egilsey Church and Tower, Orkney\"",
+      "reason": "Set proper alt caption for xci"
+    },
+    {
+      "file": "src/epub/text/loi.xhtml",
+      "action": "regex",
+      "pattern": "<li>\\s*<p>\\s*<a href=\"titlepage\\.xhtml[^\"]*\">[^<]*</a>\\s*</p>\\s*</li>\\s*",
+      "replace": "",
+      "reason": "RSC-012: Remove LoI entry referencing non-existent titlepage fragment"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "\\.(</span>\\s*</h2>)",
+      "replace": "\\1",
+      "reason": "t-065: Remove trailing period from chapter subtitle"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "(<h[1-6]\\s+[^>]*?)\\s+id=\"[^\"]*\"([^>]*>)",
+      "replace": "\\1\\2",
+      "reason": "s-019: Remove id attribute from heading elements"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ci</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CI</span>",
+      "reason": "s-023: Uppercase Roman numeral Ci to CI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CII</span>",
+      "reason": "s-023: Uppercase Roman numeral Cii to CII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ciii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Ciii to CIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Civ</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Civ to CIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Cix to CIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CV</span>",
+      "reason": "s-023: Uppercase Roman numeral Cv to CV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Cvi to CVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Cvii to CVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Cviii to CVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cx</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CX</span>",
+      "reason": "s-023: Uppercase Roman numeral Cx to CX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXI</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxi to CXI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXII</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxii to CXII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxiii to CXIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxiv to CXIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXV</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxv to CXV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxvi to CXVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Cxvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">CXVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Cxvii to CXVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">II</span>",
+      "reason": "s-023: Uppercase Roman numeral Ii to II"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Iii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">III</span>",
+      "reason": "s-023: Uppercase Roman numeral Iii to III"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Iv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">IV</span>",
+      "reason": "s-023: Uppercase Roman numeral Iv to IV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Ix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">IX</span>",
+      "reason": "s-023: Uppercase Roman numeral Ix to IX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Li</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LI</span>",
+      "reason": "s-023: Uppercase Roman numeral Li to LI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lii to LII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Liii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Liii to LIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Liv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Liv to LIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lix to LIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lv to LV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lvi to LVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lvii to LVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lviii to LVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lx</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lx to LX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxi to LXI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxii to LXII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxiii to LXIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxiv to LXIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxix to LXIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxv to LXV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxvi to LXVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxvii to LXVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxviii to LXVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxx</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxx to LXX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxi to LXXI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxii to LXXII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxiii to LXXIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxiv to LXXIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxix to LXXIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxv to LXXV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxvi to LXXVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxvii to LXXVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxviii to LXXVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxx</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxx to LXXX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">i</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">I</span>",
+      "reason": "s-023: Uppercase Roman numeral i to I"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxi to LXXXI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxii to LXXXII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxiii to LXXXIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxiv to LXXXIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxix to LXXXIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXV</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxv to LXXXV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxvi to LXXXVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxvii to LXXXVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Lxxxviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">LXXXVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Lxxxviii to LXXXVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Vi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">VI</span>",
+      "reason": "s-023: Uppercase Roman numeral Vi to VI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Vii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">VII</span>",
+      "reason": "s-023: Uppercase Roman numeral Vii to VII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Viii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">VIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Viii to VIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xc</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XC</span>",
+      "reason": "s-023: Uppercase Roman numeral Xc to XC"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xci</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xci to XCI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xcii to XCII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xciii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xciii to XCIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xciv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xciv to XCIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xcix to XCIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xcv to XCV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xcvi to XCVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xcvii to XCVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xcviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XCVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xcviii to XCVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xi to XI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xii to XII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xiii to XIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xiv to XIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xix to XIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xl</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XL</span>",
+      "reason": "s-023: Uppercase Roman numeral Xl to XL"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xli</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xli to XLI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xliii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xliii to XLIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xliv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xliv to XLIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xlix to XLIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xlv to XLV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xlvi to XLVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xlvii to XLVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xlviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XLVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xlviii to XLVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xv to XV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xvi to XVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xvii to XVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xviii to XVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xx</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xx to XX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxi to XXI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxii to XXII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxiii to XXIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxiv to XXIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxix to XXIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxv to XXV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxvi to XXVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxvii to XXVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxviii to XXVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxx</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxx to XXX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxi to XXXI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxii to XXXII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxiii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxiii to XXXIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxiv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXIV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxiv to XXXIV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxix</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXIX</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxix to XXXIX"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxv</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXV</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxv to XXXV"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxvi</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXVI</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxvi to XXXVI"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxvii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXVII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxvii to XXXVII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/chapter-*.xhtml",
+      "pattern": "<span epub:type=\"z3998:ordinal z3998:roman\">Xxxviii</span>",
+      "replace": "<span epub:type=\"z3998:ordinal z3998:roman\">XXXVIII</span>",
+      "reason": "s-023: Uppercase Roman numeral Xxxviii to XXXVIII"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "<hr\\s*/?>\\s*(</section>)",
+      "replace": "\\1",
+      "reason": "s-012: Remove trailing hr before section close"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "\\.(</h[1-6]>)",
+      "replace": "\\1",
+      "reason": "t-065: Remove trailing period from headings"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "\\.(</span>\\s*</h[1-6]>)",
+      "replace": "\\1",
+      "reason": "t-065: Remove trailing period before closing span"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "\\s*<hr\\s*/?>\\s*(</section>)",
+      "replace": "\\n\\t\\t\\1",
+      "reason": "s-012: Remove trailing hr before section close"
+    },
+    {
+      "file": "src/epub/text/loi.xhtml",
+      "action": "regex",
+      "pattern": "<li>\\s*<p>\\s*<a href=\"titlepage\\.xhtml[^\"]*\">[^<]*</a>\\s*</p>\\s*</li>\\s*",
+      "replace": "",
+      "reason": "RSC-012: Remove LoI entry for non-existent titlepage fragment"
+    },
+    {
+      "file": "src/epub/text/battle-between-earl-einar-prince-halfdan.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle between Earl Einar and Prince Halfdan.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle between Earl Einar and Prince Halfdan.</h2>",
+      "reason": "s-072: Unwrap single span in battle-between-earl-einar-prince-halfdan.xhtml"
+    },
+    {
+      "file": "src/epub/text/battle-between-liot-skuli.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle between Liot and Skuli.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle between Liot and Skuli.</h2>",
+      "reason": "s-072: Unwrap single span in battle-between-liot-skuli.xhtml"
+    },
+    {
+      "file": "src/epub/text/battle.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle.</h2>",
+      "reason": "s-072: Unwrap single span in battle.xhtml"
+    },
+    {
+      "file": "src/epub/text/dominions-king-harald-earl-rgnvald.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Dominions of King Harald and Earl Rögnvald.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Dominions of King Harald and Earl Rögnvald.</h2>",
+      "reason": "s-072: Unwrap single span in dominions-king-harald-earl-rgnvald.xhtml"
+    },
+    {
+      "file": "src/epub/text/earl-melbrigd-slain-sigurd.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Earl Melbrigd slain by Sigurd.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Earl Melbrigd slain by Sigurd.</h2>",
+      "reason": "s-072: Unwrap single span in earl-melbrigd-slain-sigurd.xhtml"
+    },
+    {
+      "file": "src/epub/text/einar-comes-islands.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Einar comes to the Islands.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Einar comes to the Islands.</h2>",
+      "reason": "s-072: Unwrap single span in einar-comes-islands.xhtml"
+    },
+    {
+      "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Meeting between Olaf (Tryggvi’s Son) and the Earl.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Meeting between Olaf (Tryggvi’s Son) and the Earl.</h2>",
+      "reason": "s-072: Unwrap single span in meeting-between-olaf-tryggvis-son-earl.xhtml"
+    },
+    {
+      "file": "src/epub/text/murder-havard.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Murder of Havard.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Murder of Havard.</h2>",
+      "reason": "s-072: Unwrap single span in murder-havard.xhtml"
+    },
+    {
+      "file": "src/epub/text/vikings-slain.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Vikings slain.</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Vikings slain.</h2>",
+      "reason": "s-072: Unwrap single span in vikings-slain.xhtml"
+    },
+    {
+      "file": "src/epub/text/battle-between-earl-einar-prince-halfdan.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle Between Earl Einar and Prince Halfdan</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle Between Earl Einar and Prince Halfdan</h2>",
+      "reason": "s-072: Unwrap single span in battle-between-earl-einar-prince-halfdan.xhtml"
+    },
+    {
+      "file": "src/epub/text/battle-between-liot-skuli.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle Between Liot and Skuli</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle Between Liot and Skuli</h2>",
+      "reason": "s-072: Unwrap single span in battle-between-liot-skuli.xhtml"
+    },
+    {
+      "file": "src/epub/text/battle.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Battle</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Battle</h2>",
+      "reason": "s-072: Unwrap single span in battle.xhtml"
+    },
+    {
+      "file": "src/epub/text/dominions-king-harald-earl-rgnvald.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">The Dominions of King Harald and Earl Rögnvald</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">The Dominions of King Harald and Earl Rögnvald</h2>",
+      "reason": "s-072: Unwrap single span in dominions-king-harald-earl-rgnvald.xhtml"
+    },
+    {
+      "file": "src/epub/text/earl-melbrigd-slain-sigurd.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Earl Melbrigd Slain by Sigurd</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Earl Melbrigd Slain by Sigurd</h2>",
+      "reason": "s-072: Unwrap single span in earl-melbrigd-slain-sigurd.xhtml"
+    },
+    {
+      "file": "src/epub/text/einar-comes-islands.xhtml",
+      "action": "replace",
+      "find": "<h2 class=\"c016\" epub:type=\"title\">\n\t\t\t\t<span class=\"sc\">Einar Comes to the Islands</span>\n\t\t\t</h2>",
+      "replace": "<h2 class=\"c016 sc\" epub:type=\"title\">Einar Comes to the Islands</h2>",
+      "reason": "s-072: Unwrap single span in einar-comes-islands.xhtml"
+    },
+    {
+      "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
+      "action": "replace",
+      "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">Meeting Between Olaf (Tryggvi’s Son) and the Earl</span></h2>",
+      "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">Meeting Between Olaf (Tryggvi’s Son) and the Earl</h2>",
+      "reason": "s-072: Unwrap single span in meeting-between-olaf-tryggvis-son-earl.xhtml"
+    },
+    {
+      "file": "src/epub/text/murder-havard.xhtml",
+      "action": "replace",
+      "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">The Murder of Havard</span></h2>",
+      "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">The Murder of Havard</h2>",
+      "reason": "s-072: Unwrap single span in murder-havard.xhtml"
+    },
+    {
+      "file": "src/epub/text/vikings-slain.xhtml",
+      "action": "replace",
+      "find": "<h2 epub:type=\"title\" class=\"c016\"><span class=\"sc\">The Vikings Slain</span></h2>",
+      "replace": "<h2 epub:type=\"title\" class=\"c016 sc\">The Vikings Slain</h2>",
+      "reason": "s-072: Unwrap single span in vikings-slain.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-3.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-cxxxii\">cxxxii</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">cxxxii</div>",
+      "reason": "s-072: Unwrap single span in appendix-3.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-5.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-cxxxiii\">cxxxiii</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">cxxxiii</div>",
+      "reason": "s-072: Unwrap single span in appendix-5.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-7.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t\t\t<span class=\"large\">SAGA OF OLAF, TRYGGVI’s SON.</span>\n\t\t\t\t\t</div>",
+      "replace": "<div class=\"large\">SAGA OF OLAF, TRYGGVI’s SON.</div>",
+      "reason": "s-072: Unwrap single span in appendix-7.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-c.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-176\">176</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">176</div>",
+      "reason": "s-072: Unwrap single span in chapter-c.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-cvi.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-183\">183</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">183</div>",
+      "reason": "s-072: Unwrap single span in chapter-cvi.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-cvii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-188\">188</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">188</div>",
+      "reason": "s-072: Unwrap single span in chapter-cvii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-cxv.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-198\">198</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">198</div>",
+      "reason": "s-072: Unwrap single span in chapter-cxv.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-cxvi.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-200\">200</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">200</div>",
+      "reason": "s-072: Unwrap single span in chapter-cxvi.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-lii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-78\">78</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">78</div>",
+      "reason": "s-072: Unwrap single span in chapter-lii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-lviii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-91\">91</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">91</div>",
+      "reason": "s-072: Unwrap single span in chapter-lviii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-lxii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-68\">68</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">68</div>",
+      "reason": "s-072: Unwrap single span in chapter-lxii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-lxx.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-113\">113</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">113</div>",
+      "reason": "s-072: Unwrap single span in chapter-lxx.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-lxxx.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-139\">139</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">139</div>",
+      "reason": "s-072: Unwrap single span in chapter-lxxx.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-lxxxviii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-156\">156</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">156</div>",
+      "reason": "s-072: Unwrap single span in chapter-lxxxviii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-viii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-26\">26</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">26</div>",
+      "reason": "s-072: Unwrap single span in chapter-viii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xci.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-161\">161</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">161</div>",
+      "reason": "s-072: Unwrap single span in chapter-xci.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xcviii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-172\">172</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">172</div>",
+      "reason": "s-072: Unwrap single span in chapter-xcviii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xi.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-29\">29</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">29</div>",
+      "reason": "s-072: Unwrap single span in chapter-xi.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xix.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-40\">40</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">40</div>",
+      "reason": "s-072: Unwrap single span in chapter-xix.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xlviii.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-75\">75</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">75</div>",
+      "reason": "s-072: Unwrap single span in chapter-xlviii.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xxi.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-44\">44</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">44</div>",
+      "reason": "s-072: Unwrap single span in chapter-xxi.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xxiv.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-49\">49</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">49</div>",
+      "reason": "s-072: Unwrap single span in chapter-xxiv.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-xxxv.xhtml",
+      "action": "replace",
+      "find": "<div>\n\t\t\t\t<span class=\"pageno\" id=\"Page-61\">61</span>\n\t\t\t</div>",
+      "replace": "<div class=\"pageno\">61</div>",
+      "reason": "s-072: Unwrap single span in chapter-xxxv.xhtml"
+    },
+    {
+      "file": "src/epub/text/murder-havard.xhtml",
+      "action": "replace",
+      "find": "<div>\n<span class=\"pageno\" id=\"Page-209\">209</span>\n</div>",
+      "replace": "<div class=\"pageno\">209</div>",
+      "reason": "s-072: Unwrap single span in murder-havard.xhtml"
+    },
+    {
+      "file": "src/epub/text/preface-2.xhtml",
+      "action": "replace",
+      "find": "<div class=\"line in5\">\n\t\t\t\t\t\t\t<span class=\"sc\">National Museum</span>\n\t\t\t\t\t\t</div>",
+      "replace": "<div class=\"line in5 sc\">National Museum</div>",
+      "reason": "s-072: Unwrap single span in preface-2.xhtml"
+    },
+    {
+      "file": "src/epub/text/viii-bishopric-orkney.xhtml",
+      "action": "replace",
+      "find": "<div class=\"line\">\n\t\t\t\t\t\t\t<span class=\"sc\">Hic requiescit Willialmus senex, felicis memoriae,</span>\n\t\t\t\t\t\t</div>",
+      "replace": "<div class=\"line sc\">Hic requiescit Willialmus senex, felicis memoriae,</div>",
+      "reason": "s-072: Unwrap single span in viii-bishopric-orkney.xhtml"
+    },
+    {
+      "file": "src/epub/text/viii-bishopric-orkney.xhtml",
+      "action": "replace",
+      "find": "<div class=\"line\">\n\t\t\t\t\t\t\t<span class=\"sc\">primus Episcopus.</span>\n\t\t\t\t\t\t</div>",
+      "replace": "<div class=\"line sc\">primus Episcopus.</div>",
+      "reason": "s-072: Unwrap single span in viii-bishopric-orkney.xhtml"
+    },
+    {
+      "file": "src/epub/text/xi-maeshow-stones-stennis.xhtml",
+      "action": "replace",
+      "find": "<div>\n<span class=\"pageno\" id=\"Page-cix\">cix</span>\n</div>",
+      "replace": "<div class=\"pageno\">cix</div>",
+      "reason": "s-072: Unwrap single span in xi-maeshow-stones-stennis.xhtml"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "\\s*<div class=\"pbb\">\\s*<hr[^>]*/>\\s*</div>\\s*(</section>)",
+      "replace": "\\n\\t\\t\\1",
+      "reason": "s-012: Remove trailing page-break hr div before </section>"
+    },
+    {
+      "file": "src/epub/text/appendix-4.xhtml",
+      "action": "replace",
+      "find": "<h3 class=\"c016\" epub:type=\"title\">Ii. The Angus Line of the Earls of Orkney</h3>",
+      "replace": "<h2 class=\"c016\" epub:type=\"title\">Ii. The Angus Line of the Earls of Orkney</h2>",
+      "reason": "s-085: Promote h3 → h2 in appendix-4.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-5.xhtml",
+      "action": "replace",
+      "find": "<h3 class=\"c016\" epub:type=\"title\">Iii. The Stratherne Line of the Earls of Orkney</h3>",
+      "replace": "<h2 class=\"c016\" epub:type=\"title\">Iii. The Stratherne Line of the Earls of Orkney</h2>",
+      "reason": "s-085: Promote h3 → h2 in appendix-5.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-6.xhtml",
+      "action": "replace",
+      "find": "<h3 class=\"c016\" epub:type=\"title\">Iv. The St. Clair Line of the Earls of Orkney</h3>",
+      "replace": "<h2 class=\"c016\" epub:type=\"title\">Iv. The St. Clair Line of the Earls of Orkney</h2>",
+      "reason": "s-085: Promote h3 → h2 in appendix-6.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-4.xhtml",
+      "action": "regex",
+      "pattern": "<i>d\\.\\s",
+      "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+      "reason": "t-029: Wrap 'd.' abbreviation in appendix-4.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-5.xhtml",
+      "action": "regex",
+      "pattern": "<i>d\\.\\s",
+      "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+      "reason": "t-029: Wrap 'd.' abbreviation in appendix-5.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-6.xhtml",
+      "action": "regex",
+      "pattern": "<i>d\\.\\s",
+      "replace": "<i><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+      "reason": "t-029: Wrap 'd.' abbreviation in appendix-6.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-4.xhtml",
+      "action": "regex",
+      "pattern": ">\\s*d\\.\\s",
+      "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+      "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-4.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-4.xhtml",
+      "action": "regex",
+      "pattern": ">\\s*m\\.\\s",
+      "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
+      "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-4.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-5.xhtml",
+      "action": "regex",
+      "pattern": ">\\s*d\\.\\s",
+      "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+      "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-5.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-5.xhtml",
+      "action": "regex",
+      "pattern": ">\\s*m\\.\\s",
+      "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
+      "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-5.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-6.xhtml",
+      "action": "regex",
+      "pattern": ">\\s*d\\.\\s",
+      "replace": "><abbr epub:type=\"z3998:initialism\">d.</abbr> ",
+      "reason": "t-029: Wrap bare 'd.' abbreviation in appendix-6.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-6.xhtml",
+      "action": "regex",
+      "pattern": ">\\s*m\\.\\s",
+      "replace": "><abbr epub:type=\"z3998:initialism\">m.</abbr> ",
+      "reason": "t-029: Wrap bare 'm.' abbreviation in appendix-6.xhtml"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "<abbr>([^<]*)</abbr>",
+      "replace": "<abbr epub:type=\"z3998:initialism\">\\1</abbr>",
+      "reason": "y-028: Add epub:type to bare <abbr> elements"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "<abbr([^>]*)>AD</abbr>",
+      "replace": "<abbr\\1>A.D.</abbr>",
+      "reason": "t-030: Add periods to AD initialism"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/endnotes-*.xhtml",
+      "pattern": "(\\d)<abbr",
+      "replace": "\\1 <abbr",
+      "reason": "y-028: Add space between digit and <abbr>"
+    },
+    {
+      "file": "src/epub/text/appendix-2.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from appendix-2.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-3.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from appendix-3.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-5.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from appendix-5.xhtml"
+    },
+    {
+      "file": "src/epub/text/appendix-6.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from appendix-6.xhtml"
+    },
+    {
+      "file": "src/epub/text/chapter-cxvii.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c003\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from chapter-cxvii.xhtml"
+    },
+    {
+      "file": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "<hr\\ class=\"c027\"/>",
+      "replace": "",
+      "reason": "s-012: Remove hr from endnotes-9.xhtml"
+    },
+    {
+      "file": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"c002\\ pb\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from endnotes-9.xhtml"
+    },
+    {
+      "file": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "pattern": "<hr\\ class=\"c029\"/>",
+      "replace": "",
+      "reason": "s-012: Remove hr from endnotes-9.xhtml"
+    },
+    {
+      "file": "src/epub/text/preface-2.xhtml",
+      "action": "regex",
+      "pattern": "<hr\\ class=\"c006\"/>",
+      "replace": "",
+      "reason": "s-012: Remove hr from preface-2.xhtml"
+    },
+    {
+      "file": "src/epub/text/xiii-remains-northmen.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from xiii-remains-northmen.xhtml"
+    },
+    {
+      "file": "src/epub/text/meeting-between-olaf-tryggvis-son-earl.xhtml",
+      "action": "regex",
+      "pattern": "\\\n\\\t\\\t\\\t<div\\ class=\"pbb\">\\\n\\\t\\\t\\\t\\\t<hr\\ class=\"pb\\ c003\"/>\\\n\\\t\\\t\\\t</div>",
+      "replace": "",
+      "reason": "s-012: Remove pbb hr div from meeting-between-olaf-tryggvis-son-earl.xhtml"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "\\s*<span class=\"pageno\"[^>]*>[^<]*</span>",
+      "replace": "",
+      "reason": "Remove print page number markers from text"
+    },
+    {
+      "action": "regex",
+      "file_pattern": "src/epub/text/*.xhtml",
+      "pattern": "<span class=\"pageno\"[^>]*>[^<]*</span>\\s*",
+      "replace": "",
+      "reason": "Remove pageno spans with trailing whitespace"
+    },
+    {
+      "file": "src/epub/text/ii-early-christianity-islands.xhtml",
+      "action": "replace",
+      "find": ">Ii. ",
+      "replace": ">II. ",
+      "reason": "Uppercase Roman numeral in ii-early-christianity-islands.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/iii-arrival-northmen-establishment-earld.xhtml",
+      "action": "replace",
+      "find": ">Iii. ",
+      "replace": ">III. ",
+      "reason": "Uppercase Roman numeral in iii-arrival-northmen-establishment-earld.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/iv-earldom-norse-line.xhtml",
+      "action": "replace",
+      "find": ">Iv. ",
+      "replace": ">IV. ",
+      "reason": "Uppercase Roman numeral in iv-earldom-norse-line.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/ix-bishopric-caithness.xhtml",
+      "action": "replace",
+      "find": ">Ix. ",
+      "replace": ">IX. ",
+      "reason": "Uppercase Roman numeral in ix-bishopric-caithness.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/v-earldom-angus-line.xhtml",
+      "action": "replace",
+      "find": ">v. ",
+      "replace": ">V. ",
+      "reason": "Uppercase Roman numeral in v-earldom-angus-line.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/vi-earldom-stratherne-line.xhtml",
+      "action": "replace",
+      "find": ">Vi. ",
+      "replace": ">VI. ",
+      "reason": "Uppercase Roman numeral in vi-earldom-stratherne-line.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/vii-earldom-line-st-clair.xhtml",
+      "action": "replace",
+      "find": ">Vii. ",
+      "replace": ">VII. ",
+      "reason": "Uppercase Roman numeral in vii-earldom-line-st-clair.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/viii-bishopric-orkney.xhtml",
+      "action": "replace",
+      "find": ">Viii. ",
+      "replace": ">VIII. ",
+      "reason": "Uppercase Roman numeral in viii-bishopric-orkney.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/xi-maeshow-stones-stennis.xhtml",
+      "action": "replace",
+      "find": ">Xi. ",
+      "replace": ">XI. ",
+      "reason": "Uppercase Roman numeral in xi-maeshow-stones-stennis.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/xii-mousa-pictish-towers.xhtml",
+      "action": "replace",
+      "find": ">Xii. ",
+      "replace": ">XII. ",
+      "reason": "Uppercase Roman numeral in xii-mousa-pictish-towers.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/xiii-remains-northmen.xhtml",
+      "action": "replace",
+      "find": ">Xiii. ",
+      "replace": ">XIII. ",
+      "reason": "Uppercase Roman numeral in xiii-remains-northmen.xhtml heading"
+    },
+    {
+      "file": "src/epub/text/chapter-lxxii.xhtml",
+      "action": "regex",
+      "pattern": "<h2 epub:type=\"title\" class=\"c001\">Chapter <div epub:type=\"z3998:poem\">.*?<span epub:type=\"z3998:roman z3998:ordinal\">Lxxii</span></span><span class=\"line\"><span class=\"small\">the Burning of Frakork\\.</span></span></p> </div></h2>",
+      "replace": "<h2 epub:type=\"title\" class=\"c001\">Chapter <span epub:type=\"z3998:ordinal z3998:roman\">LXXII</span>. <span class=\"subtitle\">The Burning of Frakork</span></h2>",
+      "reason": "Fix corrupted chapter-lxxii heading (rough_cleanup verse conversion bug)"
+    },
+    {
+      "file": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "replace": "\\1",
+      "reason": "RSC-012: unwrap broken page-number cross-refs in endnotes",
+      "pattern": "<a href=\"#Page-[^\"]+\">([^<]+)</a>"
+    },
+    {
+      "file": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "replace": "\\1",
+      "reason": "RSC-012: unwrap broken chapter cross-refs in endnotes",
+      "pattern": "<a href=\"#ch-[^\"]+\">([^<]+)</a>"
+    },
+    {
+      "file": "src/epub/text/endnotes-9.xhtml",
+      "action": "regex",
+      "replace": "\\1",
+      "reason": "RSC-012: unwrap broken heading cross-refs in endnotes",
+      "pattern": "<a href=\"#h[23]-[^\"]+\">([^<]+)</a>"
+    },
+    {
+      "file": "src/epub/text/appendix-6.xhtml",
+      "action": "replace",
+      "find": "\t\t\t<figure id=\"illustration-2\">\n\t\t\t\t<figure id=\"illustration-2\">\n\t\t\t\t\t<img alt=\"ORKNEYAR.\" src=\"../images/orkneyar.jpg\" epub:type=\"z3998:photograph\"/>\n\t\t\t\t\t<figcaption>ORKNEYAR.</figcaption>\n\t\t\t\t</figure>\n\t\t\t\t<figcaption>ORKNEYAR.</figcaption>\n\t\t\t</figure>",
+      "replace": "\t\t\t<figure id=\"illustration-2\">\n\t\t\t\t<img alt=\"ORKNEYAR.\" src=\"../images/orkneyar.jpg\" epub:type=\"z3998:photograph\"/>\n\t\t\t\t<figcaption>ORKNEYAR.</figcaption>\n\t\t\t</figure>",
+      "reason": "RSC-005: remove duplicate nested figure in appendix-6"
+    }
+  ]
 }
