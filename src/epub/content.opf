@@ -307,8 +307,8 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
-		<itemref idref="preface-2.xhtml"/>
 		<itemref idref="halftitle.xhtml"/>
+		<itemref idref="preface-2.xhtml"/>
 		<itemref idref="introduction-3.xhtml"/>
 		<itemref idref="ii-early-christianity-islands.xhtml"/>
 		<itemref idref="iii-arrival-northmen-establishment-earld.xhtml"/>
@@ -458,8 +458,5 @@
 		<itemref idref="endnotes-9.xhtml"/>
 		<itemref idref="about-the-translator.xhtml"/>
 		<itemref idref="permissions.xhtml"/>
-		<itemref idref="loi.xhtml"/>
-		<itemref idref="uncopyright.xhtml"/>
-		<itemref idref="colophon.xhtml"/>
-	</spine>
+</spine>
 </package>
