@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://www.impressioneditions.com/ebooks/anonymous/the-orkneyinga-saga</dc:identifier>
-		<dc:date>2026-07-24T05:31:42Z</dc:date>
+		<dc:date>2026-07-24T06:17:15Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the public domain. This ebook edition is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See the Copyright &amp; Permissions page at the end of this ebook for details.</dc:rights>
 		<dc:publisher id="publisher">Impression Editions</dc:publisher>
@@ -43,19 +43,28 @@
 		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/57723</dc:source>
-		<meta property="se:word-count">124936</meta>
+		<meta property="se:production-notes"/>
+		<meta property="se:word-count">124885</meta>
 		<meta property="se:reading-ease.flesch">66.17</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Anonymous</meta>
 		<meta property="se:url.vcs.github">VCS_URL</meta>
 		<dc:creator id="author">Anonymous</dc:creator>
 		<meta property="file-as" refines="#author"/>
 		<meta property="se:name.person.full-name" refines="#author">Anonymous</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#author"/>
+		<meta property="se:url.authority.nacoaf" refines="#author"/>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<dc:contributor id="translator">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
+		<meta property="file-as" refines="#translator"/>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#translator">_WIKI_URL</meta>
 		<meta property="se:url.authority.nacoaf" refines="#translator">_NACOAF_URI</meta>
 		<meta property="display-seq" refines="#translator">1</meta>
 		<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>
+		<dc:contributor id="artist"/>
+		<meta property="file-as" refines="#artist"/>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist"/>
+		<meta property="se:url.authority.nacoaf" refines="#artist"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">TRANSCRIBER_1_NAME</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">TRANSCRIBER_1_SORT</meta>
 		<meta property="se:url.homepage" refines="#transcriber-1">TRANSCRIBER_1_URL</meta>
@@ -71,12 +80,15 @@
 		<dc:contributor id="translator-1">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
 		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
 		<meta property="file-as" refines="#translator-1">Gilbert Goudie and Jón A. Hjaltalín</meta>
-		<dc:contributor id="translator-2">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
-		<meta property="role" refines="#translator-2" scheme="marc:relators">trl</meta>
-		<meta property="file-as" refines="#translator-2">Gilbert Goudie and Jón A. Hjaltalín</meta>
-		<dc:contributor id="translator-3">Gilbert Goudie and Jón A. Hjaltalín</dc:contributor>
-		<meta property="role" refines="#translator-3" scheme="marc:relators">trl</meta>
-		<meta property="file-as" refines="#translator-3">Gilbert Goudie and Jón A. Hjaltalín</meta>
+		<dc:contributor id="producer-1"/>
+		<meta property="file-as" refines="#producer-1"/>
+		<meta property="se:url.homepage" refines="#producer-1"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<meta property="marc:relators" refines="#preface-2.xhtml">wpr</meta>
 	</metadata>
 	<manifest>
@@ -103,8 +115,6 @@
 		<item href="images/civ.jpg" id="civ.jpg" media-type="image/jpeg"/>
 		<item href="images/cix.jpg" id="cix.jpg" media-type="image/jpeg"/>
 		<item href="images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.source.jpg" id="cover.source.jpg" media-type="image/jpeg"/>
-		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image cover-image"/>
 		<item href="images/cvi.jpg" id="cvi.jpg" media-type="image/jpeg"/>
 		<item href="images/cvii-bottom.jpg" id="cvii-bottom.jpg" media-type="image/jpeg"/>
 		<item href="images/cvii-top.jpg" id="cvii-top.jpg" media-type="image/jpeg"/>
@@ -130,7 +140,6 @@
 		<item href="images/xix.jpg" id="xix.jpg" media-type="image/jpeg"/>
 		<item href="images/xvi.jpg" id="xvi.jpg" media-type="image/jpeg"/>
 		<item href="images/xvii.jpg" id="xvii.jpg" media-type="image/jpeg"/>
-		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-2.xhtml" id="appendix-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-3.xhtml" id="appendix-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/appendix-4.xhtml" id="appendix-4.xhtml" media-type="application/xhtml+xml"/>
@@ -257,7 +266,6 @@
 		<item href="text/chapter-xxxvi.xhtml" id="chapter-xxxvi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-xxxvii.xhtml" id="chapter-xxxvii.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-xxxviii.xhtml" id="chapter-xxxviii.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/dominions-king-harald-earl-rgnvald.xhtml" id="dominions-king-harald-earl-rgnvald.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/earl-melbrigd-slain-sigurd.xhtml" id="earl-melbrigd-slain-sigurd.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/einar-comes-islands.xhtml" id="einar-comes-islands.xhtml" media-type="application/xhtml+xml"/>
@@ -287,6 +295,8 @@
 		<item href="text/xii-mousa-pictish-towers.xhtml" id="xii-mousa-pictish-towers.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/xiii-remains-northmen.xhtml" id="xiii-remains-northmen.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+		<item href="text/about-the-translator.xhtml" id="about-the-translator.xhtml" media-type="application/xhtml+xml"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 			<item href="fonts/SortsMillGoudy-Regular.woff2" id="SortsMillGoudy-Regular.woff2" media-type="font/woff2"/>
 		<item href="fonts/SortsMillGoudy-Italic.woff2" id="SortsMillGoudy-Italic.woff2" media-type="font/woff2"/>
 		<item href="fonts/LeagueSpartan-Bold.woff2" id="LeagueSpartan-Bold.woff2" media-type="font/woff2"/>
@@ -417,7 +427,6 @@
 		<itemref idref="chapter-xxxvi.xhtml"/>
 		<itemref idref="chapter-xxxvii.xhtml"/>
 		<itemref idref="chapter-xxxviii.xhtml"/>
-		<itemref idref="colophon.xhtml"/>
 		<itemref idref="dominions-king-harald-earl-rgnvald.xhtml"/>
 		<itemref idref="earl-melbrigd-slain-sigurd.xhtml"/>
 		<itemref idref="einar-comes-islands.xhtml"/>
@@ -446,7 +455,7 @@
 		<itemref idref="appendix-7.xhtml"/>
 		<itemref idref="endnotes-9.xhtml"/>
 		<itemref idref="loi.xhtml"/>
-		<itemref idref="about-the-translator.xhtml"/>
 		<itemref idref="permissions.xhtml"/>
+		<itemref idref="about-the-translator.xhtml"/>
 	</spine>
 </package>
